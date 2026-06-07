@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://resumedesigner.netlify.app/sitemap.xml
