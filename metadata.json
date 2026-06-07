@@ -1,0 +1,8 @@
+{
+  "name": "Free Resume Designer v1",
+  "description": "Build professional resumes with live PDF previews, multiple templates, and secure local storage using a modern React interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
