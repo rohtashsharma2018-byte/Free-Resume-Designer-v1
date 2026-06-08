@@ -649,7 +649,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             <View style={{ marginTop: 'auto', paddingTop: 20, borderTopWidth: 1, borderTopColor: '#f8fafc', alignItems: 'center' }}>
                <Text style={{ fontSize: baseSize(7), color: '#cbd5e1', textTransform: 'uppercase', letterSpacing: 4 }}>ATS Optimized Structure v1</Text>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-2' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40 }}>
             <View style={{ flexGrow: 1 }}>
@@ -729,7 +733,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             <View style={{ marginTop: 'auto', paddingTop: 20, alignItems: 'center' }}>
                <Text style={{ fontSize: baseSize(8), fontWeight: 900, color: '#ffe4e6', textTransform: 'uppercase', letterSpacing: 10, fontStyle: 'italic' }}>ATS Bold Format v2</Text>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-3' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 50 }}>
             {/* Header - Amber & Forest */}
@@ -809,7 +817,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             <View style={{ marginTop: 'auto', paddingTop: 20, textAlign: 'right' }}>
                <Text style={{ fontSize: baseSize(9), fontWeight: 900, color: '#f1f5f9', textTransform: 'uppercase', letterSpacing: 8 }}>Earth Tone System v3</Text>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-4' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f8fafc', padding: 40 }}>
              {/* Header - Violet & Amber */}
@@ -901,7 +913,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
              <View style={{ marginTop: 'auto', paddingTop: 30, alignItems: 'center' }}>
                 <Text style={{ fontSize: baseSize(8), fontWeight: 900, color: '#e2e8f0', textTransform: 'uppercase', letterSpacing: 10 }}>Vibrant ATS Stack v4</Text>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-5' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40 }}>
              {/* Header - Emerald & Navy */}
@@ -1002,7 +1018,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: 'rgba(16,185,129,0.2)' }} />
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-6' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#fcfdfe', padding: 40 }}>
              {/* Header - Sky Blue & Charcoal */}
@@ -1089,7 +1109,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: '#0f172a' }} />
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-7' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 45 }}>
              {/* Header - Lavender & Gold */}
@@ -1169,7 +1193,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 <Text style={{ fontSize: baseSize(9), fontWeight: 900, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: 8, fontStyle: 'italic' }}>Lavender Strategic v7</Text>
                 <View style={{ width: 30, height: 4, backgroundColor: '#fbbf24', borderRadius: 2 }} />
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-8' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#fdfaf8', padding: 50 }}>
              {/* Header - Warm Orange & Navy */}
@@ -1255,7 +1283,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
              <View style={{ marginTop: 'auto', borderTopWidth: 1, borderTopColor: '#f1f5f9', paddingVertical: 15, alignItems: 'center' }}>
                 <Text style={{ fontSize: baseSize(9), fontWeight: 900, color: '#e2e8f0', textTransform: 'uppercase', letterSpacing: 10 }}>Dynamic Orange v8</Text>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-9' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40 }}>
              {/* Header - Mint & Navy */}
@@ -1338,7 +1370,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    <View style={{ width: 15, height: 4, backgroundColor: '#0f172a' }} />
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-ats-compliant-10' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 45 }}>
              {/* Header - Goldenrod & Graphite */}
@@ -1426,7 +1462,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#1e293b' }} />
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-industry-pro-11' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, color: '#0f172a' }}>
              {/* Header - Clean Light Theme */}
@@ -1505,7 +1545,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               <View style={{ marginTop: 'auto', paddingTop: 20, textAlign: 'center', borderTopWidth: 1, borderTopColor: '#e2e8f0' }}>
                  <Text style={{ fontSize: baseSize(7), fontWeight: 900, color: '#cbd5e1', textTransform: 'uppercase', letterSpacing: 10 }}>Modern Edge Pro</Text>
               </View>
-           </View>
+           
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-industry-pro-12' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f8fafc' }}>
              {/* Sustainable Tech template */}
@@ -1576,7 +1620,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    )}
                  </View>
               </View>
-           </View>
+           
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-industry-pro-13' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 50, gap: 40 }}>
              {/* Dynamic Branding */}
@@ -1630,7 +1678,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    </View>
                 )}
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-industry-pro-14' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
              {/* Global Consulting */}
@@ -1693,7 +1745,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    )}
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-industry-pro-15' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#fdfcfb', padding: 80, gap: 80 }}>
              {/* Minimalist Zen */}
@@ -1734,7 +1790,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    </View>
                 )}
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-single-column-1' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#fdfcfb', padding: 40 }}>
              {/* Header */}
@@ -1811,7 +1871,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    </View>
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-single-column-2' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40 }}>
              {/* Tech Header */}
@@ -1904,7 +1968,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    ) : null}
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-single-column-3' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 50 }}>
              {/* Editorial Header */}
@@ -1969,7 +2037,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    </View>
                 </View>
              ) : null}
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-single-column-4' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
              {/* Geometric Header Component */}
@@ -2060,7 +2132,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                    </View>
                 </View>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-single-column-5' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f8fafc', padding: 40 }}>
              {/* Bold Professional Header */}
@@ -2137,7 +2213,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
              <View style={{ backgroundColor: '#0f172a', padding: 15, borderRadius: 12, textAlign: 'right', marginTop: 20 }}>
                 <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#ffffff', opacity: 0.2, textTransform: 'uppercase', letterSpacing: 6 }}>Corporate Single Stream v5</Text>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-mixed-column-2' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#fffbeb' }}>
             {/* Header */}
@@ -2225,7 +2305,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                  ) : null}
               </View>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}
+</View>
+</View>
         ) : templateId === 'template-mixed-column-3' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
             {/* Split Header */}
@@ -2313,7 +2397,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   </View>
                </View>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-mixed-column-4' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, textAlign: 'center' }}>
              {/* Header */}
@@ -2409,7 +2497,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 </View>
              </View>
              <Text style={{ position: 'absolute', bottom: 40, left: 40, width: '100%', fontSize: baseSize(7), color: 'rgba(136,19,55,0.1)', textTransform: 'uppercase', letterSpacing: 8, textAlign: 'center' }}>Minimalist Design Concept v4</Text>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}{renderLanguages()}
+</View>
+</View>
         ) : templateId === 'template-mixed-column-5' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f1f5f9' }}>
              {/* Header Strip */}
@@ -2523,7 +2615,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
              <View style={{ backgroundColor: '#020617', padding: 10, textAlign: 'right' }}>
                 <Text style={{ fontSize: baseSize(7.5), fontFamily: chosenFontBold, color: '#6d28d9', opacity: 0.3, textTransform: 'uppercase', letterSpacing: 4 }}>System-6 Integrated Resume v5</Text>
              </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}
+</View>
+</View>
         ) : templateId === 'template-column-4' ? (
           <View style={{ flexDirection: 'row', flexGrow: 1 }}>
             {/* Left Sidebar */}
@@ -2635,7 +2731,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   Neo-Classic Design v.4
                </Text>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderProjects()}{renderCertifications()}{renderAwards()}{renderAchievements()}
+</View>
+</View>
         ) : templateId === 'template-column-5' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
             {/* Header Block */}
@@ -2755,7 +2855,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             <View style={{ backgroundColor: '#0f172a', padding: 10, textAlign: 'right' }}>
                <Text style={{ fontSize: baseSize(8), color: 'rgba(255,255,255,0.2)', textTransform: 'uppercase', letterSpacing: 4 }}>Modern Split Design v.5</Text>
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderCertifications()}{renderAwards()}{renderAchievements()}
+</View>
+</View>
         ) : templateId === 'template-two-colum-3' ? (
           <View style={{ flexDirection: 'row', flexGrow: 1 }}>
             {/* Left Sidebar: Bold Color Block */}
@@ -2879,7 +2983,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 </View>
               ) : null}
             </View>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderCertifications()}{renderAwards()}{renderAchievements()}
+</View>
+</View>
         ) : templateId === 'template-mixed-column' ? (
           <View style={{ flexDirection: 'column', flexGrow: 1 }}>
             {/* Header Area */}
@@ -2971,6 +3079,42 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                     ))}
                   </View>
                 ) : null}
+
+                {/* Projects */}
+                {projects && projects.length > 0 ? (
+                  <View style={{ marginBottom: 20 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>
+                        Projects
+                      </Text>
+                    </View>
+                    {projects.map((proj) => (
+                      <View key={proj.id} style={{ marginBottom: 12 }}>
+                        <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', marginBottom: 2 }}>{proj.title}</Text>
+                        {proj.description ? <Text style={styles.itemDesc}>{proj.description}</Text> : null}
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 ? (
+                  <View style={{ marginBottom: 20 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>
+                        Achievements
+                      </Text>
+                    </View>
+                    {achievements.map((ach) => (
+                      <View key={ach.id} style={{ marginBottom: 8 }}>
+                        <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a' }}>• {ach.name}</Text>
+                        <Text style={{ fontSize: baseSize(8.5), color: '#64748b', marginLeft: 10 }}>{ach.date}</Text>
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
               </View>
 
               {/* Right Column (skills, languages, etc) */}
@@ -3042,7 +3186,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             <Text style={{ position: 'absolute', bottom: 30, right: 30, fontSize: 7, color: '#cbd5e1', fontStyle: 'italic' }}>
               Mixed Column Design Concept
             </Text>
-          </View>
+          
+<View style={{ padding: 12 }}>
+{renderAwards()}
+</View>
+</View>
         ) : templateId === 'template-two-colum-2' ? (
           <View style={{ flexDirection: 'row', flexGrow: 1 }}>
             {/* Left Column: off-white bg, left dynamic primary color accent border */}
@@ -3226,6 +3374,23 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                         </View>
                         <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569', marginBottom: 2 }}>{proj.role}</Text>
                         {proj.description ? <Text style={{ fontSize: baseSize(8), color: '#334155', lineHeight: 1.3 }}>{proj.description}</Text> : null}
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 ? (
+                  <View style={{ marginBottom: 12 }}>
+                    <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 6 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase' }}>
+                        Achievements
+                      </Text>
+                    </View>
+                    {achievements.map((ach) => (
+                      <View key={ach.id} style={{ marginBottom: 4 }} wrap={false}>
+                        <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#0f172a' }}>{ach.name}</Text>
+                        <Text style={{ fontSize: baseSize(7.5), color: '#64748b' }}>{ach.date}</Text>
                       </View>
                     ))}
                   </View>

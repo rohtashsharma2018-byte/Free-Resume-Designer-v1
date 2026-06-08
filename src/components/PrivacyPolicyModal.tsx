@@ -65,14 +65,14 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ onProcee
                 onClick={() => setHasRead(false)}
                 className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition ${!hasRead ? "bg-slate-200 text-slate-700" : "bg-white text-slate-600 border border-slate-300 hover:bg-slate-100"}`}
               >
-                Not Read
+                Do Not Accept
               </button>
               <button
                 onClick={() => setHasRead(true)}
                 className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-semibold transition ${hasRead ? "bg-indigo-600 text-white" : "bg-white text-slate-600 border border-slate-300 hover:bg-slate-100"}`}
               >
                 <CheckCircle2 className="w-5 h-5" />
-                Yes, Read
+                Accept
               </button>
           </div>
           

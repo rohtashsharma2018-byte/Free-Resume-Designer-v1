@@ -627,7 +627,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                </div>
             </div>
             <div className="mt-auto pt-8 border-t border-slate-50 text-[10px] text-slate-300 text-center tracking-widest uppercase">ATS Optimized Structure v1</div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-2' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#fcfdfd] p-12 space-y-10">
             {/* Header - Crimson & Slate */}
@@ -708,7 +712,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                </div>
             </div>
             <div className="mt-auto pt-10 text-[10px] font-black text-rose-200 uppercase tracking-[1em] text-center italic">ATS Bold Format v2</div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-3' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-16 space-y-12">
             {/* Header - Amber & Forest (Earth Tones) */}
@@ -790,7 +798,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto pt-10 text-[10px] font-black text-slate-100 uppercase tracking-[1em] text-right">
               Earth Tone System v3
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-4' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-slate-50 p-16 space-y-12">
             {/* Header - Violet & Amber */}
@@ -890,7 +902,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto pt-12 text-[10px] font-black text-slate-200 uppercase tracking-[1em] text-center">
                Vibrant ATS Stack v4
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-5' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-12 space-y-12">
              {/* Header - Emerald & Navy (Modern Corporate) */}
@@ -1003,7 +1019,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-2 h-2 rounded-full bg-emerald-500/20" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-6' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#fcfdfe] p-12 space-y-10">
              {/* Header - Sky Blue & Charcoal */}
@@ -1103,7 +1123,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-4 h-4 bg-slate-900 rounded-full" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-7' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-14 space-y-12">
              {/* Header - Lavender & Gold */}
@@ -1198,7 +1222,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                 <span className="text-[11px] font-black uppercase tracking-[1em] opacity-40 italic"> Lavender Strategic v7</span>
                 <div className="w-12 h-1 bg-amber-400 rounded-full" />
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-8' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#fdfaf8] p-16 space-y-16">
              {/* Header - Warm Orange & Navy */}
@@ -1296,7 +1324,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
              <div className="mt-auto py-6 border-y-2 border-slate-100 flex justify-center">
                 <span className="text-[11px] font-black uppercase tracking-[2em] text-slate-200">Dynamic Orange v8</span>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-9' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-12 space-y-12">
              {/* Header - Mint & Navy */}
@@ -1397,7 +1429,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-12 h-1 bg-slate-900" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-ats-compliant-10' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-14 space-y-12">
              {/* Header - Goldenrod & Graphite */}
@@ -1494,7 +1530,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-4 h-4 bg-slate-900 rounded-full" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-industry-pro-11' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-16 space-y-12 text-slate-900">
              {/* Header - Clean Light Theme */}
@@ -1578,7 +1618,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
              <div className="mt-auto pt-10 text-[10px] font-black text-slate-300 uppercase tracking-[1.5em] text-center border-t border-slate-200">
                 Modern Edge Pro
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-industry-pro-12' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#f8fafc] p-0">
              {/* Sustainable Tech Template - Forest & Sand */}
@@ -1667,7 +1711,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    )}
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-industry-pro-13' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#ffffff] p-16 space-y-16">
              {/* Dynamic Branding */}
@@ -1734,7 +1782,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-12 h-2 bg-[#1e293b]" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-industry-pro-14' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-0">
              {/* Global Consulting */}
@@ -1823,7 +1875,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                    <div className="w-1 h-1 rounded-full bg-[#1d4ed8]" />
                 </div>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-industry-pro-15' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-center bg-[#fdfcfb] p-24 space-y-24">
              {/* Minimalist Zen */}
@@ -1911,7 +1967,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
              <div className="mt-auto pt-24 text-[8px] font-serif font-black italic text-slate-200 text-center tracking-[2em] uppercase brightness-150">
                 Zen Flow
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-single-column-1' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-center bg-[#fdfcfb] p-16 space-y-12">
             {/* Elegant Centered Header */}
@@ -2003,7 +2063,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto pt-10 text-[9px] text-slate-300 font-serif lowercase italic tracking-[0.5em]">
               Elegant Single Flow v1
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-single-column-2' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-12 space-y-10">
             {/* Tech-Focused Left Header */}
@@ -2116,7 +2180,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto pt-10 text-[9px] font-black text-slate-200 uppercase tracking-[1em]">
               Tech-Mono Single Stack v2
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-single-column-3' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-20 space-y-16">
             {/* Bold Editorial Header */}
@@ -2193,7 +2261,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto border-t border-slate-900/10 pt-10 text-[10px] font-serif font-black italic text-slate-200 text-right">
               Magazine Editorial Layout v3
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-single-column-4' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white">
             {/* Geometric Block Header */}
@@ -2294,7 +2366,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="mt-auto p-12 text-[8px] font-black text-slate-200 uppercase tracking-[1em] text-center">
               Geometric Minimalist v4
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-single-column-5' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-slate-50 p-16 space-y-12">
             {/* High Impact Professional Header */}
@@ -2383,7 +2459,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="p-10 bg-slate-900 rounded-3xl text-right">
                <span className="text-[10px] font-black text-white opacity-20 uppercase tracking-[1em]">Corporate Single Stream v5</span>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-mixed-column-2' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#fffbeb]">
             {/* Elegant Serif Header - Single Column */}
@@ -2494,7 +2574,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                 )}
               </div>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-mixed-column-3' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white">
             {/* Modern Brutalist Split Header */}
@@ -2592,7 +2676,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                   )}
                </div>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-mixed-column-4' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-center bg-white p-12">
              {/* Centered Minimalist Header */}
@@ -2692,7 +2780,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
              <div className="mt-20 text-[9px] font-black text-rose-900/10 tracking-[1em] uppercase">
                 Minimalist Design Concept v4
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}{renderLanguagesSection()}
+</div>
+</div>
         ) : templateId === 'template-mixed-column-5' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-[#f1f5f9]">
              {/* Modern Technical Header Strip */}
@@ -2826,7 +2918,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
              <div className="p-4 bg-slate-950 text-right">
                 <span className="text-[8px] font-mono font-bold text-violet-400/30 uppercase tracking-[0.5em]">System-6 Integrated Resume v5</span>
              </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-column-4' ? (
           <div className="flex flex-row h-full min-h-[297mm] items-stretch text-left">
             {/* Sidebar with light textured background */}
@@ -2957,7 +3053,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                 Neo-Classic Design v.4
               </div>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderProjectsSection()}{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-column-5' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left">
             {/* Split Header with color block */}
@@ -3094,7 +3194,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
             <div className="p-6 bg-slate-900 text-right">
               <span className="text-[9px] font-black text-white/20 uppercase tracking-[0.5em]">Modern Split Design Concept v.5</span>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-two-colum-3' ? (
           <div className="flex flex-row h-full min-h-[297mm] items-stretch text-left">
             {/* Left Column: Bold Primary Background Sidebar */}
@@ -3257,7 +3361,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                 </div>
               )}
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderCertificationsSection()}{renderAwardsSection()}{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-mixed-column' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left">
             {/* Header: Name and contact on white bg */}
@@ -3349,6 +3457,46 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                               {edu.description}
                             </p>
                           )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Projects */}
+                {projects && projects.length > 0 && (
+                  <div className="text-left">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-2.5 h-2.5 rounded-full" style={bgStyle} />
+                      <h2 className="font-bold uppercase tracking-widest text-[11px]" style={colorStyle}>Projects</h2>
+                    </div>
+                    <div className="space-y-4">
+                      {projects.map((proj) => (
+                        <div key={proj.id}>
+                          <h3 className="font-bold text-slate-900 text-xs mb-1">{proj.title}</h3>
+                          {proj.description && (
+                            <p className="text-[10px] text-slate-600 leading-relaxed whitespace-pre-line decoration-slate-200">
+                              {proj.description}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 && (
+                  <div className="text-left">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-2.5 h-2.5 rounded-full" style={bgStyle} />
+                      <h2 className="font-bold uppercase tracking-widest text-[11px]" style={colorStyle}>Achievements</h2>
+                    </div>
+                    <div className="space-y-4">
+                      {achievements.map((ach) => (
+                        <div key={ach.id}>
+                          <h3 className="font-bold text-slate-900 text-xs mb-1">• {ach.name}</h3>
+                          {ach.date && <div className="text-[9.5px] text-slate-400 font-bold italic ml-2.5 mb-1">{ach.date}</div>}
                         </div>
                       ))}
                     </div>
@@ -3718,7 +3866,11 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                 Formatted autonomously on Resume Designer
               </div>
             </div>
-          </div>
+          
+<div className="p-8 w-full block shrink-0" style={{marginTop: 'auto'}}>
+{renderAchievementsSection()}
+</div>
+</div>
         ) : templateId === 'template-two-colum-1' ? (
           <div className="flex flex-row h-full min-h-[297mm] items-stretch">
             {/* First Column: navy blue bg, white text */}

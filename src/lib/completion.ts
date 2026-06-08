@@ -10,6 +10,7 @@ export const SECTION_POINTS = {
   projects: 5,
   awards: 5,
   achievements: 5,
+  certifications: 5,
 };
 
 export const isSectionFull = (data: ResumeData, secId: string): boolean => {
@@ -22,6 +23,7 @@ export const isSectionFull = (data: ResumeData, secId: string): boolean => {
     case 'projects': return data.projects.length > 0 && data.projects.every(proj => !!(proj.title && proj.description && proj.description.trim()));
     case 'awards': return (data.awards || []).length > 0 && (data.awards || []).every(award => !!(award.name && award.name.trim()));
     case 'achievements': return (data.achievements || []).length > 0 && (data.achievements || []).every(ach => !!(ach.name && ach.name.trim()));
+    case 'certifications': return data.certifications.length > 0 && data.certifications.every(cert => !!(cert.name && cert.name.trim()));
     default: return false;
   }
 };

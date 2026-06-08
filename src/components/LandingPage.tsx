@@ -74,81 +74,32 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       previewColor: "#ca8a04",
     },
     {
-      id: "template-two-colum-1",
-      name: "Template Two Column 1",
-      desc: "Classic double column layout with side accent-bars to display certifications and projects.",
-      tag: "Structured",
-      previewColor: "#1e3a8a",
-    },
-    {
-      id: "template-column-5",
-      name: "Template Two Column 5",
-      desc: "High-impact Modern Split with bold headings and structured content layouts.",
-      tag: "Modernist",
-      previewColor: "#0f172a",
-    },
-    {
-      id: "template-mixed-column",
-      name: "Template Mixed Column 1",
-      desc: "Modern layout featuring a bold summary header and an efficient mixed-column structure.",
-      tag: "Contemporary",
-      previewColor: "#0d9488",
-    },
-    {
-      id: "template-mixed-column-5",
-      name: "Template Mixed Column 5",
-      desc: "Advanced technical layout featuring a triple-tier system with overlapping strips.",
-      tag: "System Developer",
-      previewColor: "#6d28d9",
-    },
-    {
-      id: "template-single-column-2",
-      name: "Template Single Column 2",
-      desc: "Technical left-aligned flow featuring monospaced accents and bold section headers.",
-      tag: "Tech Minimal",
-      previewColor: "#0f172a",
-    },
-    {
-      id: "template-single-column-4",
-      name: "Template Single Column 4",
-      desc: "Modern geometric minimalist design with a structured accent-colored header block.",
-      tag: "Modernist",
-      previewColor: "#4338ca",
-    },
-    {
-      id: "template-ats-compliant-2",
-      name: "ATS Compliant 2",
-      desc: "Bold crimson-themed design with a structured narrative flow and clear headers.",
-      tag: "ATS Optimized",
-      previewColor: "#be123c",
-    },
-    {
-      id: "template-ats-compliant-3",
-      name: "ATS Compliant 3",
-      desc: "Earth-toned logical structure with strong section distinctions and clean padding.",
-      tag: "ATS Optimized",
-      previewColor: "#d97706",
-    },
-    {
-      id: "template-ats-compliant-8",
-      name: "ATS Compliant 8",
-      desc: "Rich Indigo layout with accented bullets and structured career history.",
-      tag: "ATS Optimized",
-      previewColor: "#4f46e5",
-    },
-    {
-      id: "template-ats-compliant-9",
-      name: "ATS Compliant 9",
-      desc: "Minimalist Steel design with side-bar meta-details and clean typography.",
-      tag: "ATS Optimized",
+      id: "classic-professional",
+      name: "Classic Professional",
+      desc: "Timeless traditional layout ideal for corporate and established industries.",
+      tag: "Professional",
       previewColor: "#334155",
     },
     {
-      id: "template-ats-compliant-10",
-      name: "ATS Compliant 10",
-      desc: "Sophisticated Royal Blue Professional layout for high-level management.",
-      tag: "ATS Optimized",
-      previewColor: "#1e40af",
+      id: "academic-technical",
+      name: "Academic/Technical",
+      desc: "Structured single-column layout optimized for detailed publications and tech stacks.",
+      tag: "Technical",
+      previewColor: "#0ea5e9",
+    },
+    {
+      id: "executive-premium",
+      name: "Executive Premium",
+      desc: "Refined multi-column design crafted for senior leadership and c-suite roles.",
+      tag: "Premium",
+      previewColor: "#dc2626",
+    },
+    {
+      id: "ats-optimized",
+      name: "ATS Optimized",
+      desc: "Rigid structure built strictly to pass automated tracking systems and standard parsers.",
+      tag: "ATS Ready",
+      previewColor: "#16a34a",
     },
   ];
 
@@ -223,9 +174,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div>
               <span className="font-extrabold text-base tracking-tight text-slate-900 block">
                 Free Resume Designer
-              </span>
-              <span className="text-[10px] text-slate-400 font-mono tracking-wider font-semibold uppercase">
-                Offline Secure
               </span>
             </div>
           </div>
