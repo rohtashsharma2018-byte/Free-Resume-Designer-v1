@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logoUrl from "../assets/images/logo.svg";
 import {
   FileText,
   Sparkles,
@@ -37,6 +38,7 @@ interface TemplateItem {
 
 interface LandingPageProps {
   onStartDesigning: () => void;
+  onExploreTemplates: () => void;
   onCreateWithTemplate: (title: string, templateId: string) => void;
   onExploreSample: () => void;
   onNavigateAbout: () => void;
@@ -48,6 +50,7 @@ interface LandingPageProps {
 
 export const LandingPage: React.FC<LandingPageProps> = ({
   onStartDesigning,
+  onExploreTemplates,
   onCreateWithTemplate,
   onExploreSample,
   onNavigateAbout,
@@ -100,6 +103,41 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       desc: "Rigid structure built strictly to pass automated tracking systems and standard parsers.",
       tag: "ATS Ready",
       previewColor: "#16a34a",
+    },
+    {
+      id: "ats-standout",
+      name: "ATS Standout",
+      desc: "Modern two-column ATS-compliant structure accented with sophisticated gold-yellow and warm charcoal-grey.",
+      tag: "ATS Modern",
+      previewColor: "#ca8a04",
+    },
+    {
+      id: "ats-lunar",
+      name: "ATS Lunar",
+      desc: "Futuristic two-column ATS-compliant layout with vibrant orange and dark grey typography accents.",
+      tag: "ATS Modern",
+      previewColor: "#ea580c",
+    },
+    {
+      id: "ats-universe",
+      name: "ATS Universe",
+      desc: "Premium asymmetric single-column layout highlighting your achievements with warm bold yellow and stellar dark slate.",
+      tag: "ATS Universe",
+      previewColor: "#eab308",
+    },
+    {
+      id: "ats-shining-star",
+      name: "ATS Shining Star",
+      desc: "Distinguished dual-column corporate layout featuring deep navy blue and sharp silver details designed for readability.",
+      tag: "ATS Star",
+      previewColor: "#1e3a8a",
+    },
+    {
+      id: "ats-navy-classic",
+      name: "ATS Navy Classic",
+      desc: "Single-column ATS-compliant structure designed with minimalist dividers and subtle navy accents for peak readability.",
+      tag: "ATS 2024",
+      previewColor: "#1e40af",
     },
   ];
 
@@ -168,9 +206,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <nav className="bg-white/90 backdrop-blur-md border-b border-slate-250 sticky top-0 z-[60] py-3.5 px-6 shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="bg-indigo-600 text-white p-2 rounded-xl shadow-md shadow-indigo-600/20">
-              <FileText className="w-5 h-5" />
-            </div>
+            <img 
+              src={logoUrl} 
+              className="w-14 h-14 object-contain rounded-xl shadow-md transition-all duration-200 hover:scale-105" 
+              alt="Logo" 
+              referrerPolicy="no-referrer" 
+            />
             <div>
               <span className="font-extrabold text-base tracking-tight text-slate-900 block">
                 Free Resume Designer
@@ -242,14 +283,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 border border-indigo-100 rounded-full text-xs font-semibold text-indigo-700 mb-6 shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-indigo-500 fill-indigo-500/10" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-orange-50 border border-orange-100 rounded-full text-xs font-semibold text-orange-700 mb-6 shadow-2xs">
+            <Sparkles className="w-3.5 h-3.5 text-orange-500 fill-orange-500/10" />
             <span>100% Free • Infinite Local Restores • Offline Enabled</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 max-w-4xl mx-auto leading-[1.1] mb-6">
             Build high-performance,{" "}
-            <span className="text-indigo-600 relative inline-block">
+            <span className="text-5xl md:text-7xl bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent relative inline-block align-middle pb-1 font-black">
               ATS-optimized resumes
             </span>{" "}
             without paywalls.
@@ -263,18 +304,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto mb-16">
             <button
-              onClick={onStartDesigning}
-              className="w-full sm:w-auto px-7 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-base transition-all cursor-pointer shadow-lg shadow-indigo-600/20 hover:scale-[1.01] flex items-center justify-center gap-2 group"
-            >
-              <span>Build Your Resume</span>
-              <ArrowRight className="w-5 h-5 text-indigo-200 group-hover:translate-x-0.5 transition-transform" />
-            </button>
-
-            <button
               onClick={onExploreSample}
               className="w-full sm:w-auto px-7 py-3.5 bg-slate-800 hover:bg-slate-900 text-white rounded-xl font-bold text-base transition-all cursor-pointer shadow-sm hover:shadow-md flex items-center justify-center gap-2"
             >
-              <span>Load Interactive Demo</span>
+              <span>Build Your Resume</span>
             </button>
           </div>
 
@@ -297,7 +330,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </span>
             </div>
             <div className="text-center border-l md:border-l border-slate-200">
-              <span className="block text-2xl font-black text-indigo-600">
+              <span className="block text-2xl font-black text-slate-700">
                 Offline
               </span>
               <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider font-mono">
@@ -334,6 +367,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Step 1 */}
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 text-center relative overflow-hidden group hover:shadow-xl hover:border-indigo-200 transition-all duration-300">
+              <div className="absolute top-5 left-5 w-8 h-8 bg-white text-slate-800 border border-slate-200 text-sm font-bold rounded-xl flex items-center justify-center shadow-xs z-20">
+                1
+              </div>
               <div className="absolute top-0 right-0 p-6 opacity-5">
                 <Layout className="w-32 h-32 text-indigo-900 transform rotate-12 group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -351,6 +387,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
             {/* Step 2 */}
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 text-center relative overflow-hidden group hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+              <div className="absolute top-5 left-5 w-8 h-8 bg-white text-slate-800 border border-slate-200 text-sm font-bold rounded-xl flex items-center justify-center shadow-xs z-20">
+                2
+              </div>
               <div className="absolute top-0 right-0 p-6 opacity-5">
                 <FileText className="w-32 h-32 text-emerald-900 transform -rotate-12 group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -368,6 +407,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
             {/* Step 3 */}
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 text-center relative overflow-hidden group hover:shadow-xl hover:border-orange-200 transition-all duration-300">
+              <div className="absolute top-5 left-5 w-8 h-8 bg-white text-slate-800 border border-slate-200 text-sm font-bold rounded-xl flex items-center justify-center shadow-xs z-20">
+                3
+              </div>
               <div className="absolute top-0 right-0 p-6 opacity-5">
                 <Palette className="w-32 h-32 text-orange-900 transform rotate-12 group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -385,6 +427,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
             {/* Step 4 */}
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 text-center relative overflow-hidden group hover:shadow-xl hover:border-sky-200 transition-all duration-300">
+              <div className="absolute top-5 left-5 w-8 h-8 bg-white text-slate-800 border border-slate-200 text-sm font-bold rounded-xl flex items-center justify-center shadow-xs z-20">
+                4
+              </div>
               <div className="absolute top-0 right-0 p-6 opacity-5">
                 <Download className="w-32 h-32 text-sky-900 transform -rotate-12 group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -406,7 +451,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       {/* Bento Grid Features */}
       <section className="py-20 px-6 max-w-7xl mx-auto" id="features-anchor">
         <div className="text-center mb-16">
-          <p className="text-xs font-black uppercase text-indigo-600 tracking-wider font-mono mb-2">
+          <p className="text-xs font-black uppercase text-orange-600 tracking-wider font-mono mb-2">
             Architectural Excellence
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -450,7 +495,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-16">
             <div>
-              <p className="text-xs font-bold uppercase text-indigo-400 tracking-wider font-mono mb-1">
+              <p className="text-xs font-bold uppercase text-orange-400 tracking-wider font-mono mb-1">
                 Interactive Templates
               </p>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
@@ -463,11 +508,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             <button
-              onClick={onStartDesigning}
-              className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-bold transition-all cursor-pointer flex items-center gap-2 group shrink-0"
+              onClick={onExploreTemplates}
+              className="px-5 py-2.5 bg-white hover:bg-indigo-50 text-slate-900 rounded-xl text-sm font-bold transition-all cursor-pointer flex items-center gap-2 group shrink-0 shadow-sm"
             >
-              <span>Launch Dashboard Studio</span>
-              <ChevronRight className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform" />
+              <span>Explore More Templates</span>
+              <ChevronRight className="w-4 h-4 text-slate-900 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </div>
 
@@ -613,7 +658,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       {/* Styled Accordion FAQ Section */}
       <section className="py-20 px-6 max-w-4xl mx-auto" id="faq-anchor">
         <div className="text-center mb-16">
-          <p className="text-xs font-black uppercase text-indigo-600 tracking-wider font-mono mb-2">
+          <p className="text-xs font-black uppercase text-orange-600 tracking-wider font-mono mb-2">
             Humble Answers
           </p>
           <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
@@ -657,10 +702,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       {/* Minimal Footer */}
       <footer className="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800 text-center text-xs">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <div className="bg-slate-800 p-1.5 rounded-lg border border-slate-700">
-              <FileText className="w-4 h-4 text-indigo-400" />
-            </div>
+          <div className="flex items-center gap-2.5">
+            <img 
+              src={logoUrl} 
+              className="w-8 h-8 object-contain rounded-lg shadow-sm" 
+              alt="Logo" 
+              referrerPolicy="no-referrer" 
+            />
             <span className="font-bold text-slate-200">
               Free Resume Designer
             </span>

@@ -489,7 +489,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
     const items = [];
 
     // Template Check (Max 25)
-    if (data.templateId === 'ats-optimized') {
+    if (data.templateId === 'ats-optimized' || data.templateId === 'ats-navy-classic') {
       score += 25;
       items.push({
         status: 'pass',
@@ -803,7 +803,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                 id="select-resume-template"
                 value={data.templateId}
                 onChange={(e) => onChange({ ...data, templateId: e.target.value as any })}
-                className="w-full text-sm text-slate-700 bg-white border border-slate-200 rounded-lg px-3 py-2 outline-none focus:border-indigo-500 cursor-pointer"
+                className="w-full text-sm text-white bg-orange-600 border border-orange-600 rounded-lg px-3 py-2 outline-none focus:border-orange-700 cursor-pointer font-medium"
               >
                 {[
                   { id: 'modern-minimal', name: 'Modern Minimal' },
@@ -812,8 +812,13 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                   { id: 'academic-technical', name: 'Academic Technical' },
                   { id: 'executive-premium', name: 'Executive Premium' },
                   { id: 'ats-optimized', name: 'ATS Optimized' },
+                  { id: 'ats-standout', name: 'ATS Standout' },
+                  { id: 'ats-lunar', name: 'ATS Lunar' },
+                  { id: 'ats-universe', name: 'ATS Universe (Yellow & Dark Grey)' },
+                  { id: 'ats-shining-star', name: 'ATS Shining Star (Navy Blue & Crisp Silver)' },
+                  { id: 'ats-navy-classic', name: 'ATS Navy Classic (Single Column, Subtly Elegant Navy)' },
                 ].map((template) => (
-                  <option key={template.id} value={template.id}>{template.name}</option>
+                  <option key={template.id} value={template.id} className="text-slate-900 bg-white">{template.name}</option>
                 ))}
               </select>
             </div>

@@ -85,7 +85,7 @@ export interface Language {
 export interface ResumeData {
   id: string;
   title: string; // Name of this resume in dashboard
-  templateId: 'modern-minimal' | 'classic-professional' | 'creative-bold' | 'academic-technical' | 'executive-premium' | 'ats-optimized' | 'template-two-colum-1';
+  templateId: 'modern-minimal' | 'classic-professional' | 'creative-bold' | 'academic-technical' | 'executive-premium' | 'ats-optimized' | 'template-two-colum-1' | 'ats-standout' | 'ats-lunar' | 'ats-universe' | 'ats-shining-star' | 'ats-navy-classic';
   primaryColor: string; // Hex code
   fontSize: 'sm' | 'base' | 'lg';
   fontFamily: 'sans' | 'serif' | 'mono' | 'display';

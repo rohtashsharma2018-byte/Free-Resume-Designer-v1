@@ -47,6 +47,7 @@ interface DashboardProps {
   onDuplicate: (resume: ResumeData) => void;
   onImport: (resume: ResumeData) => void;
   bootstrapSample: () => void;
+  initialView?: 'saved' | 'templates' | 'manual';
 }
 
 const TEMPLATES = [
@@ -56,6 +57,11 @@ const TEMPLATES = [
   { id: 'academic-technical', title: 'Academic Technical' },
   { id: 'executive-premium', title: 'Executive Premium' },
   { id: 'ats-optimized', title: 'ATS Optimized' },
+  { id: 'ats-standout', title: 'ATS Standout' },
+  { id: 'ats-lunar', title: 'ATS Lunar' },
+  { id: 'ats-universe', title: 'ATS Universe' },
+  { id: 'ats-shining-star', title: 'ATS Shining Star' },
+  { id: 'ats-navy-classic', title: 'ATS Navy Classic' },
 ];
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -67,10 +73,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onDuplicate,
   onImport,
   bootstrapSample,
+  initialView = 'manual',
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
-  const [view, setView] = useState<'saved' | 'templates' | 'manual'>('manual');
+  const [view, setView] = useState<'saved' | 'templates' | 'manual'>(initialView);
   const [isCompilingId, setIsCompilingId] = useState<string | null>(null);
   const [showDeleteAllConfirm, setShowDeleteAllConfirm] = useState(false);
   const [countdown, setCountdown] = useState(10);
@@ -266,7 +273,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="flex justify-center gap-3">
               <button
                 onClick={() => onCreate('New Resume', 'modern-minimal')}
-                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-medium cursor-pointer"
+                className="px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-lg text-xs font-medium cursor-pointer transition-colors"
               >
                 Add New Blank
               </button>
@@ -337,6 +344,15 @@ export const Dashboard: React.FC<DashboardProps> = ({
                           <span className="font-medium text-slate-700">{templateLabel}</span>
                         </div>
                         <div className="flex justify-between">
+                          <span className="text-slate-400">Identity:</span>
+                          <span className="font-medium text-slate-700">
+                            {
+                              ['fullName', 'jobTitle', 'email', 'phone', 'location', 'nationality', 'website', 'linkedin', 'github', 'bio', 'gender', 'photoUrl']
+                                .filter(f => !!resume.personalInfo[f as keyof typeof resume.personalInfo]).length
+                            } fields
+                          </span>
+                        </div>
+                        <div className="flex justify-between">
                           <span className="text-slate-400">Experience:</span>
                           <span className="font-medium text-slate-700">{resume.experience.length} details</span>
                         </div>
@@ -363,7 +379,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                       <div className="flex items-center justify-between gap-2">
                         <button
                           onClick={() => onSelect(resume.id)}
-                          className="py-1.5 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-sm transition-colors cursor-pointer text-center"
+                          className="py-1.5 px-6 bg-slate-800 hover:bg-slate-900 text-white font-medium rounded-lg text-sm transition-colors cursor-pointer text-center"
                         >
                           Edit Details
                         </button>

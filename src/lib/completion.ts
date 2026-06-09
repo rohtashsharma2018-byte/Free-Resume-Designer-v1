@@ -5,7 +5,7 @@ export const SECTION_POINTS = {
   personal: 20,
   experience: 20,
   education: 20,
-  skills: 15,
+  skills: 10,
   languages: 10,
   projects: 5,
   awards: 5,

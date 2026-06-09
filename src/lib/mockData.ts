@@ -55,7 +55,7 @@ export function getDemoResume(): ResumeData {
         startDate: 'Jan 2022',
         endDate: 'Present',
         currentlyWorking: true,
-        description: '• Architected next-generation global multi-region telemetry pipeline processing 40B+ daily transactional payloads.\n• Directed engineering migration from state-heavy networks to unified, immutable Terraform models, reducing provisioning drift incidents by 90%.\n• Pioneered container-density auto-scalers matching regional CPU load waves, saving $4.2M in annual public cloud compute expenditures.'
+        description: '• Architected next-generation global multi-region telemetry pipeline processing 40B+ daily transactional payloads.\n• Directed engineering migration from state-heavy networks to unified, immutable Terraform models, reducing provisioning drift incidents by 90%.\n• Pioneered container-density auto-scalers matching regional CPU load waves, saving ₹35 Cr in annual public cloud compute expenditures.'
       },
       {
         id: 'exp-2',

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import logoUrl from "./assets/images/logo.svg";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ResumeData } from "./types";
 import {
@@ -52,6 +53,7 @@ import {
 export default function App() {
   // Application State
   const [isSplashActive, setIsSplashActive] = useState<boolean>(true);
+  const [dashboardInitialView, setDashboardInitialView] = useState<'saved' | 'templates' | 'manual'>('saved');
   const [view, setView] = useState<
     | "landing"
     | "dashboard"
@@ -102,6 +104,10 @@ export default function App() {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [view]);
 
   useEffect(() => {
     if (!isDragging && !isDraggingHeight) return;
@@ -443,6 +449,10 @@ export default function App() {
 
   const templates = [
     { id: "ats-optimized", name: "ATS Optimized (Single Column)" },
+    { id: "ats-standout", name: "ATS Standout (Modern Dual Column)" },
+    { id: "ats-lunar", name: "ATS Lunar (Orange & Grey Dual)" },
+    { id: "ats-universe", name: "ATS Universe (Yellow & Grey Single-Column)" },
+    { id: "ats-shining-star", name: "ATS Shining Star (Navy & Silver Duo)" },
     { id: "modern-minimal", name: "Modern Minimal" },
     { id: "classic-professional", name: "Classic Professional" },
     { id: "creative-bold", name: "Creative Bold" },
@@ -512,7 +522,8 @@ export default function App() {
         id="app-root"
       >
         <LandingPage
-          onStartDesigning={() => setView("dashboard")}
+          onStartDesigning={() => { setDashboardInitialView('saved'); setView("dashboard"); }}
+          onExploreTemplates={() => { setDashboardInitialView('templates'); setView("dashboard"); }}
           onCreateWithTemplate={async (title, templateId) => {
             await handleCreate(title, templateId);
           }}
@@ -554,6 +565,7 @@ export default function App() {
                     if (currentResume) {
                       triggerDBSave(currentResume);
                     }
+                    setDashboardInitialView("saved");
                     setView("dashboard");
                     loadResumesList();
                   }}
@@ -566,10 +578,15 @@ export default function App() {
               ) : (
                 <button
                   onClick={() => setView("landing")}
-                  className="p-1 hover:bg-slate-100 rounded-lg transition cursor-pointer flex items-center gap-1.5 text-left border border-transparent"
+                  className="p-1 hover:bg-slate-100 rounded-lg transition cursor-pointer flex items-center gap-2.5 text-left border border-transparent"
                   title="Back to Welcome Landing"
                 >
-                  <FileText className="w-4 h-4 text-indigo-600" />
+                  <img 
+                    src={logoUrl} 
+                    className="w-12 h-12 object-contain rounded-lg shadow-sm transition-transform duration-200 hover:scale-105" 
+                    alt="Logo" 
+                    referrerPolicy="no-referrer" 
+                  />
                   <div>
                     <span className="font-extrabold text-[#0f172a] text-sm block tracking-tight">
                       Free Resume Designer
@@ -736,7 +753,7 @@ export default function App() {
                   <button
                     onClick={() => triggerDBSave(currentResume)}
                     disabled={isSaving}
-                    className="px-4 py-1.5 self-stretch justify-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-lg transition-all flex items-center gap-1.5 cursor-pointer shadow-sm border border-transparent disabled:opacity-80 disabled:cursor-not-allowed"
+                    className="px-4 py-1.5 self-stretch justify-center bg-slate-800 hover:bg-slate-900 text-white text-sm font-semibold rounded-lg transition-all flex items-center gap-1.5 cursor-pointer shadow-sm border border-transparent disabled:opacity-80 disabled:cursor-not-allowed"
                   >
                     {isSaving ? (
                       <>
@@ -871,6 +888,7 @@ export default function App() {
         {view === "dashboard" ? (
           <Dashboard
             resumes={resumes}
+            initialView={dashboardInitialView}
             onSelect={(id) => {
               const matched = resumes.find((r) => r.id === id);
               if (matched) {
@@ -1068,7 +1086,7 @@ export default function App() {
                 {!isFocusMode && (
                   <div className="bg-slate-900 border-b border-slate-800 px-4 sm:px-6 py-3 flex flex-col gap-3 text-white z-10 shrink-0 min-w-0 overflow-hidden">
                     <div className="flex items-center gap-3 w-full">
-                      <span className="text-sm bg-indigo-600 px-2 py-1 rounded font-semibold text-white uppercase tracking-wider shrink-0">
+                      <span className="text-sm bg-slate-600 px-2 py-1 rounded font-semibold text-white uppercase tracking-wider shrink-0">
                         Preview Mode
                       </span>
                       <h2 className="font-bold text-base text-slate-100 truncate flex-1 md:max-w-none">
@@ -1087,27 +1105,27 @@ export default function App() {
                         <span className="hidden sm:inline">Focus</span>
                       </button>
 
-                      <div className="flex items-center bg-slate-800 border border-slate-700 rounded-lg p-1 gap-0.5 shrink-0">
+                      <div className="flex items-center bg-slate-800 border border-slate-700 rounded-lg py-1.5 px-1 gap-0.5 shrink-0">
                       <button
                         onClick={() => zoomOut(0.1)}
-                        className="p-1.5 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
+                        className="p-1 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
                         title="Zoom Out"
                       >
-                        <ZoomOut className="w-5 h-5" />
+                        <ZoomOut className="w-4 h-4" />
                       </button>
-                      <span className="text-sm font-mono text-slate-300 w-14 text-center">
+                      <span className="text-xs font-mono text-slate-300 w-11 text-center">
                         {Math.round(state.scale * 100)}%
                       </span>
                       <button
                         onClick={() => zoomIn(0.1)}
-                        className="p-1.5 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
+                        className="p-1 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
                         title="Zoom In"
                       >
-                        <ZoomIn className="w-5 h-5" />
+                        <ZoomIn className="w-4 h-4" />
                       </button>
                       <button
                         onClick={() => resetTransform()}
-                        className="p-1.5 ml-1 text-sm font-semibold hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white border-l border-slate-700 pl-3"
+                        className="p-1 ml-0.5 text-xs font-semibold hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white border-l border-slate-700 pl-2"
                         title="Reset Zoom"
                       >
                         Reset
@@ -1127,7 +1145,7 @@ export default function App() {
 
                     <button
                       onClick={() => setShowDownloadMenu(true)}
-                      className="px-4 py-2 text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm font-semibold transition-all shadow-sm flex items-center gap-2 cursor-pointer shrink-0"
+                      className="px-4 py-2 text-white bg-slate-800 hover:bg-slate-900 rounded-lg text-sm font-semibold transition-all shadow-sm flex items-center gap-2 cursor-pointer shrink-0"
                     >
                       {isCompiling ? (
                         <Loader2 className="w-5 h-5 animate-spin" />
@@ -1206,7 +1224,7 @@ export default function App() {
               <button
                 onClick={() => triggerDBSave(currentResume)}
                 disabled={isSaving}
-                className="h-10 px-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-lg transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-85 disabled:cursor-not-allowed shadow-md shadow-indigo-600/10 border border-transparent shrink-0"
+                className="h-10 px-4 bg-slate-800 hover:bg-slate-900 text-white text-sm font-semibold rounded-lg transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-85 disabled:cursor-not-allowed shadow-md shadow-slate-800/10 border border-transparent shrink-0"
                 style={{ minWidth: "140px" }}
               >
                 {isSaving ? (
