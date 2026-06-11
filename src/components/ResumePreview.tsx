@@ -555,8 +555,815 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
         marginLeft: `calc(210mm * ${zoom - 1} / 2)`
       }}
     >
-      <div className={`${(templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-ats-compliant-1' || templateId === 'template-ats-compliant-2' || templateId === 'template-ats-compliant-3' || templateId === 'template-ats-compliant-4' || templateId === 'template-ats-compliant-5' || templateId === 'template-ats-compliant-6' || templateId === 'template-ats-compliant-7' || templateId === 'template-ats-compliant-8' || templateId === 'template-ats-compliant-9' || templateId === 'template-ats-compliant-10' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') ? 'p-0' : 'p-10'} ${fontClass} ${fontSizeClass} h-full flex flex-col justify-between`}>
-        {templateId === 'ats-standout' ? (
+      <div className={`${(templateId === 'two-column-popular' || templateId === 'two-column-gravity' || templateId === 'two-column-grow' || templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-supernova' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-ats-compliant-1' || templateId === 'template-ats-compliant-2' || templateId === 'template-ats-compliant-3' || templateId === 'template-ats-compliant-4' || templateId === 'template-ats-compliant-5' || templateId === 'template-ats-compliant-6' || templateId === 'template-ats-compliant-7' || templateId === 'template-ats-compliant-8' || templateId === 'template-ats-compliant-9' || templateId === 'template-ats-compliant-10' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') ? 'p-0' : 'p-10'} ${fontClass} ${fontSizeClass} h-full flex flex-col justify-between`}>
+        {templateId === 'two-column-gravity' ? (() => {
+          return (
+            <div className="flex flex-row h-full w-full bg-white p-6 md:p-8" id="preview-template-gravity">
+              {/* Left Sidebar */}
+              <div className="w-[30%] pr-4 md:pr-6 border-r border-slate-200 flex flex-col gap-6">
+                <div className="text-center mb-4">
+                  <h1 className="font-bold uppercase tracking-wider mb-1" style={{ fontSize: fontSize === 'sm' ? '1.25rem' : fontSize === 'lg' ? '1.75rem' : '1.5rem', color: '#0f172a' }}>
+                    {personalInfo.fullName}
+                  </h1>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-500 font-medium">{personalInfo.jobTitle}</p>
+                </div>
+
+                <div className="space-y-6">
+                  {/* Contact section */}
+                  <div className="space-y-2">
+                    <h3 className="font-bold uppercase tracking-widest border-b pb-1" style={{ fontSize: '0.7rem', borderColor: primaryColor, color: primaryColor }}>Contact</h3>
+                    <div className="space-y-1 text-slate-600" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                       {personalInfo.email && <div className="break-all">{personalInfo.email}</div>}
+                       {personalInfo.phone && <div>{personalInfo.phone}</div>}
+                       {personalInfo.location && <div>{personalInfo.location}</div>}
+                       {personalInfo.gender && <div>{personalInfo.gender}</div>}
+                       {personalInfo.nationality && <div>{personalInfo.nationality}</div>}
+                       {personalInfo.github && <div className="break-all">{personalInfo.github}</div>}
+                       {personalInfo.website && <div className="break-all">{personalInfo.website}</div>}
+                       {personalInfo.linkedin && <div className="break-all">{personalInfo.linkedin}</div>}
+                    </div>
+                  </div>
+
+                  {/* Skills section */}
+                  {skills && skills.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-widest border-b pb-1" style={{ fontSize: '0.7rem', borderColor: primaryColor, color: primaryColor }}>Skills</h3>
+                      <div className="space-y-2" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                       {skills.map(cat => (
+                         <div key={cat.id} className="space-y-1">
+                           <p className="font-semibold text-slate-800">{cat.name}</p>
+                           <div className="flex flex-wrap gap-1">
+                             {cat.skills.map((skill, idx) => (
+                               <span key={skill} className="text-slate-600">
+                                 {skill}{idx < cat.skills.length - 1 && <span className="mx-1 text-slate-300">|</span>}
+                               </span>
+                             ))}
+                           </div>
+                         </div>
+                       ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Languages section */}
+                  {languages && languages.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-widest border-b pb-1" style={{ fontSize: '0.7rem', borderColor: primaryColor, color: primaryColor }}>Languages</h3>
+                      <div className="space-y-1" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                        {languages.map(lang => (
+                          <div key={lang.id} className="flex justify-between text-slate-600">
+                            <span className="font-medium">{lang.name}</span>
+                            <span className="text-slate-400 italic">{lang.proficiency}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Awards section */}
+                  {awards && awards.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-widest border-b pb-1" style={{ fontSize: '0.7rem', borderColor: primaryColor, color: primaryColor }}>Awards</h3>
+                      <div className="space-y-2" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                        {awards.map(award => (
+                          <div key={award.id} className="text-slate-600">
+                            <p className="font-semibold text-slate-800">{award.name}</p>
+                            <p className="text-[9px] text-slate-400">{award.issuer} | {award.date}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Certifications section */}
+                  {certifications && certifications.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-widest border-b pb-1" style={{ fontSize: '0.7rem', borderColor: primaryColor, color: primaryColor }}>Certifications</h3>
+                      <div className="space-y-2" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                        {certifications.map(cert => (
+                          <div key={cert.id} className="text-slate-600">
+                            <p className="font-semibold text-slate-800">{cert.name}</p>
+                            <p className="text-[9px] text-slate-400">{cert.issuer} | {cert.date}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Main Content Area */}
+              <div className="w-[70%] pl-4 md:pl-6 space-y-6 flex flex-col">
+                {personalInfo.bio && (
+                  <div>
+                    <h3 className="font-bold uppercase tracking-widest border-b pb-1 mb-2" style={{ fontSize: '0.8rem', borderColor: primaryColor, color: primaryColor }}>About Me</h3>
+                    <p className="text-slate-600 leading-relaxed" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>{personalInfo.bio}</p>
+                  </div>
+                )}
+
+                {experience && experience.length > 0 && (
+                   <div className="space-y-3">
+                     <h3 className="font-bold uppercase tracking-widest border-b pb-1 mb-2" style={{ fontSize: '0.8rem', borderColor: primaryColor, color: primaryColor }}>Experience</h3>
+                     <div className="space-y-4">
+                       {experience.map(exp => (
+                         <div key={exp.id} className="space-y-1">
+                           <div className="flex justify-between items-baseline">
+                             <span className="font-bold text-slate-800" style={{ fontSize: '0.85rem' }}>{exp.position}</span>
+                             <span className="text-[9px] uppercase tracking-wider text-slate-400 font-mono">{exp.startDate} — {exp.currentlyWorking ? 'Present' : exp.endDate}</span>
+                           </div>
+                           <div className="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">{exp.company} | {exp.location}</div>
+                           <p className="text-slate-600 whitespace-pre-line leading-relaxed mt-1 italic pl-2 border-l-2 border-slate-100" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>{exp.description}</p>
+                         </div>
+                       ))}
+                     </div>
+                   </div>
+                )}
+
+                {education && education.length > 0 && (
+                   <div className="space-y-3">
+                     <h3 className="font-bold uppercase tracking-widest border-b pb-1 mb-2" style={{ fontSize: '0.8rem', borderColor: primaryColor, color: primaryColor }}>Education</h3>
+                     <div className="space-y-3">
+                        {education.map(edu => (
+                          <div key={edu.id}>
+                            <div className="flex justify-between items-baseline">
+                              <span className="font-bold text-slate-800" style={{ fontSize: '0.85rem' }}>{edu.degree} in {edu.fieldOfStudy}</span>
+                              <span className="text-[9px] text-slate-400 font-mono italic">{edu.startDate} — {edu.currentlyStudying ? 'Present' : edu.endDate}</span>
+                            </div>
+                            <div className="text-[10px] text-slate-500 font-medium">{edu.institution} | {edu.location}</div>
+                            {edu.description && <p className="text-slate-600 mt-1 pl-2" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>{edu.description}</p>}
+                          </div>
+                        ))}
+                     </div>
+                   </div>
+                )}
+
+                {projects && projects.length > 0 && (
+                   <div className="space-y-3">
+                     <h3 className="font-bold uppercase tracking-widest border-b pb-1 mb-2" style={{ fontSize: '0.8rem', borderColor: primaryColor, color: primaryColor }}>Projects</h3>
+                     <div className="space-y-3">
+                        {projects.map(proj => (
+                          <div key={proj.id} className="space-y-1">
+                            <div className="flex justify-between items-baseline font-bold text-slate-800">
+                               <span style={{ fontSize: '0.85rem' }}>{proj.title}</span>
+                               <span className="text-[9px] text-slate-400 font-mono">{proj.startDate} — {proj.isCurrent ? 'Present' : proj.endDate}</span>
+                            </div>
+                            <div className="text-[10px] text-slate-500 italic font-medium">{proj.role} {proj.link && <span className="normal-case not-italic text-blue-400 ml-2">({proj.link})</span>}</div>
+                            <p className="text-slate-600 leading-relaxed" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>{proj.description}</p>
+                          </div>
+                        ))}
+                     </div>
+                   </div>
+                )}
+
+                {achievements && achievements.length > 0 && (
+                  <div className="space-y-3">
+                    <h3 className="font-bold uppercase tracking-widest border-b pb-1 mb-2" style={{ fontSize: '0.8rem', borderColor: primaryColor, color: primaryColor }}>Achievements</h3>
+                    <ul className="text-slate-600 space-y-1 list-disc pl-4" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                      {achievements.map(ach => (
+                        <li key={ach.id} className="leading-relaxed">
+                          <span className="font-semibold text-slate-700">{ach.name}</span> {ach.date && <span>({ach.date})</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        })() : templateId === 'two-column-popular' ? (() => {
+          const isAccentDark = isColorDark(primaryColor);
+          const sidebarAccentStyle = isAccentDark ? { color: '#cbd5e1' } : { color: primaryColor };
+          const sidebarAccentColorText = isAccentDark ? { color: '#a5b4fc' } : { color: primaryColor };
+          const sidebarLineBg = isAccentDark ? { backgroundColor: '#6366f1' } : { backgroundColor: primaryColor };
+          
+          const bodyTextSizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[11.5px]' : 'text-[10.5px]';
+          const sidebarSubTitleSizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[11px]';
+          const entryTitleSizeClass = fontSize === 'sm' ? 'text-[10.5px]' : fontSize === 'lg' ? 'text-[13px]' : 'text-[11.5px]';
+          const subEntrySizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[11.5px]' : 'text-[10.5px]';
+          const entryMetaSizeClass = fontSize === 'sm' ? 'text-[8.5px]' : fontSize === 'lg' ? 'text-[10.5px]' : 'text-[9.5px]';
+          
+          return (
+            <div className="flex flex-row h-full min-h-[297mm] text-left bg-white relative overflow-hidden">
+              {/* Left Sidebar: Dark Background */}
+              <div className="w-[33%] bg-[#1a1a1a] text-slate-200 p-8 flex flex-col space-y-6 shrink-0 relative">
+                {/* Subtle dynamic accent line */}
+                <div className="absolute top-0 left-0 bottom-0 w-[3px]" style={sidebarLineBg} />
+                
+                {/* Profile Image/Placeholder & Name Header block */}
+                <div className="space-y-4">
+                  {personalInfo.photoUrl ? (
+                    <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-slate-700 mx-auto">
+                      <img 
+                        src={personalInfo.photoUrl} 
+                        alt={personalInfo.fullName} 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-24 h-24 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 text-2xl font-bold mx-auto border border-slate-700">
+                      {personalInfo.fullName ? personalInfo.fullName.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase() : 'JD'}
+                    </div>
+                  )}
+                  
+                  <div className="text-center">
+                    <h1 className="text-lg font-bold tracking-tight text-white leading-tight">
+                      {personalInfo.fullName || 'Your Name'}
+                    </h1>
+                    {personalInfo.jobTitle && (
+                      <p className={`font-semibold tracking-wider uppercase mt-1 ${sidebarSubTitleSizeClass}`} style={sidebarAccentColorText}>
+                        {personalInfo.jobTitle}
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Identity/Contact Details block */}
+                <div className="space-y-3 pt-4 border-t border-slate-800">
+                  <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Contact Details</h3>
+                  <div className="space-y-2 text-slate-300" style={{ fontSize: fontSize === 'sm' ? '9px' : fontSize === 'lg' ? '11px' : '10px' }}>
+                    {personalInfo.email && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Email</span>
+                        <span className="break-all">{personalInfo.email}</span>
+                      </div>
+                    )}
+                    {personalInfo.phone && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Phone</span>
+                        <span>{personalInfo.phone}</span>
+                      </div>
+                    )}
+                    {personalInfo.location && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Location</span>
+                        <span>{personalInfo.location}</span>
+                      </div>
+                    )}
+                    {personalInfo.nationality && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Nationality</span>
+                        <span>{personalInfo.nationality}</span>
+                      </div>
+                    )}
+                    {personalInfo.gender && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Gender</span>
+                        <span>{personalInfo.gender}</span>
+                      </div>
+                    )}
+                    {personalInfo.website && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">Website</span>
+                        <span className="break-all">{personalInfo.website}</span>
+                      </div>
+                    )}
+                    {personalInfo.linkedin && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">LinkedIn</span>
+                        <span className="break-all">{personalInfo.linkedin}</span>
+                      </div>
+                    )}
+                    {personalInfo.github && (
+                      <div className="flex flex-col">
+                        <span className="text-[8px] text-slate-500 uppercase tracking-wider font-semibold">GitHub</span>
+                        <span className="break-all">{personalInfo.github}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Skills section */}
+                {skills && skills.length > 0 && (
+                  <div className="space-y-3 pt-4 border-t border-slate-800">
+                    <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Skills</h3>
+                    <div className="space-y-2">
+                      {skills.map((cat) => (
+                        <div key={cat.id} className="space-y-1">
+                          <span className="text-[9px] font-semibold uppercase tracking-wider" style={sidebarAccentColorText}>{cat.name}</span>
+                          <div className="flex flex-wrap gap-1">
+                            {cat.skills && cat.skills.map((skill, sIdx) => (
+                              <span key={sIdx} className="text-[9px] bg-slate-800 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700/50">
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Certifications section */}
+                {certifications && certifications.length > 0 && (
+                  <div className="space-y-3 pt-4 border-t border-slate-800">
+                    <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Certifications</h3>
+                    <div className="space-y-2">
+                      {certifications.map((cert) => (
+                        <div key={cert.id} className="text-[9.5px]">
+                          <p className="font-semibold text-white leading-tight">{cert.name}</p>
+                          <p className="text-slate-400 text-[8.5px] mt-0.5">{cert.issuer} {cert.date && `• ${cert.date}`}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Awards section */}
+                {awards && awards.length > 0 && (
+                  <div className="space-y-3 pt-4 border-t border-slate-800">
+                    <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Awards</h3>
+                    <div className="space-y-2">
+                      {awards.map((awr) => (
+                        <div key={awr.id} className="text-[9.5px]">
+                          <p className="font-semibold text-white leading-tight">{awr.name}</p>
+                          <p className="text-slate-405 text-[8.5px] mt-0.5" style={{ color: '#94a3b8' }}>{awr.issuer} {awr.date && `• ${awr.date}`}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Achievements section */}
+                {achievements && achievements.length > 0 && (
+                  <div className="space-y-3 pt-4 border-t border-slate-800">
+                    <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Achievements</h3>
+                    <div className="space-y-2">
+                      {achievements.map((ach) => (
+                        <div key={ach.id} className="text-[9.5px]">
+                          <p className="font-semibold text-white leading-tight">{ach.name}</p>
+                          {ach.date && <p className="text-slate-400 text-[8.5px] mt-0.5">{ach.date}</p>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Languages section */}
+                {languages && languages.length > 0 && (
+                  <div className="space-y-3 pt-4 border-t border-slate-800">
+                    <h3 className={`font-bold uppercase tracking-widest text-slate-400 ${fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[10.5px]'}`}>Languages</h3>
+                    <div className="space-y-1">
+                      {languages.map((lang) => (
+                        <div key={lang.id} className="flex justify-between text-[9.5px]">
+                          <span className="text-white">{lang.name}</span>
+                          <span className="text-slate-400 font-medium italic">{lang.proficiency}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Right Main Column: Clean grid layout with vibrant accent colors */}
+              <div className="w-[67%] bg-white p-9 flex flex-col space-y-6">
+                
+                {/* Summary / Bio if provided */}
+                {personalInfo.bio && (
+                  <div className="space-y-2">
+                    <h2 className={`font-bold uppercase tracking-wider flex items-center ${headingFontSizeClass}`} style={colorStyle}>
+                      Professional Summary
+                    </h2>
+                    <div className="h-[2px]" style={{ backgroundColor: primaryColor, opacity: 0.2 }} />
+                    <p className={`text-slate-600 leading-relaxed ${bodyTextSizeClass}`}>
+                      {personalInfo.bio}
+                    </p>
+                  </div>
+                )}
+
+                {/* Work Experience */}
+                {experience && experience.length > 0 && (
+                  <div className="space-y-3">
+                    <h2 className={`font-bold uppercase tracking-wider flex items-center ${headingFontSizeClass}`} style={colorStyle}>
+                      Professional Experience
+                    </h2>
+                    <div className="h-[2px]" style={{ backgroundColor: primaryColor, opacity: 0.2 }} />
+                    <div className="space-y-4">
+                      {experience.map((exp) => (
+                        <div key={exp.id} className="group text-left">
+                          <div className="flex justify-between items-start">
+                            <div>
+                              <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                {exp.position}
+                              </h4>
+                              <p className={`font-semibold mt-0.5 ${subEntrySizeClass}`} style={colorStyle}>
+                                {exp.company}
+                              </p>
+                            </div>
+                            <div className={`text-right font-medium text-slate-500 ${entryMetaSizeClass}`}>
+                              <span className="block">{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</span>
+                              {exp.location && <span className="text-slate-400">{exp.location}</span>}
+                            </div>
+                          </div>
+                          {exp.description && (
+                            <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}33` }}>
+                              {exp.description}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Projects */}
+                {projects && projects.length > 0 && (
+                  <div className="space-y-3">
+                    <h2 className={`font-bold uppercase tracking-wider flex items-center ${headingFontSizeClass}`} style={colorStyle}>
+                      Projects
+                    </h2>
+                    <div className="h-[2px]" style={{ backgroundColor: primaryColor, opacity: 0.2 }} />
+                    <div className="space-y-4">
+                      {projects.map((proj) => (
+                        <div key={proj.id} className="text-left">
+                          <div className="flex justify-between items-start">
+                            <div>
+                              <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                {proj.title}
+                              </h4>
+                              {proj.role && (
+                                <p className={`text-slate-500 font-medium mt-0.5 ${subEntrySizeClass}`}>
+                                  Role: {proj.role}
+                                </p>
+                              )}
+                            </div>
+                            <div className={`text-right font-medium text-slate-500 ${entryMetaSizeClass}`}>
+                              <span>{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</span>
+                              {proj.link && (
+                                <span className="block mt-0.5 underline transition-all hover:opacity-85" style={colorStyle}>{proj.link}</span>
+                              )}
+                            </div>
+                          </div>
+                          {proj.description && (
+                            <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}33` }}>
+                              {proj.description}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Education */}
+                {education && education.length > 0 && (
+                  <div className="space-y-3">
+                    <h2 className={`font-bold uppercase tracking-wider flex items-center ${headingFontSizeClass}`} style={colorStyle}>
+                      Education
+                    </h2>
+                    <div className="h-[2px]" style={{ backgroundColor: primaryColor, opacity: 0.2 }} />
+                    <div className="space-y-4">
+                      {education.map((edu) => (
+                        <div key={edu.id} className="text-left">
+                          <div className="flex justify-between items-start">
+                            <div>
+                              <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                {edu.degree}{edu.fieldOfStudy ? ` in ${edu.fieldOfStudy}` : ''}
+                              </h4>
+                              <p className={`font-semibold mt-0.5 ${subEntrySizeClass}`} style={colorStyle}>
+                                {edu.institution}
+                              </p>
+                            </div>
+                            <div className={`text-right font-medium text-slate-500 ${entryMetaSizeClass}`}>
+                              <span className="block">{edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}</span>
+                              {edu.location && <span className="text-slate-400">{edu.location}</span>}
+                            </div>
+                          </div>
+                          {edu.description && (
+                            <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}33` }}>
+                              {edu.description}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+              </div>
+            </div>
+          );
+        })() : templateId === 'two-column-grow' ? (() => {
+          const bodyTextSizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[11.5px]' : 'text-[10.5px]';
+          const sidebarSubTitleSizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-xs' : 'text-[11px]';
+          const entryTitleSizeClass = fontSize === 'sm' ? 'text-[10.5px]' : fontSize === 'lg' ? 'text-[13px]' : 'text-[11.5px]';
+          const subEntrySizeClass = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[11.5px]' : 'text-[10.5px]';
+          const entryMetaSizeClass = fontSize === 'sm' ? 'text-[8.5px]' : fontSize === 'lg' ? 'text-[10.5px]' : 'text-[9.5px]';
+
+          return (
+            <div className="flex flex-col h-full min-h-[297mm] text-left bg-white relative overflow-hidden">
+              {/* Modern Top Header - Full Width */}
+              <div className="w-full bg-[#facc15] text-slate-900 p-8 relative">
+                {/* Accent thin colored top border */}
+                <div className="absolute top-0 left-0 right-0 h-[4px]" style={{ backgroundColor: primaryColor }} />
+                
+                <div className="flex justify-between items-center">
+                  <div className="space-y-1.5 max-w-[75%]">
+                    <h1 className="text-3xl font-extrabold tracking-tight leading-tight text-slate-950">
+                      {personalInfo.fullName || 'Your Name'}
+                    </h1>
+                    {personalInfo.jobTitle && (
+                      <p className="text-sm font-bold uppercase tracking-widest text-slate-900">
+                        {personalInfo.jobTitle}
+                      </p>
+                    )}
+                    
+                    {/* Compact contact bar inside header */}
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1.5 text-slate-800 text-[10px]">
+                      {personalInfo.email && (
+                        <span className="flex items-center gap-1">
+                          <span className="text-slate-900">●</span> {personalInfo.email}
+                        </span>
+                      )}
+                      {personalInfo.phone && (
+                        <span className="flex items-center gap-1">
+                          <span className="text-slate-900">●</span> {personalInfo.phone}
+                        </span>
+                      )}
+                      {personalInfo.location && (
+                        <span className="flex items-center gap-1">
+                          <span className="text-slate-900">●</span> {personalInfo.location}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {personalInfo.photoUrl ? (
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-slate-800 shrink-0">
+                      <img 
+                        src={personalInfo.photoUrl} 
+                        alt={personalInfo.fullName} 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center text-[#facc15] text-xl font-bold border border-slate-800 shrink-0">
+                      {personalInfo.fullName ? personalInfo.fullName.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase() : 'JD'}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Columns wrapper */}
+              <div className="flex flex-row flex-1 w-full bg-white">
+                {/* Left Column (33%) - Light Blueish Slate Background */}
+                <div className="w-[33%] bg-slate-50/80 p-6 flex flex-col space-y-5 border-r border-slate-100 shrink-0">
+                  {/* Additional Contact details (website, socials) if present */}
+                  {(personalInfo.website || personalInfo.linkedin || personalInfo.github || personalInfo.nationality || personalInfo.gender) && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Links & Info</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-1.5 text-slate-600 text-[9.5px]">
+                        {personalInfo.website && (
+                          <div>
+                            <span className="text-[8px] text-slate-400 uppercase tracking-wider block font-semibold">Website</span>
+                            <span className="break-all">{personalInfo.website}</span>
+                          </div>
+                        )}
+                        {personalInfo.linkedin && (
+                          <div>
+                            <span className="text-[8px] text-slate-400 uppercase tracking-wider block font-semibold">LinkedIn</span>
+                            <span className="break-all">{personalInfo.linkedin}</span>
+                          </div>
+                        )}
+                        {personalInfo.github && (
+                          <div>
+                            <span className="text-[8px] text-slate-400 uppercase tracking-wider block font-semibold">GitHub</span>
+                            <span className="break-all">{personalInfo.github}</span>
+                          </div>
+                        )}
+                        {personalInfo.nationality && (
+                          <div>
+                            <span className="text-[8px] text-slate-400 uppercase tracking-wider block font-semibold">Nationality</span>
+                            <span>{personalInfo.nationality}</span>
+                          </div>
+                        )}
+                        {personalInfo.gender && (
+                          <div>
+                            <span className="text-[8px] text-slate-400 uppercase tracking-wider block font-semibold">Gender</span>
+                            <span>{personalInfo.gender}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Skills */}
+                  {skills && skills.length > 0 && (
+                    <div className="space-y-3">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Skills</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-2.5">
+                        {skills.map((cat) => (
+                          <div key={cat.id} className="space-y-1">
+                            <span className="text-[9px] font-bold text-slate-700 uppercase tracking-wider">{cat.name}</span>
+                            <div className="flex flex-wrap gap-1">
+                              {cat.skills && cat.skills.map((skill, sIdx) => (
+                                <span key={sIdx} className="text-[9px] bg-white text-slate-800 px-1.5 py-0.5 rounded border border-slate-200/80 shadow-sm font-medium">
+                                  {skill}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Certifications */}
+                  {certifications && certifications.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Certifications</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-1.5">
+                        {certifications.map((cert) => (
+                          <div key={cert.id} className="text-[9.5px]">
+                            <p className="font-semibold text-slate-800 leading-tight">{cert.name}</p>
+                            <p className="text-slate-500 text-[8.5px] mt-0.5">{cert.issuer} {cert.date && `• ${cert.date}`}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Awards */}
+                  {awards && awards.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Awards</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-1.5">
+                        {awards.map((awr) => (
+                          <div key={awr.id} className="text-[9.5px]">
+                            <p className="font-semibold text-slate-800 leading-tight">{awr.name}</p>
+                            <p className="text-slate-500 text-[8.5px] mt-0.5">{awr.issuer} {awr.date && `• ${awr.date}`}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Achievements */}
+                  {achievements && achievements.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Achievements</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-1.5">
+                        {achievements.map((ach) => (
+                          <div key={ach.id} className="text-[9.5px]">
+                            <p className="font-semibold text-slate-800 leading-tight">{ach.name}</p>
+                            {ach.date && <p className="text-slate-500 text-[8.5px] mt-0.5">{ach.date}</p>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Languages */}
+                  {languages && languages.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-bold uppercase tracking-wider text-slate-800 text-[10.5px]">Languages</h3>
+                      <div className="h-[1.5px]" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+                      <div className="space-y-1">
+                        {languages.map((lang) => (
+                          <div key={lang.id} className="flex justify-between text-[9.5px]">
+                            <span className="text-slate-800 font-medium">{lang.name}</span>
+                            <span className="text-slate-500 font-medium italic">{lang.proficiency}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Right Column (67%) - Main details */}
+                <div className="w-[67%] bg-white p-7 flex flex-col space-y-5">
+                  {/* Professional Summary */}
+                  {personalInfo.bio && (
+                    <div className="space-y-2">
+                      <h2 className={`font-bold uppercase tracking-wider text-slate-900 ${headingFontSizeClass}`}>
+                        Professional Summary
+                      </h2>
+                      <div className="h-[2px]" style={{ backgroundColor: primaryColor }} />
+                      <p className={`text-slate-600 leading-relaxed ${bodyTextSizeClass}`}>
+                        {personalInfo.bio}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Experience */}
+                  {experience && experience.length > 0 && (
+                    <div className="space-y-3">
+                      <h2 className={`font-bold uppercase tracking-wider text-slate-900 ${headingFontSizeClass}`}>
+                        Professional Experience
+                      </h2>
+                      <div className="h-[2px]" style={{ backgroundColor: primaryColor }} />
+                      <div className="space-y-4">
+                        {experience.map((exp) => (
+                          <div key={exp.id} className="text-left">
+                            <div className="flex justify-between items-start">
+                              <div className="flex-1 pr-3">
+                                <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                  {exp.position}
+                                </h4>
+                                <p className={`font-semibold mt-0.5 ${subEntrySizeClass}`} style={{ color: primaryColor }}>
+                                  {exp.company}
+                                </p>
+                              </div>
+                              <div className={`text-right font-medium text-slate-500 shrink-0 ${entryMetaSizeClass}`}>
+                                <span className="block">{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</span>
+                                {exp.location && <span className="text-slate-400">{exp.location}</span>}
+                              </div>
+                            </div>
+                            {exp.description && (
+                              <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l-2 ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}aa` }}>
+                                {exp.description}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Projects */}
+                  {projects && projects.length > 0 && (
+                    <div className="space-y-3">
+                      <h2 className={`font-bold uppercase tracking-wider text-slate-900 ${headingFontSizeClass}`}>
+                        Projects
+                      </h2>
+                      <div className="h-[2px]" style={{ backgroundColor: primaryColor }} />
+                      <div className="space-y-4">
+                        {projects.map((proj) => (
+                          <div key={proj.id} className="text-left">
+                            <div className="flex justify-between items-start">
+                              <div className="flex-1 pr-3">
+                                <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                  {proj.title}
+                                </h4>
+                                {proj.role && (
+                                  <p className={`text-slate-500 font-medium mt-0.5 ${subEntrySizeClass}`}>
+                                    Role: {proj.role}
+                                  </p>
+                                )}
+                              </div>
+                              <div className={`text-right font-medium text-slate-500 shrink-0 ${entryMetaSizeClass}`}>
+                                <span className="block">{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</span>
+                                {proj.link && (
+                                  <span className="block mt-0.5 underline text-blue-600 truncate max-w-[120px]">{proj.link}</span>
+                                )}
+                              </div>
+                            </div>
+                            {proj.description && (
+                              <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l-2 ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}aa` }}>
+                                {proj.description}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Education */}
+                  {education && education.length > 0 && (
+                    <div className="space-y-3">
+                      <h2 className={`font-bold uppercase tracking-wider text-slate-900 ${headingFontSizeClass}`}>
+                        Education
+                      </h2>
+                      <div className="h-[2px]" style={{ backgroundColor: primaryColor }} />
+                      <div className="space-y-4">
+                        {education.map((edu) => (
+                          <div key={edu.id} className="text-left">
+                            <div className="flex justify-between items-start">
+                              <div className="flex-1 pr-3">
+                                <h4 className={`font-bold text-slate-800 leading-tight ${entryTitleSizeClass}`}>
+                                  {edu.degree}{edu.fieldOfStudy ? ` in ${edu.fieldOfStudy}` : ''}
+                                </h4>
+                                <p className={`font-semibold mt-0.5 ${subEntrySizeClass}`} style={{ color: primaryColor }}>
+                                  {edu.institution}
+                                </p>
+                              </div>
+                              <div className={`text-right font-medium text-slate-500 shrink-0 ${entryMetaSizeClass}`}>
+                                <span className="block">{edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}</span>
+                                {edu.location && <span className="text-slate-400">{edu.location}</span>}
+                              </div>
+                            </div>
+                            {edu.description && (
+                              <div className={`text-slate-600 mt-1 whitespace-pre-line leading-relaxed pl-3 border-l-2 ${bodyTextSizeClass}`} style={{ borderLeftColor: `${primaryColor}aa` }}>
+                                {edu.description}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })() : templateId === 'ats-standout' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white p-11 space-y-5 font-sans relative">
             {/* Top border header accent in Gold Yellow */}
             <div className="absolute top-0 left-0 right-0 h-2 bg-amber-500" />
@@ -1312,6 +2119,255 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({ data, zoom = 1.0 }
                <span>Last active: {new Date(data.updatedAt).toLocaleDateString()}</span>
             </div>
           </div>
+        ) : templateId === 'ats-supernova' ? ( (() => {
+          const nameSize = fontSize === 'sm' ? 'text-[36px]' : fontSize === 'lg' ? 'text-[52px]' : 'text-[44px]';
+          const titleSize = fontSize === 'sm' ? 'text-base' : fontSize === 'lg' ? 'text-xl' : 'text-lg';
+          const bioSize = fontSize === 'sm' ? 'text-[11px]' : fontSize === 'lg' ? 'text-[15px]' : 'text-[13px]';
+          const contactSize = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[12.5px]' : 'text-[11px]';
+          const sectionTitleSize = fontSize === 'sm' ? 'text-lg' : fontSize === 'lg' ? 'text-2xl' : 'text-xl';
+          const itemTitleSize = fontSize === 'sm' ? 'text-[12px]' : fontSize === 'lg' ? 'text-base' : 'text-[14px]';
+          const itemSubtitleSize = fontSize === 'sm' ? 'text-[10px]' : fontSize === 'lg' ? 'text-[13px]' : 'text-xs';
+          const bodySize = fontSize === 'sm' ? 'text-[9.5px]' : fontSize === 'lg' ? 'text-[12.5px]' : 'text-[11px]';
+          const smallSize = fontSize === 'sm' ? 'text-[8.5px]' : fontSize === 'lg' ? 'text-[11.5px]' : 'text-[10px]';
+
+          return (
+          <div className="flex flex-col h-full min-h-[297mm] text-left text-slate-800 p-0 relative" style={{ backgroundColor: `${primaryColor}0a` }} id="layout-ats-supernova">
+            {/* Header */}
+            <div className="bg-slate-900 text-white pt-16 pb-12 px-12 relative overflow-hidden">
+               <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-3xl opacity-30 pointer-events-none" style={{ backgroundColor: primaryColor }} />
+               <div className="absolute bottom-0 left-0 w-full h-2" style={{ backgroundColor: primaryColor }} />
+               
+               <div className="flex justify-between items-end">
+                 <div className="max-w-2xl pr-4">
+                   <h1 className={`${nameSize} font-black tracking-tight leading-none mb-3 uppercase text-white`} style={{ wordBreak: 'break-word', overflowWrap: 'break-word' }}>
+                     {personalInfo.fullName || 'Your Name'}
+                   </h1>
+                   {personalInfo.jobTitle && (
+                     <p className={`${titleSize} font-bold tracking-widest uppercase`} style={{ color: primaryColor }}>
+                       {personalInfo.jobTitle}
+                     </p>
+                   )}
+                 </div>
+                 {personalInfo.photoUrl && (
+                   <img 
+                     src={personalInfo.photoUrl} 
+                     alt={personalInfo.fullName} 
+                     className="w-24 h-24 rounded-full object-cover border-4 border-slate-800 shadow-xl ring-2 z-10 shrink-0"
+                     style={{ WebkitBoxShadow: `0 0 0 2px ${primaryColor}` }}
+                     referrerPolicy="no-referrer"
+                   />
+                 )}
+               </div>
+
+               {personalInfo.bio && (
+                 <p className={`mt-8 ${bioSize} text-slate-300 leading-relaxed font-medium max-w-3xl`}>
+                   {personalInfo.bio}
+                 </p>
+               )}
+            </div>
+
+            {/* Contact Details Bar */}
+            <div className={`text-white py-3 px-12 flex flex-wrap gap-x-6 gap-y-2 ${contactSize} font-semibold tracking-wide shadow-md z-10 relative`} style={{ backgroundColor: primaryColor }}>
+                {[
+                  personalInfo.email,
+                  personalInfo.phone,
+                  personalInfo.location,
+                  personalInfo.website,
+                  personalInfo.linkedin,
+                  personalInfo.github
+                ].filter(Boolean).map((detail, idx) => (
+                  <div key={idx} className="flex items-center gap-1.5 shrink-0">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white opacity-60" />
+                    <span style={{ color: textOnAccentClass }}>{detail}</span>
+                  </div>
+                ))}
+            </div>
+
+            {/* Main Content Area */}
+            <div className="px-12 py-10 space-y-8 flex-1 w-full box-border">
+              
+              {experience.length > 0 && (
+                <section>
+                  <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                    <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Exp</span>erience
+                  </h2>
+                  <div className="space-y-6">
+                    {experience.map((exp: any) => (
+                      <div key={exp.id} className="relative pl-6 border-l-2 border-slate-200 pb-2">
+                        <div className="absolute w-3 h-3 rounded-full -left-[7px] top-1.5 ring-4" style={{ backgroundColor: primaryColor, boxShadow: `0 0 0 4px ${primaryColor}10` }} />
+                        <div className="flex flex-col mb-1.5">
+                          <h3 className={`${itemTitleSize} font-bold text-slate-900`}>{exp.position ?? exp.title}</h3>
+                          <div className={`flex flex-wrap items-center gap-2 ${itemSubtitleSize} font-semibold`}>
+                            <span style={{ color: primaryColor }}>{exp.company}</span>
+                            {exp.location && (
+                              <>
+                                <span className="text-slate-300">•</span>
+                                <span className="text-slate-600">{exp.location}</span>
+                              </>
+                            )}
+                            <span className="text-slate-300">•</span>
+                            <span className="text-slate-500">{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</span>
+                          </div>
+                        </div>
+                        <p className={`${bodySize} text-slate-700 leading-relaxed whitespace-pre-wrap`}>
+                          {exp.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {projects && projects.length > 0 && (
+                <section>
+                  <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                    <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Pro</span>jects
+                  </h2>
+                  <div className="space-y-6">
+                    {projects.map((proj: any) => (
+                      <div key={proj.id} className="relative pl-6 border-l-2 border-slate-200 pb-2">
+                         <div className="flex flex-col mb-1.5">
+                          <h3 className={`${itemTitleSize} font-bold text-slate-900`}>{proj.title}</h3>
+                          <div className={`flex flex-wrap items-center gap-2 ${itemSubtitleSize} font-semibold`}>
+                             {proj.role && <span style={{ color: primaryColor }}>{proj.role}</span>}
+                             {proj.role && <span className="text-slate-300">•</span>}
+                             <span className="text-slate-500">{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</span>
+                          </div>
+                        </div>
+                        <p className={`${bodySize} text-slate-700 leading-relaxed whitespace-pre-wrap mt-2`}>
+                          {proj.description}
+                        </p>
+                        {proj.link && (
+                          <a href={proj.link} target="_blank" rel="noreferrer" className={`${smallSize} underline font-semibold mt-1 inline-block`} style={{ color: primaryColor }}>
+                            View Project
+                          </a>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {education.length > 0 && (
+                <section>
+                  <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                    <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Edu</span>cation
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {education.map((edu: any) => (
+                      <div key={edu.id} className="bg-white p-4 rounded-xl border shadow-sm relative overflow-hidden" style={{ borderColor: `${primaryColor}30` }}>
+                        <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: primaryColor }} />
+                        <h3 className={`${itemTitleSize} font-bold text-slate-900 mb-1`}>{edu.degree}</h3>
+                        <p className={`${itemSubtitleSize} font-semibold mb-2`} style={{ color: primaryColor }}>{edu.institution}</p>
+                        <p className={`${smallSize} text-slate-500 font-medium uppercase tracking-wider`}>{edu.startDate} – {edu.endDate}</p>
+                        {edu.description && <p className={`${smallSize} text-slate-600 mt-2`}>{edu.description}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {skills.length > 0 && (
+                <section>
+                  <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                    <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Ski</span>lls
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.map((skill: any) => (
+                      <span key={skill.id} className={`px-3 py-1.5 bg-slate-900 ${bodySize} font-bold tracking-wide rounded hover:-translate-y-0.5 transition-transform shadow-sm border-b-2 border-slate-700`} style={{ color: `${primaryColor}10` > '#808080' ? '#fff' : '#f8fafc' }}>
+                        {skill.name}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {languages && languages.length > 0 && (
+                 <section>
+                  <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                    <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Lan</span>guages
+                  </h2>
+                  <div className="flex flex-wrap gap-4">
+                    {languages.map((lang: any) => (
+                      <div key={lang.id} className="flex flex-col items-center justify-center p-3 border border-slate-200 bg-white rounded-lg shadow-sm w-24">
+                        <span className={`${itemSubtitleSize} font-black text-slate-900 uppercase`}>{lang.name}</span>
+                        <span className={`${smallSize} font-semibold uppercase tracking-widest mt-1`} style={{ color: primaryColor }}>{lang.proficiency}</span>
+                      </div>
+                    ))}
+                  </div>
+                 </section>
+              )}
+
+              {certifications && certifications.length > 0 && (
+                 <section>
+                   <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                     <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Cer</span>tifications
+                   </h2>
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                     {certifications.map((cert: any) => (
+                       <div key={cert.id} className="flex flex-col bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
+                         <h3 className={`${itemTitleSize} font-bold text-slate-900`}>{cert.name}</h3>
+                         <p className={`${bodySize} font-semibold`} style={{ color: primaryColor }}>{cert.issuer}</p>
+                         <p className={`${smallSize} text-slate-500 font-medium uppercase tracking-wider mt-1`}>{cert.date}</p>
+                       </div>
+                     ))}
+                   </div>
+                 </section>
+              )}
+
+              {awards && awards.length > 0 && (
+                 <section>
+                   <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                     <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Awa</span>rds
+                   </h2>
+                   <ul className="space-y-3">
+                     {awards.map((award: any) => (
+                       <li key={award.id} className="flex gap-3 items-start px-4 py-3 rounded-lg border border-slate-100" style={{ backgroundColor: `${primaryColor}08` }}>
+                         <span className={`shrink-0 mt-0.5 font-bold ${itemTitleSize}`} style={{ color: primaryColor }}>🏆</span>
+                         <div>
+                           <div className="flex flex-wrap gap-2 items-baseline mb-1">
+                             <h3 className={`${itemSubtitleSize} font-bold text-slate-900`}>{award.title || award.name}</h3>
+                             <span className={`${smallSize} font-semibold`} style={{ color: primaryColor }}>{award.date || award.year}</span>
+                           </div>
+                           {(award.description || award.issuer) && <p className={`${bodySize} text-slate-600 leading-relaxed`}>{award.description || award.issuer}</p>}
+                         </div>
+                       </li>
+                     ))}
+                   </ul>
+                 </section>
+              )}
+
+              {achievements && achievements.length > 0 && (
+                 <section>
+                   <h2 className={`${sectionTitleSize} font-black text-slate-900 border-b-2 pb-2 mb-6 tracking-tight flex items-center gap-2 uppercase`} style={{ borderColor: `${primaryColor}40` }}>
+                     <span className="shadow-sm p-1 rounded mr-1" style={{ color: primaryColor, backgroundColor: `${primaryColor}20` }}>Ach</span>ievements
+                   </h2>
+                   <ul className="space-y-3">
+                     {achievements.map((ach: any) => (
+                       <li key={ach.id} className="flex gap-3 items-start px-4 py-3 rounded-lg border border-slate-100" style={{ backgroundColor: `${primaryColor}08` }}>
+                         <span className={`shrink-0 mt-0.5 font-bold ${itemTitleSize}`} style={{ color: primaryColor }}>★</span>
+                         <div>
+                           <div className="flex flex-wrap gap-2 items-baseline mb-1">
+                             <h3 className={`${itemSubtitleSize} font-bold text-slate-900`}>{ach.title}</h3>
+                             {ach.date && <span className={`${smallSize} font-semibold`} style={{ color: primaryColor }}>{ach.date}</span>}
+                             {ach.year && !ach.date && <span className={`${smallSize} font-semibold`} style={{ color: primaryColor }}>{ach.year}</span>}
+                           </div>
+                           <p className={`${bodySize} text-slate-600 leading-relaxed`}>{ach.description}</p>
+                         </div>
+                       </li>
+                     ))}
+                   </ul>
+                 </section>
+              )}
+            </div>
+            
+            <div className="absolute top-4 right-4 print:hidden opacity-30 text-[9px] text-slate-500 font-mono text-right pointer-events-none">
+               <div>ASTRO //</div>
+               <span>Supernova</span>
+            </div>
+          </div>
+          );
+        })()
         ) : templateId === 'ats-navy-classic' ? (
           <div className="flex flex-col h-full min-h-[297mm] text-left bg-white text-slate-800 p-12 space-y-5 font-sans relative" id="layout-ats-navy-classic">
             {/* Elegant, clean subtle navy top accent border */}

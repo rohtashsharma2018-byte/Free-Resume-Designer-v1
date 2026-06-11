@@ -20,7 +20,6 @@ import { ContactUs } from "./components/ContactUs";
 import { PrivacyPolicyModal } from "./components/PrivacyPolicyModal";
 import { ResumeForm } from "./components/ResumeForm";
 import { PWAInstallPrompt } from "./components/PWAInstallPrompt";
-import { SplashScreen } from "./components/SplashScreen";
 import { ResumePreview } from "./components/ResumePreview";
 import { PDFDocument } from "./components/PDFDocument";
 import { pdf } from "@react-pdf/renderer";
@@ -52,7 +51,6 @@ import {
 
 export default function App() {
   // Application State
-  const [isSplashActive, setIsSplashActive] = useState<boolean>(true);
   const [dashboardInitialView, setDashboardInitialView] = useState<'saved' | 'templates' | 'manual'>('saved');
   const [view, setView] = useState<
     | "landing"
@@ -452,6 +450,7 @@ export default function App() {
     { id: "ats-standout", name: "ATS Standout (Modern Dual Column)" },
     { id: "ats-lunar", name: "ATS Lunar (Orange & Grey Dual)" },
     { id: "ats-universe", name: "ATS Universe (Yellow & Grey Single-Column)" },
+    { id: "ats-supernova", name: "ATS Supernova (Rose & Slate Single-Column)" },
     { id: "ats-shining-star", name: "ATS Shining Star (Navy & Silver Duo)" },
     { id: "modern-minimal", name: "Modern Minimal" },
     { id: "classic-professional", name: "Classic Professional" },
@@ -539,10 +538,6 @@ export default function App() {
         {/* Interactive PWA Install Banner */}
         <PWAInstallPrompt />
 
-        {/* Elegant Native SplashScreen loading flow */}
-        {isSplashActive && (
-          <SplashScreen onFinish={() => setIsSplashActive(false)} />
-        )}
       </div>
     );
   }
@@ -1347,11 +1342,6 @@ export default function App() {
 
       {/* Interactive PWA Install Banner */}
       <PWAInstallPrompt />
-
-      {/* Elegant Native Slash Screen loading flow */}
-      {isSplashActive && (
-        <SplashScreen onFinish={() => setIsSplashActive(false)} />
-      )}
 
       {showPrivacyModal && (
         <PrivacyPolicyModal onProceed={() => {

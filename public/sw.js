@@ -1,5 +1,5 @@
-const CACHE_NAME = 'resume-designer-static-v1';
-const DYNAMIC_CACHE_NAME = 'resume-designer-dynamic-v1';
+const CACHE_NAME = 'resume-designer-static-v2';
+const DYNAMIC_CACHE_NAME = 'resume-designer-dynamic-v2';
 
 // Files to cache immediately upon service worker installation
 const STATIC_ASSETS = [

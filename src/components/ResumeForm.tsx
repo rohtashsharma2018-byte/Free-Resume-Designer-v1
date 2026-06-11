@@ -803,7 +803,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                 id="select-resume-template"
                 value={data.templateId}
                 onChange={(e) => onChange({ ...data, templateId: e.target.value as any })}
-                className="w-full text-sm text-white bg-orange-600 border border-orange-600 rounded-lg px-3 py-2 outline-none focus:border-orange-700 cursor-pointer font-medium"
+                className="w-full text-sm text-slate-700 bg-slate-100 border border-slate-200 rounded-lg px-3 py-2 outline-none focus:border-slate-300 focus:bg-white transition-colors cursor-pointer font-medium"
               >
                 {[
                   { id: 'modern-minimal', name: 'Modern Minimal' },
@@ -813,8 +813,12 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                   { id: 'executive-premium', name: 'Executive Premium' },
                   { id: 'ats-optimized', name: 'ATS Optimized' },
                   { id: 'ats-standout', name: 'ATS Standout' },
+                  { id: 'two-column-popular', name: 'Two Column Popular (Modern 2-Column Sidebar Layout)' },
+                  { id: 'two-column-grow', name: 'Two Column Grow (Industry Standard 2-Column Theme)' },
+                  { id: 'two-column-gravity', name: 'Two Column Gravity (Elegant 2-Column Sidebar Layout)' },
                   { id: 'ats-lunar', name: 'ATS Lunar' },
                   { id: 'ats-universe', name: 'ATS Universe (Yellow & Dark Grey)' },
+                  { id: 'ats-supernova', name: 'ATS Supernova (Rose & Slate)' },
                   { id: 'ats-shining-star', name: 'ATS Shining Star (Navy Blue & Crisp Silver)' },
                   { id: 'ats-navy-classic', name: 'ATS Navy Classic (Single Column, Subtly Elegant Navy)' },
                 ].map((template) => (
@@ -861,7 +865,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                   <label className="px-3 py-1.5 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-600 font-medium cursor-pointer shadow-xs transition-colors flex items-center gap-1.5">
                     <ImagePlus className="w-3.5 h-3.5 text-indigo-500" />
                     Upload Image
-                    <input type="file" accept="image/*" onChange={handlePhotoUpload} className="hidden" />
+                    <input spellCheck={true} type="file" accept="image/*" onChange={handlePhotoUpload} className="hidden" />
                   </label>
                   {data.personalInfo.photoUrl && (
                     <button 
@@ -879,7 +883,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Full Name</label>
-                <input
+                <input spellCheck={true}
                   id="input-full-name"
                   type="text"
                   placeholder="e.g. Eleanor Vance"
@@ -899,7 +903,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Job Title</label>
-                <input
+                <input spellCheck={true}
                   id="input-job-title"
                   type="text"
                   placeholder="e.g. Principal Architect / Full Stack Lead"
@@ -911,7 +915,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Email Address</label>
-                <input
+                <input spellCheck={true}
                   id="input-email"
                   type="email"
                   placeholder="e.g. eleanor@vance.io"
@@ -931,7 +935,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Phone Number</label>
-                <input
+                <input spellCheck={true}
                   id="input-phone"
                   type="tel"
                   placeholder="e.g. +1 (415) 555-0199"
@@ -951,7 +955,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Location / Address</label>
-                <input
+                <input spellCheck={true}
                   id="input-location"
                   type="text"
                   placeholder="e.g. San Francisco, CA"
@@ -971,7 +975,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Nationality</label>
-                <input
+                <input spellCheck={true}
                   id="input-nationality"
                   type="text"
                   placeholder="e.g. American, British"
@@ -998,7 +1002,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">Personal Site / Portfolio</label>
-                <input
+                <input spellCheck={true}
                   id="input-website"
                   type="text"
                   placeholder="e.g. vance-eleanor.com"
@@ -1018,7 +1022,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">LinkedIn Profile Handle</label>
-                <input
+                <input spellCheck={true}
                   id="input-linkedin"
                   type="text"
                   placeholder="e.g. eleanor-vance"
@@ -1038,7 +1042,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1.5">GitHub Username</label>
-                <input
+                <input spellCheck={true}
                   id="input-github"
                   type="text"
                   placeholder="e.g. eleanor-git"
@@ -1059,7 +1063,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
             <div>
               <label className="block text-sm font-medium text-slate-600 mb-1.5">Executive Bio / Summary Statement</label>
-              <textarea
+              <textarea spellCheck={true}
                 id="input-bio"
                 rows={4}
                 placeholder="Briefly state your core value proposition, leadership capabilities, or career aspirations in 3-4 structured lines..."
@@ -1140,7 +1144,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Company / Organization</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Stripe, Inc."
                           value={exp.company}
@@ -1150,7 +1154,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Position Title</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Senior Frontend Engineer"
                           value={exp.position}
@@ -1160,7 +1164,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Location</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. San Francisco, CA (Remote)"
                           value={exp.location}
@@ -1174,7 +1178,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         <div className="flex justify-between items-center mb-1">
                           <label className="block text-sm font-medium text-slate-500">Employment Timeline</label>
                           <label className="flex items-center gap-1 text-[11px] font-medium text-slate-600 cursor-pointer">
-                            <input
+                            <input spellCheck={true}
                               type="checkbox"
                               checked={exp.currentlyWorking}
                               onChange={(e) => updateExp(exp.id, 'currentlyWorking', e.target.checked)}
@@ -1185,7 +1189,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                           <div className="relative flex items-center w-full">
-                            <input
+                            <input spellCheck={true}
                               type="text"
                               placeholder="Start (e.g. Jan 2024)"
                               value={exp.startDate}
@@ -1193,7 +1197,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                               className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-400"
                             />
                             <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                            <input
+                            <input spellCheck={true}
                               type="month"
                               value={parseMMMYYYYToYYYYMM(exp.startDate)}
                               onChange={(e) => updateExp(exp.id, 'startDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1201,7 +1205,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             />
                           </div>
                           <div className="relative flex items-center w-full">
-                            <input
+                            <input spellCheck={true}
                               type="text"
                               placeholder="End (e.g. Present)"
                               disabled={exp.currentlyWorking}
@@ -1211,7 +1215,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             />
                             {!exp.currentlyWorking && <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />}
                             {!exp.currentlyWorking && (
-                              <input
+                              <input spellCheck={true}
                                 type="month"
                                 value={parseMMMYYYYToYYYYMM(exp.endDate)}
                                 onChange={(e) => updateExp(exp.id, 'endDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1225,7 +1229,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
                     <div>
                       <label className="block text-sm font-medium text-slate-500 mb-1">Roles, Accomplishments & Impact</label>
-                      <textarea
+                      <textarea spellCheck={true}
                         rows={3}
                         placeholder="Detail critical duties, key technical domains navigated, and measurable achievements (e.g. Boosted SEO conversions by 31%). Use clear paragraphs or bullet line drafts."
                         value={exp.description}
@@ -1317,7 +1321,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">School / University</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Stanford University"
                           value={edu.institution}
@@ -1327,7 +1331,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Degree Received</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Master of Science (B.S.)"
                           value={edu.degree}
@@ -1337,7 +1341,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Field of Study</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Intelligent Systems / Computer Science"
                           value={edu.fieldOfStudy}
@@ -1349,7 +1353,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         <div className="flex justify-between items-center mb-1">
                           <label className="block text-sm font-medium text-slate-500">Timeline dates</label>
                           <label className="flex items-center gap-1 text-[11px] font-medium text-slate-600 cursor-pointer">
-                            <input
+                            <input spellCheck={true}
                               type="checkbox"
                               checked={edu.currentlyStudying}
                               onChange={(e) => updateEdu(edu.id, 'currentlyStudying', e.target.checked)}
@@ -1360,7 +1364,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                           <div className="relative flex items-center w-full">
-                            <input
+                            <input spellCheck={true}
                               type="text"
                               placeholder="Start (e.g. Sep 2021)"
                               value={edu.startDate}
@@ -1368,7 +1372,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                               className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-400"
                             />
                             <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                            <input
+                            <input spellCheck={true}
                               type="month"
                               value={parseMMMYYYYToYYYYMM(edu.startDate)}
                               onChange={(e) => updateEdu(edu.id, 'startDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1376,7 +1380,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             />
                           </div>
                           <div className="relative flex items-center w-full">
-                            <input
+                            <input spellCheck={true}
                               type="text"
                               placeholder="End (e.g. Jun 2023)"
                               disabled={edu.currentlyStudying}
@@ -1386,7 +1390,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             />
                             {!edu.currentlyStudying && <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />}
                             {!edu.currentlyStudying && (
-                              <input
+                              <input spellCheck={true}
                                 type="month"
                                 value={parseMMMYYYYToYYYYMM(edu.endDate)}
                                 onChange={(e) => updateEdu(edu.id, 'endDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1400,7 +1404,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
                     <div>
                       <label className="block text-sm font-medium text-slate-500 mb-1">Description / Honors / GPA</label>
-                      <input
+                      <input spellCheck={true}
                         type="text"
                         placeholder="e.g. Graduated with Honors. Cumulative GPA: 3.91. Focus core: Cloud Infrastructure, AI Engines."
                         value={edu.description}
@@ -1459,7 +1463,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       className="p-4 border border-slate-205 bg-slate-50/50 rounded-xl space-y-3 relative group"
                     >
                       <div className="flex justify-between items-center">
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           value={cat.name}
                           onChange={(e) => updateSkillCategoryName(cat.id, e.target.value)}
@@ -1509,7 +1513,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         }}
                         className="flex gap-2"
                       >
-                        <input
+                        <input spellCheck={true}
                           id={tempInputId}
                           type="text"
                           placeholder="Type tag (e.g., React) and hit Enter..."
@@ -1598,7 +1602,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Project Title</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Distributed Consensus Engine"
                           value={proj.title}
@@ -1608,7 +1612,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Your Role / Contributions</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Solo Developer / Lead Architect"
                           value={proj.role}
@@ -1618,7 +1622,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Project Demo / URL Link</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. github.com/user/consensus-engine"
                           value={proj.link}
@@ -1630,7 +1634,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         <div className="flex justify-between items-center mb-1">
                           <label className="block text-sm font-medium text-slate-500">Project Timeline</label>
                           <label className="flex items-center gap-1 text-[11px] font-medium text-slate-600 cursor-pointer">
-                            <input
+                            <input spellCheck={true}
                               type="checkbox"
                               checked={proj.isCurrent}
                               onChange={(e) => updateProj(proj.id, 'isCurrent', e.target.checked)}
@@ -1642,7 +1646,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                         <div className="grid grid-cols-2 gap-2">
                           <div>
                             <div className="relative flex items-center w-full">
-                              <input
+                              <input spellCheck={true}
                                 type="text"
                                 placeholder="e.g. Jul 2023"
                                 value={proj.startDate}
@@ -1650,7 +1654,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                                 className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-400"
                               />
                               <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                              <input
+                              <input spellCheck={true}
                                 type="month"
                                 value={parseMMMYYYYToYYYYMM(proj.startDate)}
                                 onChange={(e) => updateProj(proj.id, 'startDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1660,7 +1664,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                           </div>
                           <div>
                             <div className="relative flex items-center w-full">
-                              <input
+                              <input spellCheck={true}
                                 type="text"
                                 placeholder="e.g. Dec 2023"
                                 disabled={proj.isCurrent}
@@ -1670,7 +1674,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                               />
                               {!proj.isCurrent && <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />}
                               {!proj.isCurrent && (
-                                <input
+                                <input spellCheck={true}
                                   type="month"
                                   value={parseMMMYYYYToYYYYMM(proj.endDate)}
                                   onChange={(e) => updateProj(proj.id, 'endDate', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1685,7 +1689,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
 
                     <div>
                       <label className="block text-sm font-medium text-slate-500 mb-1">Project Description & Core Scope</label>
-                      <textarea
+                      <textarea spellCheck={true}
                         rows={3}
                         placeholder="Detail system architectures crafted, libraries utilized, performance improvements, and real accomplishments."
                         value={proj.description}
@@ -1757,7 +1761,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Certification Name</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. AWS Certified Solutions Architect"
                           value={cert.name}
@@ -1775,7 +1779,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Issuing Authority / Issuer</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Amazon Web Services (AWS)"
                           value={cert.issuer}
@@ -1786,7 +1790,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Issue Date</label>
                         <div className="relative flex items-center w-full">
-                          <input
+                          <input spellCheck={true}
                             type="text"
                             placeholder="e.g. Nov 2024"
                             value={cert.date}
@@ -1794,7 +1798,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-400"
                           />
                           <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                          <input
+                          <input spellCheck={true}
                             type="month"
                             value={parseMMMYYYYToYYYYMM(cert.date)}
                             onChange={(e) => updateCert(cert.id, 'date', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1804,7 +1808,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Credential URL Link</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. credentials.com/verify-aws-102"
                           value={cert.link}
@@ -1869,7 +1873,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Award Title</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Employee of the Month"
                           value={award.name}
@@ -1887,7 +1891,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Issuing Organization</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. HashiCorp"
                           value={award.issuer}
@@ -1898,7 +1902,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Date Received</label>
                         <div className="relative flex items-center w-full">
-                          <input
+                          <input spellCheck={true}
                             type="text"
                             placeholder="e.g. Oct 2021"
                             value={award.date}
@@ -1906,7 +1910,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-400"
                           />
                           <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                          <input
+                          <input spellCheck={true}
                             type="month"
                             value={parseMMMYYYYToYYYYMM(award.date)}
                             onChange={(e) => updateAward(award.id, 'date', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -1916,7 +1920,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Verification Link</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. credentials.com/verify-award-102"
                           value={award.link}
@@ -1982,7 +1986,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       {/* Full span name input so it's spacious */}
                       <div className="sm:col-span-2">
                         <label className="block text-sm font-medium text-slate-500 mb-1">Achievement Description</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. Secured first place in AWS Global Cluster Scaling Hackathon"
                           value={ach.name}
@@ -2001,7 +2005,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Date Achieved / Recorded</label>
                         <div className="relative flex items-center w-full">
-                          <input
+                          <input spellCheck={true}
                             type="text"
                             placeholder="e.g. Nov 2022"
                             value={ach.date}
@@ -2009,7 +2013,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                             className="w-full px-3.5 pr-8 py-2 text-sm text-slate-700 border border-slate-250 rounded-lg outline-none focus:border-indigo-500 transition-all placeholder:text-slate-450"
                           />
                           <Calendar className="absolute right-2.5 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
-                          <input
+                          <input spellCheck={true}
                             type="month"
                             value={parseMMMYYYYToYYYYMM(ach.date)}
                             onChange={(e) => updateAchievement(ach.id, 'date', formatYYYYMMToMMMYYYY(e.target.value))}
@@ -2019,7 +2023,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-500 mb-1">Reference Link (Optional)</label>
-                        <input
+                        <input spellCheck={true}
                           type="text"
                           placeholder="e.g. github.com/your-repo"
                           value={ach.link}
@@ -2069,7 +2073,7 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                     className="p-4 border border-slate-200/80 bg-white rounded-xl shadow-xs space-y-3 relative flex items-center gap-3 justify-between"
                   >
                     <div className="flex-1 space-y-2">
-                      <input
+                      <input spellCheck={true}
                         type="text"
                         placeholder="Language name (e.g. Spanish)"
                         value={lang.name}

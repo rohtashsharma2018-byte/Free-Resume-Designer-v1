@@ -60,6 +60,7 @@ const TEMPLATES = [
   { id: 'ats-standout', title: 'ATS Standout' },
   { id: 'ats-lunar', title: 'ATS Lunar' },
   { id: 'ats-universe', title: 'ATS Universe' },
+  { id: 'ats-supernova', title: 'ATS Supernova' },
   { id: 'ats-shining-star', title: 'ATS Shining Star' },
   { id: 'ats-navy-classic', title: 'ATS Navy Classic' },
 ];
@@ -301,17 +302,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
                     <div>
                       <div className="flex justify-between items-start gap-2 mb-2">
                         <div className="flex items-center gap-3">
-                          <div className="w-16 h-16 relative">
-                            <ResponsiveContainer width="100%" height="100%">
-                              <PieChart>
+                          <div className="w-16 h-16 relative mr-2 shrink-0 flex items-center justify-center">
+                            <ResponsiveContainer width={64} height={64}>
+                              <PieChart width={64} height={64}>
                                 <Pie
                                   data={[{ value: getResumeCompletionScore(resume) }, { value: Math.max(0, 100 - getResumeCompletionScore(resume)) }]}
+                                  cx="50%"
+                                  cy="50%"
                                   innerRadius={20}
-                                  outerRadius={28}
+                                  outerRadius={26}
                                   paddingAngle={0}
                                   dataKey="value"
                                   startAngle={90}
                                   endAngle={-270}
+                                  stroke="none"
                                 >
                                   <Cell fill={getResumeCompletionScore(resume) > 80 ? '#22c55e' : getResumeCompletionScore(resume) >= 50 ? '#f97316' : '#ef4444'} />
                                   <Cell fill="#e2e8f0" />

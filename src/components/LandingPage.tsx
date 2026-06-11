@@ -98,6 +98,27 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       previewColor: "#dc2626",
     },
     {
+      id: "two-column-popular",
+      name: "Two Column Popular",
+      desc: "Modern 2-column sidebar layout. Features customizable dark sidebar, elegant headers, and perfect breathing room.",
+      tag: "Popular 2024",
+      previewColor: "#1e293b",
+    },
+    {
+      id: "two-column-grow",
+      name: "Two Column Grow",
+      desc: "Professional 2-column theme crafted with high-impact color accents and modern industry standards layout structuring.",
+      tag: "Grow Standard",
+      previewColor: "#2563eb",
+    },
+    {
+      id: "two-column-gravity",
+      name: "Two Column Gravity",
+      desc: "An elegant, sophisticated two-column resume design with refined column dividers and focused readability.",
+      tag: "New",
+      previewColor: "#1e293b",
+    },
+    {
       id: "ats-optimized",
       name: "ATS Optimized",
       desc: "Rigid structure built strictly to pass automated tracking systems and standard parsers.",
@@ -124,6 +145,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       desc: "Premium asymmetric single-column layout highlighting your achievements with warm bold yellow and stellar dark slate.",
       tag: "ATS Universe",
       previewColor: "#eab308",
+    },
+    {
+      id: "ats-supernova",
+      name: "ATS Supernova",
+      desc: "Vibrant asymmetric single-column layout highlighting your achievements with striking rose and deep slate.",
+      tag: "ATS Supernova",
+      previewColor: "#f43f5e",
     },
     {
       id: "ats-shining-star",
