@@ -51,7 +51,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
   // Global styles for react-pdf
   const styles = StyleSheet.create({
     page: {
-      padding: (templateId === 'two-column-popular' || templateId === 'two-column-gravity' || templateId === 'two-column-grow' || templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-supernova' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-ats-compliant-1' || templateId === 'template-ats-compliant-2' || templateId === 'template-ats-compliant-3' || templateId === 'template-ats-compliant-4' || templateId === 'template-ats-compliant-5' || templateId === 'template-ats-compliant-6' || templateId === 'template-ats-compliant-7' || templateId === 'template-ats-compliant-8' || templateId === 'template-ats-compliant-9' || templateId === 'template-ats-compliant-10' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') ? 0 : 36,
+      padding: (templateId === 'two-column-popular' || templateId === 'two-column-venus' || templateId === 'two-column-pluto' || templateId === 'two-column-eclipse' || templateId === 'two-column-victory' || templateId === 'two-column-harmony' || templateId === 'two-column-amber' || templateId === 'two-column-ocean' || templateId === 'two-column-uranus' || templateId === 'two-column-galaxy' || templateId === 'two-column-gravity' || templateId === 'two-column-grow' || templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-supernova' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') ? 0 : 36,
       fontFamily: chosenFont,
       color: '#1e293b',
       fontSize: baseSize(10),
@@ -231,7 +231,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
 
   // Render Header block
   const renderHeader = () => {
-    if (templateId === 'two-column-popular' || templateId === 'two-column-gravity' || templateId === 'two-column-grow' || templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-supernova' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-ats-compliant-1' || templateId === 'template-ats-compliant-2' || templateId === 'template-ats-compliant-3' || templateId === 'template-ats-compliant-4' || templateId === 'template-ats-compliant-5' || templateId === 'template-ats-compliant-6' || templateId === 'template-ats-compliant-7' || templateId === 'template-ats-compliant-8' || templateId === 'template-ats-compliant-9' || templateId === 'template-ats-compliant-10' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') {
+    if (templateId === 'two-column-popular' || templateId === 'two-column-venus' || templateId === 'two-column-pluto' || templateId === 'two-column-eclipse' || templateId === 'two-column-victory' || templateId === 'two-column-harmony' || templateId === 'two-column-amber' || templateId === 'two-column-ocean' || templateId === 'two-column-uranus' || templateId === 'two-column-galaxy' || templateId === 'two-column-gravity' || templateId === 'two-column-grow' || templateId === 'ats-standout' || templateId === 'ats-lunar' || templateId === 'ats-universe' || templateId === 'ats-supernova' || templateId === 'ats-shining-star' || templateId === 'ats-navy-classic' || templateId === 'template-two-colum-1' || templateId === 'template-two-colum-2' || templateId === 'template-two-colum-3' || templateId === 'template-mixed-column' || templateId === 'template-column-4' || templateId === 'template-column-5' || templateId === 'template-mixed-column-2' || templateId === 'template-mixed-column-3' || templateId === 'template-mixed-column-4' || templateId === 'template-mixed-column-5' || templateId === 'template-single-column-1' || templateId === 'template-single-column-2' || templateId === 'template-single-column-3' || templateId === 'template-single-column-4' || templateId === 'template-single-column-5' || templateId === 'template-industry-pro-11' || templateId === 'template-industry-pro-12' || templateId === 'template-industry-pro-13' || templateId === 'template-industry-pro-14' || templateId === 'template-industry-pro-15') {
       return null;
     }
     if (templateId === 'ats-optimized') {
@@ -579,7 +579,2026 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
       <Page size="A4" style={styles.page}>
         {renderHeader()}
 
-        {templateId === 'two-column-gravity' ? (() => {
+        {templateId === 'two-column-venus' ? (() => {
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Header */}
+              <View style={{ backgroundColor: `${primaryColor}10`, padding: 24, borderBottomWidth: 2, borderBottomColor: primaryColor }}>
+                <Text style={{ fontSize: baseSize(24), fontFamily: chosenFontBold, textTransform: 'uppercase', color: '#1e293b', marginBottom: 4, letterSpacing: 1.5 }}>
+                  {personalInfo.fullName}
+                </Text>
+                <Text style={{ fontSize: baseSize(11), color: primaryColor, fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 2 }}>{personalInfo.jobTitle}</Text>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 12 }}>
+                  {personalInfo.email && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>{personalInfo.email}</Text>}
+                  {personalInfo.phone && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>{personalInfo.phone}</Text>}
+                  {personalInfo.location && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>{personalInfo.location}</Text>}
+                  {personalInfo.gender && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>| {personalInfo.gender}</Text>}
+                  {personalInfo.nationality && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>| {personalInfo.nationality}</Text>}
+                  {personalInfo.github && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>| {personalInfo.github}</Text>}
+                  {personalInfo.website && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>| {personalInfo.website}</Text>}
+                  {personalInfo.linkedin && <Text style={{ fontSize: baseSize(8), color: '#475569', marginRight: 8 }}>| {personalInfo.linkedin}</Text>}
+                </View>
+              </View>
+
+              {/* Two Column Layout below */}
+              <View style={{ flexDirection: 'row', flexGrow: 1 }}>
+                {/* Left Column */}
+                <View style={{ width: '30%', padding: 20, backgroundColor: '#f8fafc', borderRightWidth: 1, borderRightColor: '#e2e8f0', flexDirection: 'column' }}>
+                  {/* Summary */}
+                  {personalInfo.bio && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, color: primaryColor }}>Profile</Text>
+                      <View style={{ width: 30, height: 2, backgroundColor: primaryColor, borderRadius: 2, marginBottom: 8 }} />
+                      <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5 }}>{personalInfo.bio}</Text>
+                    </View>
+                  )}
+
+                  {/* Skills */}
+                  {skills && skills.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, color: primaryColor }}>Skills</Text>
+                      <View style={{ width: 30, height: 2, backgroundColor: primaryColor, borderRadius: 2, marginBottom: 8 }} />
+                      <View style={{ gap: 8 }}>
+                        {skills.map(cat => (
+                          <View key={cat.id} style={{ gap: 3 }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{cat.name}</Text>
+                            <View style={{ gap: 2 }}>
+                              {cat.skills.map((skill) => (
+                                <View key={skill} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                  <View style={{ width: 3, height: 3, borderRadius: 1.5, backgroundColor: primaryColor, marginRight: 5 }} />
+                                  <Text style={{ fontSize: baseSize(8), color: '#475569' }}>{skill}</Text>
+                                </View>
+                              ))}
+                            </View>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Languages */}
+                  {languages && languages.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, color: primaryColor }}>Languages</Text>
+                      <View style={{ width: 30, height: 2, backgroundColor: primaryColor, borderRadius: 2, marginBottom: 8 }} />
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ marginBottom: 5 }}>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#1e293b', fontFamily: chosenFontBold }}>{lang.name}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#64748b' }}>{lang.proficiency}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {/* Awards */}
+                  {awards && awards.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, color: primaryColor }}>Awards</Text>
+                      <View style={{ width: 30, height: 2, backgroundColor: primaryColor, borderRadius: 2, marginBottom: 8 }} />
+                      {awards.map(award => (
+                        <View key={award.id} style={{ marginBottom: 8, backgroundColor: '#ffffff', padding: 6, borderRadius: 4, borderWidth: 1, borderColor: '#f1f5f9' }}>
+                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{award.name}</Text>
+                          <Text style={{ fontSize: baseSize(7.5), color: '#64748b', marginTop: 1 }}>{award.issuer} | {award.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                  
+                  {/* Certifications */}
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, color: primaryColor }}>Certifications</Text>
+                      <View style={{ width: 30, height: 2, backgroundColor: primaryColor, borderRadius: 2, marginBottom: 8 }} />
+                      {certifications.map(cert => (
+                        <View key={cert.id} style={{ marginBottom: 8, backgroundColor: '#ffffff', padding: 6, borderRadius: 4, borderWidth: 1, borderColor: '#f1f5f9' }}>
+                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{cert.name}</Text>
+                          <Text style={{ fontSize: baseSize(7.5), color: '#64748b', marginTop: 1 }}>{cert.issuer} | {cert.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                </View>
+
+                {/* Right Column */}
+                <View style={{ width: '70%', padding: 24, flexDirection: 'column' }}>
+                  {/* Experience */}
+                  {experience && experience.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor, marginBottom: 12 }}>Experience</Text>
+                      <View style={{ gap: 14 }}>
+                        {experience.map(exp => (
+                            <View key={exp.id} style={{ gap: 2 }}>
+                               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                   <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#1e293b' }}>{exp.position}</Text>
+                                   <Text style={{ fontSize: baseSize(7.5), color: primaryColor, fontFamily: chosenFontBold, backgroundColor: `${primaryColor}20`, paddingHorizontal: 6, paddingVertical: 2, borderRadius: 8, textTransform: 'uppercase' }}>{exp.startDate} — {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                               </View>
+                               <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 2 }}>{exp.company} — {exp.location}</Text>
+                               <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5 }}>{exp.description}</Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Education */}
+                  {education && education.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor, marginBottom: 12 }}>Education</Text>
+                      <View style={{ gap: 12 }}>
+                        {education.map(edu => (
+                            <View key={edu.id} style={{ gap: 2 }}>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#1e293b' }}>{edu.degree} in {edu.fieldOfStudy}</Text>
+                                    <Text style={{ fontSize: baseSize(7.5), color: primaryColor, fontFamily: chosenFontBold, backgroundColor: `${primaryColor}20`, paddingHorizontal: 6, paddingVertical: 2, borderRadius: 8, textTransform: 'uppercase' }}>{edu.startDate} — {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                                </View>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{edu.institution} — {edu.location}</Text>
+                                {edu.description && <Text style={{ fontSize: baseSize(8.5), color: '#475569', marginTop: 2 }}>{edu.description}</Text>}
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Projects */}
+                  {projects && projects.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor, marginBottom: 12 }}>Projects</Text>
+                      <View style={{ gap: 12 }}>
+                        {projects.map(proj => (
+                            <View key={proj.id} style={{ gap: 2 }}>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#1e293b' }}>{proj.title}</Text>
+                                    <Text style={{ fontSize: baseSize(7.5), color: primaryColor, fontFamily: chosenFontBold, backgroundColor: `${primaryColor}20`, paddingHorizontal: 6, paddingVertical: 2, borderRadius: 8, textTransform: 'uppercase' }}>{proj.startDate} — {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                                </View>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{proj.role} {proj.link ? `(${proj.link})` : ''}</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#475569', marginTop: 2, lineHeight: 1.5 }}>{proj.description}</Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Achievements */}
+                  {achievements && achievements.length > 0 && (
+                    <View>
+                      <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor, marginBottom: 12 }}>Achievements</Text>
+                      <View style={{ gap: 8 }}>
+                        {achievements.map(ach => (
+                            <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                                <Text style={{ color: primaryColor, marginRight: 6, fontSize: baseSize(10) }}>•</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#475569', flex: 1, lineHeight: 1.4 }}>
+                                  <Text style={{ fontFamily: chosenFontBold, color: '#1e293b' }}>{ach.name}</Text> {ach.date ? `(${ach.date})` : ''}
+                                </Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-galaxy' ? (() => {
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Header */}
+              <View style={{ backgroundColor: primaryColor, padding: 24, textAlign: 'center' }}>
+                <Text style={{ fontSize: baseSize(24), fontFamily: chosenFontBold, textTransform: 'uppercase', color: '#ffffff', marginBottom: 6 }}>
+                  {personalInfo.fullName}
+                </Text>
+                <Text style={{ fontSize: baseSize(10), color: '#ffffff', opacity: 0.9, textTransform: 'uppercase', letterSpacing: 2 }}>{personalInfo.jobTitle}</Text>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: 12, opacity: 0.8 }}>
+                  {personalInfo.email && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>{personalInfo.email}</Text>}
+                  {personalInfo.phone && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>{personalInfo.phone}</Text>}
+                  {personalInfo.location && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>{personalInfo.location}</Text>}
+                  {personalInfo.gender && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>| {personalInfo.gender}</Text>}
+                  {personalInfo.nationality && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>| {personalInfo.nationality}</Text>}
+                  {personalInfo.github && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>| {personalInfo.github}</Text>}
+                  {personalInfo.website && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>| {personalInfo.website}</Text>}
+                  {personalInfo.linkedin && <Text style={{ fontSize: baseSize(8), color: '#ffffff', marginHorizontal: 4 }}>| {personalInfo.linkedin}</Text>}
+                </View>
+              </View>
+
+              {/* Two Column Layout below */}
+              <View style={{ flexDirection: 'row', flexGrow: 1 }}>
+                {/* Left Column */}
+                <View style={{ width: '35%', padding: 20, backgroundColor: '#f8fafc', borderRightWidth: 1, borderRightColor: '#e2e8f0', flexDirection: 'column' }}>
+                  {/* Summary */}
+                  {personalInfo.bio && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, color: primaryColor, paddingBottom: 2 }}>Profile</Text>
+                      <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.4 }}>{personalInfo.bio}</Text>
+                    </View>
+                  )}
+
+                  {/* Skills */}
+                  {skills && skills.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, color: primaryColor, paddingBottom: 2 }}>Skills</Text>
+                      <View style={{ gap: 6 }}>
+                        {skills.map(cat => (
+                          <View key={cat.id} style={{ gap: 2 }}>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b' }}>{cat.name}</Text>
+                            <View style={{ gap: 2 }}>
+                              {cat.skills.map((skill) => (
+                                <Text key={skill} style={{ fontSize: baseSize(8), color: '#475569' }}>• {skill}</Text>
+                              ))}
+                            </View>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Languages */}
+                  {languages && languages.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, color: primaryColor, paddingBottom: 2 }}>Languages</Text>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ marginBottom: 4 }}>
+                          <Text style={{ fontSize: baseSize(8), color: '#1e293b', fontFamily: chosenFontBold }}>{lang.name}</Text>
+                          <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', fontStyle: 'italic' }}>{lang.proficiency}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {/* Awards */}
+                  {awards && awards.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, color: primaryColor, paddingBottom: 2 }}>Awards</Text>
+                      {awards.map(award => (
+                        <View key={award.id} style={{ marginBottom: 6, borderLeftWidth: 2, borderLeftColor: `${primaryColor}40`, paddingLeft: 6 }}>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b' }}>{award.name}</Text>
+                          <Text style={{ fontSize: baseSize(7), color: '#94a3b8' }}>{award.issuer} | {award.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                  
+                  {/* Certifications */}
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, color: primaryColor, paddingBottom: 2 }}>Certifications</Text>
+                      {certifications.map(cert => (
+                        <View key={cert.id} style={{ marginBottom: 6, borderLeftWidth: 2, borderLeftColor: `${primaryColor}40`, paddingLeft: 6 }}>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b' }}>{cert.name}</Text>
+                          <Text style={{ fontSize: baseSize(7), color: '#94a3b8' }}>{cert.issuer} | {cert.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                </View>
+
+                {/* Right Column */}
+                <View style={{ width: '65%', padding: 24, flexDirection: 'column' }}>
+                  {/* Experience */}
+                  {experience && experience.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
+                        <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor }}>Experience</Text>
+                      </View>
+                      <View style={{ gap: 12 }}>
+                        {experience.map(exp => (
+                            <View key={exp.id} style={{ paddingLeft: 10, borderLeftWidth: 2, borderLeftColor: `${primaryColor}20`, gap: 2 }}>
+                               <View style={{ position: 'absolute', width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor, left: -4, top: 4 }} />
+                               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                   <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{exp.position}</Text>
+                                   <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8' }}>{exp.startDate} — {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                               </View>
+                               <Text style={{ fontSize: baseSize(8), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 2 }}>{exp.company} | {exp.location}</Text>
+                               <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.4 }}>{exp.description}</Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Education */}
+                  {education && education.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
+                        <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor }}>Education</Text>
+                      </View>
+                      <View style={{ gap: 10 }}>
+                        {education.map(edu => (
+                            <View key={edu.id} style={{ paddingLeft: 10, borderLeftWidth: 2, borderLeftColor: `${primaryColor}20`, gap: 2 }}>
+                                <View style={{ position: 'absolute', width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor, left: -4, top: 4 }} />
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{edu.degree} in {edu.fieldOfStudy}</Text>
+                                    <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', fontStyle: 'italic' }}>{edu.startDate} — {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                                </View>
+                                <Text style={{ fontSize: baseSize(8), color: '#64748b' }}>{edu.institution} | {edu.location}</Text>
+                                {edu.description && <Text style={{ fontSize: baseSize(8.5), color: '#475569', marginTop: 2 }}>{edu.description}</Text>}
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Projects */}
+                  {projects && projects.length > 0 && (
+                    <View style={{ marginBottom: 24 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
+                        <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor }}>Projects</Text>
+                      </View>
+                      <View style={{ gap: 10 }}>
+                        {projects.map(proj => (
+                            <View key={proj.id} style={{ paddingLeft: 10, borderLeftWidth: 2, borderLeftColor: `${primaryColor}20`, gap: 2 }}>
+                                <View style={{ position: 'absolute', width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor, left: -4, top: 4 }} />
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{proj.title}</Text>
+                                    <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8' }}>{proj.startDate} — {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                                </View>
+                                <Text style={{ fontSize: baseSize(8), color: '#64748b', fontStyle: 'italic' }}>{proj.role} {proj.link ? `(${proj.link})` : ''}</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#475569', marginTop: 2, lineHeight: 1.4 }}>{proj.description}</Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Achievements */}
+                  {achievements && achievements.length > 0 && (
+                    <View>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
+                        <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, textTransform: 'uppercase', color: primaryColor }}>Achievements</Text>
+                      </View>
+                      <View style={{ gap: 6 }}>
+                        {achievements.map(ach => (
+                            <View key={ach.id} style={{ paddingLeft: 10, borderLeftWidth: 2, borderLeftColor: `${primaryColor}20` }}>
+                                <View style={{ position: 'absolute', width: 4, height: 4, borderRadius: 2, backgroundColor: primaryColor, left: -3, top: 4, opacity: 0.5 }} />
+                                <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>
+                                  <Text style={{ fontFamily: chosenFontBold, color: '#334155' }}>{ach.name}</Text> {ach.date ? `(${ach.date})` : ''}
+                                </Text>
+                            </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-pluto' ? (() => {
+          return (
+            <View style={{ flexDirection: 'row', flexGrow: 1, backgroundColor: '#ffffff', padding: 24 }}>
+              {/* Sidebar */}
+              <View style={{ width: '30%', paddingRight: 18, borderRightWidth: 2, borderRightColor: '#f1f5f9', flexDirection: 'column' }}>
+                <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(16), fontFamily: chosenFontBold, textTransform: 'uppercase', color: '#0f172a' }}>{personalInfo.fullName}</Text>
+                    <Text style={{ fontSize: baseSize(8), color: primaryColor, marginTop: 4, textTransform: 'uppercase', fontFamily: chosenFontBold }}>{personalInfo.jobTitle}</Text>
+                </View>
+
+                {/* Contact */}
+                <View style={{ marginBottom: 20 }}>
+                   <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#0f172a', paddingBottom: 2 }}>Contact</Text>
+                   <View style={{ gap: 4 }}>
+                    {personalInfo.email && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.email}</Text>}
+                    {personalInfo.phone && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.phone}</Text>}
+                    {personalInfo.location && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.location}</Text>}
+                    {personalInfo.gender && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.gender}</Text>}
+                    {personalInfo.nationality && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.nationality}</Text>}
+                    {personalInfo.github && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.github}</Text>}
+                    {personalInfo.website && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.website}</Text>}
+                    {personalInfo.linkedin && <Text style={{ fontSize: baseSize(7.5), color: '#475569' }}>{personalInfo.linkedin}</Text>}
+                   </View>
+                </View>
+
+                {/* Skills */}
+                {skills && skills.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#0f172a', paddingBottom: 2 }}>Skills</Text>
+                    <View style={{ gap: 6 }}>
+                      {skills.map(cat => (
+                        <View key={cat.id} style={{ gap: 2 }}>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b', textTransform: 'uppercase' }}>{cat.name}</Text>
+                          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 2 }}>
+                            {cat.skills.map((skill, idx) => (
+                              <Text key={skill} style={{ fontSize: baseSize(7.5), color: '#475569' }}>
+                                {skill}{idx < cat.skills.length - 1 ? ' | ' : ''}
+                              </Text>
+                            ))}
+                          </View>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Languages */}
+                {languages && languages.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#0f172a', paddingBottom: 2 }}>Languages</Text>
+                    <View style={{ gap: 4 }}>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                           <Text style={{ fontSize: baseSize(7.5), color: '#1e293b', fontFamily: chosenFontBold }}>{lang.name}</Text>
+                           <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', textTransform: 'uppercase' }}>{lang.proficiency}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Awards */}
+                {awards && awards.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#0f172a', paddingBottom: 2 }}>Awards</Text>
+                    <View style={{ gap: 6 }}>
+                      {awards.map(award => (
+                        <View key={award.id}>
+                           <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b' }}>{award.name}</Text>
+                           <Text style={{ fontSize: baseSize(7), color: '#64748b' }}>{award.issuer} | {award.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Certifications */}
+                {certifications && certifications.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 4, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#0f172a', paddingBottom: 2 }}>Certifications</Text>
+                    <View style={{ gap: 6 }}>
+                      {certifications.map(cert => (
+                        <View key={cert.id}>
+                           <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b' }}>{cert.name}</Text>
+                           <Text style={{ fontSize: baseSize(7), color: '#64748b' }}>{cert.issuer} | {cert.date}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+
+              {/* Main Content Area */}
+              <View style={{ width: '70%', paddingLeft: 18, flexDirection: 'column' }}>
+                {/* About Me */}
+                {personalInfo.bio && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#0f172a' }}>About Me</Text>
+                    <Text style={{ fontSize: baseSize(8), color: '#475569', lineHeight: 1.5 }}>{personalInfo.bio}</Text>
+                  </View>
+                )}
+
+                {/* Experience */}
+                {experience && experience.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#0f172a' }}>Experience</Text>
+                    <View style={{ gap: 12 }}>
+                      {experience.map(exp => (
+                        <View key={exp.id} style={{ gap: 2 }}>
+                           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                             <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a' }}>{exp.position}</Text>
+                             <Text style={{ fontSize: baseSize(7.5), color: '#64748b', textTransform: 'uppercase', fontFamily: chosenFontBold }}>{exp.startDate} — {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                           </View>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{exp.company} <Text style={{ color: primaryColor }}>|</Text> {exp.location}</Text>
+                           <Text style={{ fontSize: baseSize(8), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{exp.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Education */}
+                {education && education.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#0f172a' }}>Education</Text>
+                    <View style={{ gap: 10 }}>
+                      {education.map(edu => (
+                        <View key={edu.id} style={{ gap: 2 }}>
+                           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                             <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a' }}>{edu.degree} in {edu.fieldOfStudy}</Text>
+                             <Text style={{ fontSize: baseSize(7.5), color: '#64748b', textTransform: 'uppercase', fontFamily: chosenFontBold }}>{edu.startDate} — {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                           </View>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{edu.institution} <Text style={{ color: primaryColor }}>|</Text> {edu.location}</Text>
+                           {edu.description && <Text style={{ fontSize: baseSize(8), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{edu.description}</Text>}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Projects */}
+                {projects && projects.length > 0 && (
+                  <View style={{ marginBottom: 20 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#0f172a' }}>Projects</Text>
+                    <View style={{ gap: 10 }}>
+                      {projects.map(proj => (
+                        <View key={proj.id} style={{ gap: 2 }}>
+                           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                             <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a' }}>{proj.title}</Text>
+                             <Text style={{ fontSize: baseSize(7.5), color: '#64748b', textTransform: 'uppercase', fontFamily: chosenFontBold }}>{proj.startDate} — {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                           </View>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{proj.role} {proj.link ? <Text style={{ color: '#94a3b8', textTransform: 'none' }}><Text style={{ color: primaryColor }}>|</Text> {proj.link}</Text> : ''}</Text>
+                           <Text style={{ fontSize: baseSize(8), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{proj.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 && (
+                  <View>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#0f172a' }}>Achievements</Text>
+                    <View style={{ gap: 6 }}>
+                      {achievements.map(ach => (
+                        <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ color: primaryColor, marginRight: 6, fontFamily: chosenFontBold }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#475569', flex: 1, lineHeight: 1.4 }}>
+                            <Text style={{ fontFamily: chosenFontBold, color: '#1e293b' }}>{ach.name}</Text> {ach.date ? `| ${ach.date}` : ''}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-eclipse' ? (() => {
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Header */}
+              <View style={{ backgroundColor: primaryColor, padding: 24, paddingBottom: 20 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <View style={{ width: '60%' }}>
+                    <Text style={{ fontSize: baseSize(20), fontFamily: chosenFontBold, textTransform: 'uppercase', color: '#ffffff', marginBottom: 4, letterSpacing: 1.5 }}>
+                      {personalInfo.fullName}
+                    </Text>
+                    <Text style={{ fontSize: baseSize(10.5), color: '#ffffff', fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 2 }}>{personalInfo.jobTitle}</Text>
+                  </View>
+                  <View style={{ width: '40%', alignItems: 'flex-end', gap: 2 }}>
+                    {personalInfo.email && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.email}</Text>}
+                    {personalInfo.phone && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.phone}</Text>}
+                    {personalInfo.location && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.location}</Text>}
+                    {personalInfo.linkedin && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.linkedin}</Text>}
+                    {personalInfo.github && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.github}</Text>}
+                    {personalInfo.website && <Text style={{ fontSize: baseSize(8), color: '#cbd5e1' }}>{personalInfo.website}</Text>}
+                  </View>
+                </View>
+              </View>
+
+              {/* Two Column Layout below */}
+              <View style={{ flexDirection: 'row', flexGrow: 1, padding: 24, paddingRight: 0 }}>
+                {/* Left Column Area */}
+                <View style={{ width: '65%', paddingRight: 24, flexDirection: 'column' }}>
+                  {personalInfo.bio && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#1e293b' }}>Profile</Text>
+                      <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5 }}>{personalInfo.bio}</Text>
+                    </View>
+                  )}
+
+                  {/* Experience */}
+                  {experience && experience.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#1e293b' }}>Experience</Text>
+                      <View style={{ gap: 14 }}>
+                        {experience.map(exp => (
+                          <View key={exp.id} style={{ gap: 2 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', borderBottomWidth: 1, borderBottomColor: '#f1f5f9', borderStyle: 'dashed', paddingBottom: 2 }}>
+                              <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#1e293b' }}>{exp.position}</Text>
+                              <Text style={{ fontSize: baseSize(7.5), color: '#64748b', fontFamily: chosenFontBold, backgroundColor: '#f8fafc', paddingHorizontal: 4, paddingVertical: 1, textTransform: 'uppercase' }}>{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                            </View>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', marginTop: 2 }}>{exp.company} <Text style={{ color: '#cbd5e1' }}>|</Text> {exp.location}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{exp.description}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Projects */}
+                  {projects && projects.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 12, color: '#1e293b' }}>Projects</Text>
+                      <View style={{ gap: 14 }}>
+                        {projects.map(proj => (
+                          <View key={proj.id} style={{ gap: 2 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', borderBottomWidth: 1, borderBottomColor: '#f1f5f9', borderStyle: 'dashed', paddingBottom: 2 }}>
+                              <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#1e293b' }}>{proj.title}</Text>
+                              <Text style={{ fontSize: baseSize(7.5), color: '#64748b', fontFamily: chosenFontBold, backgroundColor: '#f8fafc', paddingHorizontal: 4, paddingVertical: 1, textTransform: 'uppercase' }}>{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                            </View>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', marginTop: 2 }}>{proj.role} {proj.link ? <Text style={{ color: '#94a3b8', textTransform: 'none' }}><Text style={{ color: '#cbd5e1' }}>|</Text> {proj.link}</Text> : ''}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{proj.description}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+
+                {/* Right Column Area */}
+                <View style={{ width: '35%', paddingRight: 24, flexDirection: 'column' }}>
+                  {/* Skills */}
+                  {skills && skills.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#1e293b', paddingBottom: 2 }}>Expertise</Text>
+                      <View style={{ gap: 8 }}>
+                        {skills.map(cat => (
+                          <View key={cat.id} style={{ gap: 2 }}>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#1e293b', textTransform: 'uppercase' }}>{cat.name}</Text>
+                            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 2 }}>
+                              {cat.skills.map((skill, idx) => (
+                                <Text key={skill} style={{ fontSize: baseSize(8.5), color: '#475569' }}>
+                                  {skill}{idx < cat.skills.length - 1 ? ' | ' : ''}
+                                </Text>
+                              ))}
+                            </View>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Education */}
+                  {education && education.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 8, borderBottomWidth: 2, borderBottomColor: primaryColor, color: '#1e293b', paddingBottom: 2 }}>Education</Text>
+                      <View style={{ gap: 8 }}>
+                        {education.map(edu => (
+                          <View key={edu.id} style={{ gap: 1 }}>
+                            <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{edu.degree} in {edu.fieldOfStudy}</Text>
+                            <Text style={{ fontSize: baseSize(8), color: '#64748b', textTransform: 'uppercase', fontFamily: chosenFontBold }}>{edu.institution}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', fontFamily: chosenFontBold }}>{edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                            {edu.location && <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8' }}>{edu.location}</Text>}
+                            {edu.description && <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{edu.description}</Text>}
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Languages */}
+                  {languages && languages.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#1e293b' }}>Languages</Text>
+                      <View style={{ gap: 4 }}>
+                        {languages.map(lang => (
+                          <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 1, borderBottomColor: '#f1f5f9', paddingBottom: 2 }}>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontFamily: chosenFontBold }}>{lang.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', textTransform: 'uppercase', fontFamily: chosenFontBold }}>{lang.proficiency}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Certifications */}
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#1e293b' }}>Certifications</Text>
+                      <View style={{ gap: 6 }}>
+                        {certifications.map(cert => (
+                          <View key={cert.id} style={{ borderLeftWidth: 2, borderLeftColor: primaryColor, paddingLeft: 6 }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>{cert.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', marginTop: 1 }}>{cert.issuer} {cert.date ? `| ${cert.date}` : ''}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Awards */}
+                  {awards && awards.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#1e293b' }}>Awards</Text>
+                      <View style={{ gap: 6 }}>
+                        {awards.map(award => (
+                          <View key={award.id} style={{ borderLeftWidth: 2, borderLeftColor: primaryColor, paddingLeft: 6 }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>{award.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#94a3b8', marginTop: 1 }}>{award.issuer} {award.date ? `| ${award.date}` : ''}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Achievements */}
+                  {achievements && achievements.length > 0 && (
+                    <View>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', borderBottomWidth: 2, borderBottomColor: primaryColor, paddingBottom: 2, marginBottom: 8, color: '#1e293b' }}>Achievements</Text>
+                      <View style={{ gap: 6 }}>
+                        {achievements.map(ach => (
+                          <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                            <Text style={{ color: '#cbd5e1', marginRight: 6, fontFamily: chosenFontBold }}>•</Text>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#475569', flex: 1, lineHeight: 1.4 }}>
+                              <Text style={{ fontFamily: chosenFontBold, color: '#1e293b' }}>{ach.name}</Text> {ach.date ? `| ${ach.date}` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-victory' ? (() => {
+          return (
+            <View style={{ flexDirection: 'row', flexGrow: 1, backgroundColor: '#f8fafc' }}>
+              {/* Left Sidebar */}
+              <View style={{ width: '38%', paddingTop: 36, paddingBottom: 30, paddingLeft: 30, paddingRight: 24, backgroundColor: primaryColor, flexDirection: 'column' }}>
+                <View style={{ marginBottom: 30, alignItems: 'flex-end', paddingRight: 6 }}>
+                   <Text style={{ fontSize: baseSize(24), fontFamily: chosenFontBold, textTransform: 'uppercase', color: '#ffffff', textAlign: 'right', letterSpacing: 0.5 }}>
+                     {personalInfo.fullName}
+                   </Text>
+                   <Text style={{ fontSize: baseSize(10), color: '#ffffff', marginTop: 10, textTransform: 'uppercase', fontFamily: chosenFontBold, letterSpacing: 3, textAlign: 'right' }}>
+                     {personalInfo.jobTitle}
+                   </Text>
+                </View>
+
+                {/* Contact */}
+                <View style={{ marginBottom: 24, alignItems: 'flex-end', paddingRight: 6 }}>
+                   <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)', color: '#ffffff', opacity: 0.8, paddingBottom: 3, textAlign: 'right', width: '100%', letterSpacing: 1.5 }}>Contact</Text>
+                   <View style={{ gap: 6, alignItems: 'flex-end' }}>
+                    {personalInfo.email && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.email}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                    {personalInfo.phone && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.phone}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                    {personalInfo.location && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.location}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                    {personalInfo.linkedin && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.linkedin}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                    {personalInfo.website && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.website}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                    {personalInfo.github && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(8), color: '#ffffff', opacity: 0.8, marginRight: 6 }}>{personalInfo.github}</Text><Text style={{ color: '#ffffff', fontFamily: chosenFontBold }}>|</Text></View>}
+                   </View>
+                </View>
+
+                {/* Skills */}
+                {skills && skills.length > 0 && (
+                  <View style={{ marginBottom: 24, alignItems: 'flex-end', paddingRight: 6 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)', color: '#ffffff', opacity: 0.8, paddingBottom: 3, textAlign: 'right', width: '100%', letterSpacing: 1.5 }}>Expertise</Text>
+                    <View style={{ gap: 12, width: '100%', alignItems: 'flex-end' }}>
+                      {skills.map(cat => (
+                        <View key={cat.id} style={{ gap: 4, width: '100%', alignItems: 'flex-end' }}>
+                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#ffffff', opacity: 0.7, textTransform: 'uppercase', letterSpacing: 1 }}>{cat.name}</Text>
+                          <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-end', gap: 3 }}>
+                            {cat.skills.map((skill, idx) => (
+                              <Text key={skill} style={{ fontSize: baseSize(8.5), color: '#ffffff', opacity: 0.9 }}>
+                                {skill}{idx < cat.skills.length - 1 ? <Text style={{ color: '#ffffff', marginHorizontal: 3 }}> | </Text> : ''}
+                              </Text>
+                            ))}
+                          </View>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Languages */}
+                {languages && languages.length > 0 && (
+                  <View style={{ marginBottom: 24, alignItems: 'flex-end', paddingRight: 6 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)', color: '#ffffff', opacity: 0.8, paddingBottom: 3, textAlign: 'right', width: '100%', letterSpacing: 1.5 }}>Languages</Text>
+                    <View style={{ gap: 6, alignItems: 'flex-end', width: '100%' }}>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'baseline', gap: 6 }}>
+                           <Text style={{ fontSize: baseSize(7.5), color: '#ffffff', fontFamily: chosenFontBold, textTransform: 'uppercase' }}>{lang.proficiency}</Text>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#ffffff', fontFamily: chosenFontBold, opacity: 0.9, letterSpacing: 0.5 }}>{lang.name}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Education */}
+                {education && education.length > 0 && (
+                  <View style={{ alignItems: 'flex-end', paddingRight: 6 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)', color: '#ffffff', opacity: 0.8, paddingBottom: 3, textAlign: 'right', width: '100%', letterSpacing: 1.5 }}>Education</Text>
+                    <View style={{ gap: 12, alignItems: 'flex-end', width: '100%' }}>
+                      {education.map(edu => (
+                        <View key={edu.id} style={{ gap: 2, alignItems: 'flex-end' }}>
+                           <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#ffffff', textTransform: 'uppercase', textAlign: 'right', letterSpacing: 0.5 }}>{edu.degree} in {edu.fieldOfStudy}</Text>
+                           <Text style={{ fontSize: baseSize(7.5), color: '#ffffff', opacity: 0.7, textTransform: 'uppercase', fontFamily: chosenFontBold, textAlign: 'right', letterSpacing: 1 }}>{edu.institution}</Text>
+                           <Text style={{ fontSize: baseSize(7.5), color: '#ffffff', textTransform: 'uppercase', fontFamily: chosenFontBold, textAlign: 'right', letterSpacing: 1 }}>{edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+
+              {/* Right Column Area */}
+              <View style={{ width: '62%', paddingTop: 36, paddingBottom: 30, paddingLeft: 24, paddingRight: 30, backgroundColor: '#ffffff', borderLeftWidth: 8, borderLeftColor: primaryColor, flexDirection: 'column' }}>
+                {/* About Me */}
+                {personalInfo.bio && (
+                  <View style={{ marginBottom: 24 }}>
+                    <Text style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.6 }}>{personalInfo.bio}</Text>
+                  </View>
+                )}
+
+                {/* Experience */}
+                {experience && experience.length > 0 && (
+                  <View style={{ marginBottom: 24 }}>
+                    <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 14, color: '#1e293b', letterSpacing: 2 }}>Experience</Text>
+                    <View style={{ gap: 16, borderLeftWidth: 1, borderLeftColor: primaryColor, paddingLeft: 12 }}>
+                      {experience.map(exp => (
+                        <View key={exp.id} style={{ gap: 4, position: 'relative' }}>
+                           <View style={{ position: 'absolute', left: -15, top: 4, width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor }} />
+                           <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', letterSpacing: -0.2 }}>{exp.position}</Text>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1 }}>{exp.company} {exp.location && <Text style={{ color: primaryColor, marginHorizontal: 4 }}>|</Text>} {exp.location}</Text>
+                           <Text style={{ fontSize: baseSize(8), color: '#94a3b8', textTransform: 'uppercase', fontFamily: chosenFontBold, letterSpacing: 1.5 }}>{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                           <Text style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{exp.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Projects */}
+                {projects && projects.length > 0 && (
+                  <View style={{ marginBottom: 24 }}>
+                    <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 14, color: '#1e293b', letterSpacing: 2 }}>Projects</Text>
+                    <View style={{ gap: 16, borderLeftWidth: 1, borderLeftColor: primaryColor, paddingLeft: 12 }}>
+                      {projects.map(proj => (
+                        <View key={proj.id} style={{ gap: 4, position: 'relative' }}>
+                           <View style={{ position: 'absolute', left: -15, top: 4, width: 6, height: 6, borderRadius: 3, backgroundColor: primaryColor }} />
+                           <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', letterSpacing: -0.2 }}>{proj.title}</Text>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1 }}>{proj.role} {proj.link ? <Text style={{ textTransform: 'none', color: '#94a3b8' }}><Text style={{ color: primaryColor, marginHorizontal: 4 }}>|</Text>{proj.link}</Text> : ''}</Text>
+                           <Text style={{ fontSize: baseSize(8), color: '#94a3b8', textTransform: 'uppercase', fontFamily: chosenFontBold, letterSpacing: 1.5 }}>{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                           <Text style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.5, marginTop: 4 }}>{proj.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Certifications and Awards Side by Side */}
+                <View style={{ flexDirection: 'row', gap: 24, marginBottom: 24 }}>
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ flex: 1 }}>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, color: '#1e293b', letterSpacing: 1.5 }}>Certifications</Text>
+                      <View style={{ gap: 8 }}>
+                        {certifications.map(cert => (
+                          <View key={cert.id}>
+                            <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#1e293b' }}>{cert.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#64748b', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 2 }}>{cert.issuer} {cert.date ? <Text style={{ color: primaryColor, marginHorizontal: 2 }}>|</Text> : ''} {cert.date}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                  {awards && awards.length > 0 && (
+                    <View style={{ flex: 1 }}>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, color: '#1e293b', letterSpacing: 1.5 }}>Awards</Text>
+                      <View style={{ gap: 8 }}>
+                        {awards.map(award => (
+                          <View key={award.id}>
+                            <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#1e293b' }}>{award.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#64748b', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 2 }}>{award.issuer} {award.date ? <Text style={{ color: primaryColor, marginHorizontal: 2 }}>|</Text> : ''} {award.date}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 && (
+                  <View>
+                    <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, textTransform: 'uppercase', marginBottom: 12, color: '#1e293b', letterSpacing: 1.5 }}>Achievements</Text>
+                    <View style={{ gap: 6 }}>
+                      {achievements.map(ach => (
+                        <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ color: primaryColor, marginRight: 6, fontFamily: chosenFontBold }}>|</Text>
+                          <Text style={{ fontSize: baseSize(9), color: '#475569', flex: 1, lineHeight: 1.4 }}>
+                            <Text style={{ fontFamily: chosenFontBold, color: '#1e293b' }}>{ach.name}</Text> {ach.date ? <Text style={{ color: '#94a3b8', fontSize: baseSize(8), textTransform: 'uppercase', letterSpacing: 0.5 }}> | {ach.date}</Text> : ''}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-harmony' ? (() => {
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', position: 'relative' }}>
+              <View style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 7, backgroundColor: primaryColor }} />
+              
+              <View style={{ paddingTop: 40, paddingBottom: 24, paddingHorizontal: 36, alignItems: 'center' }}>
+                <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(22), textTransform: 'uppercase', letterSpacing: 1, color: '#0f172a' }}>{personalInfo.fullName}</Text>
+                <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), textTransform: 'uppercase', letterSpacing: 4, color: primaryColor, marginTop: 6, marginBottom: 14 }}>{personalInfo.jobTitle}</Text>
+                
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 6, opacity: 0.9 }}>
+                  {personalInfo.email && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.email}</Text>{ (personalInfo.phone || personalInfo.location || personalInfo.linkedin || personalInfo.github || personalInfo.website) && <Text style={{ color: '#cbd5e1', marginLeft: 6, fontFamily: chosenFontBold }}>|</Text> }</View>}
+                  {personalInfo.phone && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.phone}</Text>{ (personalInfo.location || personalInfo.linkedin || personalInfo.github || personalInfo.website) && <Text style={{ color: '#cbd5e1', marginLeft: 6, fontFamily: chosenFontBold }}>|</Text> }</View>}
+                  {personalInfo.location && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.location}</Text>{ (personalInfo.linkedin || personalInfo.github || personalInfo.website) && <Text style={{ color: '#cbd5e1', marginLeft: 6, fontFamily: chosenFontBold }}>|</Text> }</View>}
+                  {personalInfo.linkedin && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.linkedin}</Text>{ (personalInfo.github || personalInfo.website) && <Text style={{ color: '#cbd5e1', marginLeft: 6, fontFamily: chosenFontBold }}>|</Text> }</View>}
+                  {personalInfo.website && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.website}</Text>{ (personalInfo.github) && <Text style={{ color: '#cbd5e1', marginLeft: 6, fontFamily: chosenFontBold }}>|</Text> }</View>}
+                  {personalInfo.github && <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: baseSize(9), color: '#475569' }}>{personalInfo.github}</Text></View>}
+                </View>
+              </View>
+
+              <View style={{ flexDirection: 'row', flexGrow: 1, paddingHorizontal: 30, paddingBottom: 30, gap: 20 }}>
+                <View style={{ width: '33%', backgroundColor: '#f8fafc', padding: 18, borderRadius: 6, borderWidth: 1, borderColor: `${primaryColor}20` }}>
+                  {education && education.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1.5, color: '#1e293b', paddingBottom: 6, marginBottom: 10, borderBottomWidth: 1.5, borderBottomColor: `${primaryColor}40` }}>Education</Text>
+                      {education.map(edu => (
+                        <View key={edu.id} style={{ marginBottom: 12 }}>
+                          <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#334155' }}>{edu.degree}</Text>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#64748b', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 2 }}>{edu.institution}</Text>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, marginTop: 2 }}>{edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}</Text>
+                          {edu.description && <Text style={{ fontSize: baseSize(8), color: '#64748b', marginTop: 4, fontStyle: 'italic', lineHeight: 1.4 }}>{edu.description}</Text>}
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {skills && skills.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1.5, color: '#1e293b', paddingBottom: 6, marginBottom: 10, borderBottomWidth: 1.5, borderBottomColor: `${primaryColor}40` }}>Expertise</Text>
+                      {skills.map(cat => (
+                        <View key={cat.id} style={{ marginBottom: 10 }}>
+                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#1e293b', textTransform: 'uppercase', letterSpacing: 1, marginBottom: 4 }}>{cat.name}</Text>
+                          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 2 }}>
+                            {cat.skills.map((skill, idx) => (
+                              <Text key={skill} style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.4 }}>
+                                {skill}{idx < cat.skills.length - 1 ? <Text style={{ color: '#cbd5e1', marginHorizontal: 3 }}> | </Text> : ''}
+                              </Text>
+                            ))}
+                          </View>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {languages && languages.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1.5, color: '#1e293b', paddingBottom: 6, marginBottom: 10, borderBottomWidth: 1.5, borderBottomColor: `${primaryColor}40` }}>Languages</Text>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', borderBottomWidth: 1, borderBottomColor: '#ffffff', paddingBottom: 4, marginBottom: 4 }}>
+                          <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#334155' }}>{lang.name}</Text>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 0.5 }}>{lang.proficiency}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ marginBottom: 10 }}>
+                      <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1.5, color: '#1e293b', paddingBottom: 6, marginBottom: 10, borderBottomWidth: 1.5, borderBottomColor: `${primaryColor}40` }}>Certifications</Text>
+                      {certifications.map(cert => (
+                        <View key={cert.id} style={{ marginBottom: 8 }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#334155' }}>{cert.name}</Text>
+                          <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: '#64748b', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 2 }}>
+                            {cert.issuer} {cert.date && <Text> | {cert.date}</Text>}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                </View>
+
+                <View style={{ width: '67%', paddingLeft: 10, paddingTop: 4 }}>
+                  {personalInfo.bio && (
+                    <View style={{ marginBottom: 20 }}>
+                      <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', marginBottom: 8 }}>Profile Summary</Text>
+                      <Text style={{ fontSize: baseSize(9.5), color: '#475569', lineHeight: 1.6 }}>{personalInfo.bio}</Text>
+                    </View>
+                  )}
+
+                  {experience && experience.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+                        <View style={{ width: 14, height: 2, backgroundColor: primaryColor, marginRight: 8 }} />
+                        <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>Experience</Text>
+                      </View>
+                      {experience.map(exp => (
+                        <View key={exp.id} style={{ marginBottom: 14 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 2 }}>
+                            <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a' }}>{exp.position}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f1f5f9', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 2, textTransform: 'uppercase', letterSpacing: 1 }}>{exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}</Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                            <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#475569', textTransform: 'uppercase', letterSpacing: 1 }}>{exp.company}</Text>
+                            {exp.location && <><Text style={{ color: '#cbd5e1', marginHorizontal: 6, fontFamily: chosenFontBold }}>|</Text><Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#64748b', textTransform: 'uppercase', letterSpacing: 1 }}>{exp.location}</Text></>}
+                          </View>
+                          <Text style={{ fontSize: baseSize(9.5), color: '#475569', lineHeight: 1.6 }}>{exp.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {projects && projects.length > 0 && (
+                    <View style={{ marginBottom: 20 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+                        <View style={{ width: 14, height: 2, backgroundColor: primaryColor, marginRight: 8 }} />
+                        <Text style={{ fontSize: baseSize(12), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>Projects</Text>
+                      </View>
+                      {projects.map(proj => (
+                        <View key={proj.id} style={{ marginBottom: 14 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 2 }}>
+                            <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a' }}>{proj.title}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f1f5f9', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 2, textTransform: 'uppercase', letterSpacing: 1 }}>{proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}</Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                            <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#475569', textTransform: 'uppercase', letterSpacing: 1 }}>{proj.role}</Text>
+                            {proj.link && <><Text style={{ color: '#cbd5e1', marginHorizontal: 6, fontFamily: chosenFontBold }}>|</Text><Text style={{ fontSize: baseSize(9.5), color: '#64748b' }}>{proj.link}</Text></>}
+                          </View>
+                          <Text style={{ fontSize: baseSize(9.5), color: '#475569', lineHeight: 1.6 }}>{proj.description}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  <View style={{ flexDirection: 'row', gap: 16 }}>
+                    {awards && awards.length > 0 && (
+                      <View style={{ flex: 1 }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                          <View style={{ width: 10, height: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                          <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>Awards</Text>
+                        </View>
+                        {awards.map(award => (
+                          <View key={award.id} style={{ marginBottom: 8 }}>
+                            <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a' }}>{award.name}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#64748b', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 2 }}>
+                              {award.issuer} {award.date && <Text> | {award.date}</Text>}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    )}
+
+                    {achievements && achievements.length > 0 && (
+                      <View style={{ flex: 1 }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                          <View style={{ width: 10, height: 2, backgroundColor: primaryColor, marginRight: 6 }} />
+                          <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>Achievements</Text>
+                        </View>
+                        {achievements.map(ach => (
+                          <View key={ach.id} style={{ flexDirection: 'row', marginBottom: 6 }}>
+                            <Text style={{ fontFamily: chosenFontBold, color: '#cbd5e1', marginRight: 6 }}>|</Text>
+                            <Text style={{ flexShrink: 1 }}>
+                              <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#334155' }}>{ach.name}</Text>
+                              {ach.date && <Text style={{ fontSize: baseSize(8.5), color: '#64748b', textTransform: 'uppercase', letterSpacing: 1 }}> | {ach.date}</Text>}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    )}
+                  </View>
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-amber' ? (() => {
+          return (
+            <View style={{ flexDirection: 'row', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Left Sidebar Column */}
+              <View style={{ width: '34%', backgroundColor: '#fefcf6', padding: 18, borderRightWidth: 1, borderRightColor: '#faeed6', flexDirection: 'column' }}>
+                {/* Visual Accent Top Box */}
+                <View style={{ marginBottom: 18 }}>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(16), color: '#1e293b', textTransform: 'uppercase', marginBottom: 4, letterSpacing: 0.5, lineHeight: 1.2 }}>
+                    {personalInfo.fullName}
+                  </Text>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5 }}>
+                    {personalInfo.jobTitle}
+                  </Text>
+                  <View style={{ width: 30, height: 3, backgroundColor: primaryColor, marginTop: 10 }} />
+                </View>
+
+                {/* Contact Section */}
+                <View style={{ marginBottom: 18 }}>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 1, borderBottomColor: '#f1dec2', paddingBottom: 3, marginBottom: 8 }}>
+                    Contact
+                  </Text>
+                  <View style={{ flexDirection: 'column', gap: 5 }}>
+                    {personalInfo.email && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.email}</Text>
+                      </View>
+                    )}
+                    {personalInfo.phone && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>{personalInfo.phone}</Text>
+                      </View>
+                    )}
+                    {personalInfo.location && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>{personalInfo.location}</Text>
+                      </View>
+                    )}
+                    {personalInfo.linkedin && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.linkedin}</Text>
+                      </View>
+                    )}
+                    {personalInfo.github && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.github}</Text>
+                      </View>
+                    )}
+                    {personalInfo.website && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.website}</Text>
+                      </View>
+                    )}
+                    {personalInfo.gender && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Gender: {personalInfo.gender}</Text>
+                      </View>
+                    )}
+                    {personalInfo.nationality && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: '#d97706', marginRight: 4 }}>•</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Nationality: {personalInfo.nationality}</Text>
+                      </View>
+                    )}
+                  </View>
+                </View>
+
+                {/* Education Section */}
+                {education && education.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 1, borderBottomColor: '#f1dec2', paddingBottom: 3, marginBottom: 8 }}>
+                      Education
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 10 }}>
+                      {education.map(edu => (
+                        <View key={edu.id} style={{ flexDirection: 'column' }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b', lineHeight: 1.2 }}>
+                            {edu.degree}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#64748b', marginTop: 2, fontFamily: chosenFont }}>
+                            {edu.institution}
+                          </Text>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(7.5), color: primaryColor, marginTop: 3 }}>
+                            {edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}
+                          </Text>
+                          {edu.description && (
+                            <Text style={{ fontSize: baseSize(7.5), color: '#4b5563', fontStyle: 'italic', marginTop: 4, lineHeight: 1.3 }}>
+                              {edu.description}
+                            </Text>
+                          )}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Languages Section */}
+                {languages && languages.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 1, borderBottomColor: '#f1dec2', paddingBottom: 3, marginBottom: 8 }}>
+                      Languages
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 4 }}>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#374151', fontFamily: chosenFont }}>{lang.name}</Text>
+                          <Text style={{ fontSize: baseSize(7.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase' }}>
+                            {lang.proficiency}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Certifications Section */}
+                {certifications && certifications.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 1, borderBottomColor: '#f1dec2', paddingBottom: 3, marginBottom: 8 }}>
+                      Certifications
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 8 }}>
+                      {certifications.map(cert => (
+                        <View key={cert.id} style={{ flexDirection: 'column' }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#374151', lineHeight: 1.2 }}>
+                            {cert.name}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#64748b', marginTop: 2 }}>
+                            {cert.issuer} {cert.date ? `| ${cert.date}` : ''}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+
+              {/* Right Content Area */}
+              <View style={{ width: '66%', padding: 20, flexDirection: 'column', gap: 18 }}>
+                {/* Profile Summary */}
+                {personalInfo.bio && (
+                  <View style={{ borderLeftWidth: 2, borderLeftColor: primaryColor, paddingLeft: 10, marginBottom: 4 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', marginBottom: 4 }}>
+                      Profile Summary
+                    </Text>
+                    <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4 }}>
+                      {personalInfo.bio}
+                    </Text>
+                  </View>
+                )}
+
+                {/* Expertise/Skills Section */}
+                {skills && skills.length > 0 && (
+                  <View>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Expertise
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 15 }}>
+                      {skills.map(cat => (
+                        <View key={cat.id} style={{ width: '47%', flexDirection: 'column', marginBottom: 4 }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8), color: '#1e293b', textTransform: 'uppercase', marginBottom: 3 }}>
+                            {cat.name}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4 }}>
+                            {cat.skills.join(' | ')}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Professional Experience */}
+                {experience && experience.length > 0 && (
+                  <View>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Professional Experience
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'column', gap: 14 }}>
+                      {experience.map(exp => (
+                        <View key={exp.id} style={{ flexDirection: 'column', gap: 3 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), color: '#0f172a' }}>
+                              {exp.position}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#fdfbeb', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                              {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
+                            </Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                              {exp.company}
+                            </Text>
+                            {exp.location && (
+                              <>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                  {exp.location}
+                                </Text>
+                              </>
+                            )}
+                          </View>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                            {exp.description}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Key Projects */}
+                {projects && projects.length > 0 && (
+                  <View>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Key Projects
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'column', gap: 14 }}>
+                      {projects.map(proj => (
+                        <View key={proj.id} style={{ flexDirection: 'column', gap: 3 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(10), color: '#0f172a' }}>
+                              {proj.title}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#fdfbeb', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                              {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
+                            </Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                              {proj.role}
+                            </Text>
+                            {proj.link && (
+                              <>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                  {proj.link}
+                                </Text>
+                              </>
+                            )}
+                          </View>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                            {proj.description}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Awards & Achievements side by side */}
+                <View style={{ flexDirection: 'row', gap: 16 }}>
+                  {awards && awards.length > 0 && (
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                        <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Awards
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 6 }}>
+                        {awards.map(award => (
+                          <View key={award.id} style={{ flexDirection: 'column' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b' }}>
+                              {award.name}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#64748b', marginTop: 1 }}>
+                              {award.issuer} {award.date ? `| ${award.date}` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {achievements && achievements.length > 0 && (
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                        <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Achievements
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 5 }}>
+                        {achievements.map(ach => (
+                          <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, marginRight: 4 }}>|</Text>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#374151', lineHeight: 1.3, flex: 1 }}>
+                              <Text style={{ fontFamily: chosenFontBold, color: '#1f2937' }}>{ach.name}</Text>
+                              {ach.date ? ` (${ach.date})` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-ocean' ? (() => {
+          return (
+            <View style={{ flexDirection: 'row', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Left Sidebar Column - Cool professional ocean blue tint background */}
+              <View style={{ width: '34%', backgroundColor: '#f4f9fc', padding: 18, borderRightWidth: 1, borderRightColor: '#d5e4ec', flexDirection: 'column' }}>
+                {/* Contact Section */}
+                <View style={{ marginBottom: 18 }}>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 2, borderBottomColor: '#cbdbe3', paddingBottom: 3, marginBottom: 8 }}>
+                    Contact
+                  </Text>
+                  <View style={{ flexDirection: 'column', gap: 4 }}>
+                    {personalInfo.email && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.email}</Text>
+                      </View>
+                    )}
+                    {personalInfo.phone && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>{personalInfo.phone}</Text>
+                      </View>
+                    )}
+                    {personalInfo.location && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>{personalInfo.location}</Text>
+                      </View>
+                    )}
+                    {personalInfo.linkedin && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.linkedin}</Text>
+                      </View>
+                    )}
+                    {personalInfo.github && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.github}</Text>
+                      </View>
+                    )}
+                    {personalInfo.website && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.website}</Text>
+                      </View>
+                    )}
+                    {personalInfo.gender && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Gender: {personalInfo.gender}</Text>
+                      </View>
+                    )}
+                    {personalInfo.nationality && (
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                        <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Nationality: {personalInfo.nationality}</Text>
+                      </View>
+                    )}
+                  </View>
+                </View>
+
+                {/* Education Section */}
+                {education && education.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 2, borderBottomColor: '#cbdbe3', paddingBottom: 3, marginBottom: 8 }}>
+                      Education
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 10 }}>
+                      {education.map(edu => (
+                        <View key={edu.id} style={{ flexDirection: 'column' }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b', lineHeight: 1.2 }}>
+                            {edu.degree}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#64748b', marginTop: 2, fontFamily: chosenFont }}>
+                            {edu.institution}
+                          </Text>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(7.5), color: primaryColor, marginTop: 3 }}>
+                            {edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}
+                          </Text>
+                          {edu.description && (
+                            <Text style={{ fontSize: baseSize(7.5), color: '#4b5563', fontStyle: 'italic', marginTop: 4, lineHeight: 1.3 }}>
+                              {edu.description}
+                            </Text>
+                          )}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Languages Section */}
+                {languages && languages.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 2, borderBottomColor: '#cbdbe3', paddingBottom: 3, marginBottom: 8 }}>
+                      Languages
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 4 }}>
+                      {languages.map(lang => (
+                        <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#374151', fontFamily: chosenFont }}>{lang.name}</Text>
+                          <Text style={{ fontSize: baseSize(7.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase' }}>
+                            {lang.proficiency}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Certifications Section */}
+                {certifications && certifications.length > 0 && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', borderBottomWidth: 2, borderBottomColor: '#cbdbe3', paddingBottom: 3, marginBottom: 8 }}>
+                      Certifications
+                    </Text>
+                    <View style={{ flexDirection: 'column', gap: 8 }}>
+                      {certifications.map(cert => (
+                        <View key={cert.id} style={{ flexDirection: 'column' }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#374151', lineHeight: 1.2 }}>
+                            {cert.name}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#64748b', marginTop: 2 }}>
+                            {cert.issuer} {cert.date ? `| ${cert.date}` : ''}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+              </View>
+
+              {/* Right Content Area */}
+              <View style={{ width: '66%', padding: 20, flexDirection: 'column', gap: 16 }}>
+                {/* Header block in right column */}
+                <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbd6e2', paddingBottom: 8, marginBottom: 4 }}>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(16), color: '#0f172a', textTransform: 'uppercase', lineHeight: 1.2 }}>
+                    {personalInfo.fullName}
+                  </Text>
+                  <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, marginTop: 3 }}>
+                    {personalInfo.jobTitle}
+                  </Text>
+                </View>
+
+                {/* Profile Summary */}
+                {personalInfo.bio && (
+                  <View style={{ borderLeftWidth: 2, borderLeftColor: primaryColor, paddingLeft: 10, marginBottom: 4 }}>
+                    <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', marginBottom: 4 }}>
+                      Profile Summary
+                    </Text>
+                    <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4 }}>
+                      {personalInfo.bio}
+                    </Text>
+                  </View>
+                )}
+
+                {/* Expertise/Skills Section */}
+                {skills && skills.length > 0 && (
+                  <View style={{ marginBottom: 4 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Expertise
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
+                      {skills.map(cat => (
+                        <View key={cat.id} style={{ width: '47%', flexDirection: 'column', marginBottom: 4 }}>
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8), color: '#1e293b', textTransform: 'uppercase', marginBottom: 3 }}>
+                            {cat.name}
+                          </Text>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4 }}>
+                            {cat.skills.join(' | ')}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Professional Experience */}
+                {experience && experience.length > 0 && (
+                  <View style={{ marginBottom: 4 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Professional Experience
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'column', gap: 12 }}>
+                      {experience.map(exp => (
+                        <View key={exp.id} style={{ flexDirection: 'column', gap: 3 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), color: '#0f172a', flex: 1, marginRight: 8 }}>
+                              {exp.position}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f0f6f9', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                              {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
+                            </Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                              {exp.company}
+                            </Text>
+                            {exp.location && (
+                              <>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                  {exp.location}
+                                </Text>
+                              </>
+                            )}
+                          </View>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                            {exp.description}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Key Projects */}
+                {projects && projects.length > 0 && (
+                  <View style={{ marginBottom: 4 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                      <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Key Projects
+                      </Text>
+                    </View>
+                    <View style={{ flexDirection: 'column', gap: 12 }}>
+                      {projects.map(proj => (
+                        <View key={proj.id} style={{ flexDirection: 'column', gap: 3 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), color: '#0f172a', flex: 1, marginRight: 8 }}>
+                              {proj.title}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f0f6f9', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                              {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
+                            </Text>
+                          </View>
+                          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                              {proj.role}
+                            </Text>
+                            {proj.link && (
+                              <>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                  {proj.link}
+                                </Text>
+                              </>
+                            )}
+                          </View>
+                          <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                            {proj.description}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                )}
+
+                {/* Awards & Achievements side by side */}
+                <View style={{ flexDirection: 'row', gap: 16 }}>
+                  {awards && awards.length > 0 && (
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                        <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Awards
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 6 }}>
+                        {awards.map(award => (
+                          <View key={award.id} style={{ flexDirection: 'column' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b' }}>
+                              {award.name}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: '#64748b', marginTop: 1 }}>
+                              {award.issuer} {award.date ? `| ${award.date}` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {achievements && achievements.length > 0 && (
+                    <View style={{ flex: 1, flexDirection: 'column' }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                        <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Achievements
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 5 }}>
+                        {achievements.map(ach => (
+                          <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                            <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, marginRight: 4 }}>|</Text>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#374151', lineHeight: 1.3, flex: 1 }}>
+                              <Text style={{ fontFamily: chosenFontBold, color: '#1f2937' }}>{ach.name}</Text>
+                              {ach.date ? ` (${ach.date})` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-uranus' ? (() => {
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
+              {/* Top Banner Header: Deep Space Dark Slate with Icy Ring Accents */}
+              <View style={{ width: '100%', backgroundColor: primaryColor, paddingHorizontal: 24, paddingVertical: 18, borderBottomWidth: 4, borderBottomColor: '#ffffff', flexDirection: 'column' }}>
+                <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(18), color: '#ffffff', textTransform: 'uppercase', letterSpacing: 1, lineHeight: 1.2 }}>
+                  {personalInfo.fullName}
+                </Text>
+                <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9), color: '#bae6fd', textTransform: 'uppercase', letterSpacing: 1.5, marginTop: 4 }}>
+                  {personalInfo.jobTitle}
+                </Text>
+              </View>
+
+              {/* Layout Content Grid */}
+              <View style={{ flexDirection: 'row', flexGrow: 1 }}>
+                {/* Left Column - Main Content Area (66%) */}
+                <View style={{ width: '66%', padding: 20, flexDirection: 'column', gap: 14 }}>
+                  {/* Profile Summary */}
+                  {personalInfo.bio && (
+                    <View style={{ borderLeftWidth: 2, borderLeftColor: primaryColor, paddingLeft: 10, marginBottom: 4 }}>
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b', marginBottom: 4 }}>
+                        Profile Summary
+                      </Text>
+                      <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4 }}>
+                        {personalInfo.bio}
+                      </Text>
+                    </View>
+                  )}
+
+                  {/* Professional Experience */}
+                  {experience && experience.length > 0 && (
+                    <View style={{ marginBottom: 4 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#e2e8f0', borderStyle: 'dashed', paddingBottom: 4, marginBottom: 10 }}>
+                        <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Professional Experience
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 12 }}>
+                        {experience.map(exp => (
+                          <View key={exp.id} style={{ flexDirection: 'column', gap: 3 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                              <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), color: '#0f172a', flex: 1, marginRight: 8 }}>
+                                {exp.position}
+                              </Text>
+                              <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f1f7fa', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                                {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
+                              </Text>
+                            </View>
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                              <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                                {exp.company}
+                              </Text>
+                              {exp.location && (
+                                <>
+                                  <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                  <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                    {exp.location}
+                                  </Text>
+                                </>
+                              )}
+                            </View>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                              {exp.description}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Key Projects */}
+                  {projects && projects.length > 0 && (
+                    <View style={{ marginBottom: 4 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#e2e8f0', borderStyle: 'dashed', paddingBottom: 4, marginBottom: 10 }}>
+                        <View style={{ width: 4, height: 10, backgroundColor: primaryColor, marginRight: 6 }} />
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Key Projects
+                        </Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 12 }}>
+                        {projects.map(proj => (
+                          <View key={proj.id} style={{ flexDirection: 'column', gap: 3 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                              <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), color: '#0f172a', flex: 1, marginRight: 8 }}>
+                                {proj.title}
+                              </Text>
+                              <Text style={{ fontSize: baseSize(8), fontFamily: chosenFontBold, color: primaryColor, backgroundColor: '#f1f7fa', paddingHorizontal: 5, paddingVertical: 1, borderRadius: 3 }}>
+                                {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
+                              </Text>
+                            </View>
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                              <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFontBold, color: '#475569' }}>
+                                {proj.role}
+                              </Text>
+                              {proj.link && (
+                                <>
+                                  <Text style={{ fontSize: baseSize(8.5), color: '#cbd5e1', marginHorizontal: 5 }}>|</Text>
+                                  <Text style={{ fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                                    {proj.link}
+                                  </Text>
+                                </>
+                              )}
+                            </View>
+                            <Text style={{ fontSize: baseSize(8.5), color: '#4b5563', lineHeight: 1.4, marginTop: 2 }}>
+                              {proj.description}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Awards & Achievements side by side */}
+                  <View style={{ flexDirection: 'row', gap: 16 }}>
+                    {awards && awards.length > 0 && (
+                      <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#e2e8f0', borderStyle: 'dashed', paddingBottom: 4, marginBottom: 6 }}>
+                          <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                            Awards
+                          </Text>
+                        </View>
+                        <View style={{ flexDirection: 'column', gap: 6 }}>
+                          {awards.map(award => (
+                            <View key={award.id} style={{ flexDirection: 'column' }}>
+                              <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b' }}>
+                                {award.name}
+                              </Text>
+                              <Text style={{ fontSize: baseSize(7.5), color: '#64748b', marginTop: 1 }}>
+                                {award.issuer} {award.date ? `| ${award.date}` : ''}
+                              </Text>
+                            </View>
+                          ))}
+                        </View>
+                      </View>
+                    )}
+
+                    {achievements && achievements.length > 0 && (
+                      <View style={{ flex: 1, flexDirection: 'column' }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#e2e8f0', borderStyle: 'dashed', paddingBottom: 4, marginBottom: 6 }}>
+                          <View style={{ width: 3, height: 8, backgroundColor: primaryColor, marginRight: 5 }} />
+                          <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                            Achievements
+                          </Text>
+                        </View>
+                        <View style={{ flexDirection: 'column', gap: 4 }}>
+                          {achievements.map(ach => (
+                            <View key={ach.id} style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                              <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                              <Text style={{ fontSize: baseSize(8), color: '#4b5563', lineHeight: 1.3, flex: 1 }}>
+                                <Text style={{ fontFamily: chosenFontBold, color: '#1f2937' }}>{ach.name}</Text>
+                                {ach.date ? ` (${ach.date})` : ''}
+                              </Text>
+                            </View>
+                          ))}
+                        </View>
+                      </View>
+                    )}
+                  </View>
+                </View>
+
+                {/* Right Column Sidebar - Ice-Giant Pale Metallic Blue background (34%) */}
+                <View style={{ width: '34%', backgroundColor: '#f1f7fa', padding: 18, borderLeftWidth: 2, borderLeftColor: '#cbdce4', flexDirection: 'column', gap: 14 }}>
+                  {/* Contact Section */}
+                  <View style={{ flexDirection: 'column' }}>
+                    <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbdbfa', paddingBottom: 3, marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                        Contact
+                      </Text>
+                      <Text style={{ fontSize: baseSize(8), color: '#cbdbfa', fontFamily: chosenFontBold }}>|</Text>
+                    </View>
+                    <View style={{ flexDirection: 'column', gap: 6 }}>
+                      {personalInfo.email && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.email}</Text>
+                        </View>
+                      )}
+                      {personalInfo.phone && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>{personalInfo.phone}</Text>
+                        </View>
+                      )}
+                      {personalInfo.location && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.location}</Text>
+                        </View>
+                      )}
+                      {personalInfo.linkedin && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.linkedin}</Text>
+                        </View>
+                      )}
+                      {personalInfo.github && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.github}</Text>
+                        </View>
+                      )}
+                      {personalInfo.website && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563', flex: 1, flexWrap: 'wrap' }}>{personalInfo.website}</Text>
+                        </View>
+                      )}
+                      {personalInfo.gender && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Gender: {personalInfo.gender}</Text>
+                        </View>
+                      )}
+                      {personalInfo.nationality && (
+                        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor, fontFamily: chosenFontBold, marginRight: 4 }}>|</Text>
+                          <Text style={{ fontSize: baseSize(8), color: '#4b5563' }}>Nationality: {personalInfo.nationality}</Text>
+                        </View>
+                      )}
+                    </View>
+                  </View>
+
+                  {/* Expertise/Skills Section */}
+                  {skills && skills.length > 0 && (
+                    <View style={{ flexDirection: 'column' }}>
+                      <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbdbfa', paddingBottom: 3, marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Skills
+                        </Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#cbdbfa', fontFamily: chosenFontBold }}>|</Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 6 }}>
+                        {skills.map(cat => (
+                          <View key={cat.id} style={{ flexDirection: 'column' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8), color: '#1e293b', textTransform: 'uppercase', marginBottom: 2 }}>
+                              {cat.name}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), color: '#4b5563', lineHeight: 1.3 }}>
+                              {cat.skills.join(' · ')}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Education Section */}
+                  {education && education.length > 0 && (
+                    <View style={{ flexDirection: 'column' }}>
+                      <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbdbfa', paddingBottom: 3, marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Education
+                        </Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#cbdbfa', fontFamily: chosenFontBold }}>|</Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 8 }}>
+                        {education.map(edu => (
+                          <View key={edu.id} style={{ flexDirection: 'column' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#1e293b', lineHeight: 1.2 }}>
+                              {edu.degree}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), color: '#475569', marginTop: 1 }}>
+                              {edu.institution}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: primaryColor, fontFamily: chosenFontBold, marginTop: 1 }}>
+                              {edu.startDate} – {edu.currentlyStudying ? 'Present' : edu.endDate}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Languages Section */}
+                  {languages && languages.length > 0 && (
+                    <View style={{ flexDirection: 'column' }}>
+                      <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbdbfa', paddingBottom: 3, marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Languages
+                        </Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#cbdbfa', fontFamily: chosenFontBold }}>|</Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 4 }}>
+                        {languages.map(lang => (
+                          <View key={lang.id} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                            <Text style={{ fontSize: baseSize(8), color: '#374151', fontFamily: chosenFont }}>{lang.name}</Text>
+                            <Text style={{ fontSize: baseSize(7.5), color: primaryColor, fontFamily: chosenFontBold }}>{lang.proficiency}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Certifications Section */}
+                  {certifications && certifications.length > 0 && (
+                    <View style={{ flexDirection: 'column' }}>
+                      <View style={{ borderBottomWidth: 2, borderBottomColor: '#cbdbfa', paddingBottom: 3, marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(9.5), textTransform: 'uppercase', letterSpacing: 1, color: '#1e293b' }}>
+                          Certifications
+                        </Text>
+                        <Text style={{ fontSize: baseSize(8), color: '#cbdbfa', fontFamily: chosenFontBold }}>|</Text>
+                      </View>
+                      <View style={{ flexDirection: 'column', gap: 8 }}>
+                        {certifications.map(cert => (
+                          <View key={cert.id} style={{ flexDirection: 'column' }}>
+                            <Text style={{ fontFamily: chosenFontBold, fontSize: baseSize(8.5), color: '#374151', lineHeight: 1.2 }}>
+                              {cert.name}
+                            </Text>
+                            <Text style={{ fontSize: baseSize(8), color: '#64748b', marginTop: 2 }}>
+                              {cert.issuer} {cert.date ? `| ${cert.date}` : ''}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              </View>
+            </View>
+          );
+        })() : templateId === 'two-column-gravity' ? (() => {
           return (
             <View style={{ flexDirection: 'row', flexGrow: 1, backgroundColor: '#ffffff', padding: 24 }}>
               {/* Sidebar */}
@@ -1022,20 +3041,27 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             </View>
           );
         })() : templateId === 'two-column-grow' ? (() => {
+          const isDark = getContrastColor(primaryColor) === '#ffffff';
+          const headerTextColor = isDark ? '#ffffff' : '#0f172a';
+          const headerSubTextColor = isDark ? '#cbd5e1' : '#334155';
+          const dotColor = isDark ? '#ffffff' : '#0f172a';
+          const avatarBg = isDark ? 'rgba(255, 255, 255, 0.15)' : '#0f172a';
+          const avatarText = isDark ? '#ffffff' : '#facc15';
+
           return (
-            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff' }}>
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', fontFamily: chosenFont }}>
               {/* Full Width Top Header */}
-              <View style={{ width: '100%', backgroundColor: '#facc15', padding: 24, position: 'relative' }}>
+              <View style={{ width: '100%', backgroundColor: primaryColor, padding: 24, position: 'relative' }}>
                 {/* Thin accent top border */}
                 <View style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: primaryColor }} />
                 
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                   <View style={{ flexDirection: 'column', flex: 1, paddingRight: 16 }}>
-                    <Text style={{ fontSize: baseSize(20), fontFamily: chosenFontBold, color: '#0f172a', lineHeight: 1.2 }}>
+                    <Text style={{ fontSize: baseSize(20), fontFamily: chosenFontBold, color: headerTextColor, lineHeight: 1.2 }}>
                       {personalInfo.fullName || 'Your Name'}
                     </Text>
                     {personalInfo.jobTitle && (
-                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b', textTransform: 'uppercase', letterSpacing: 1, marginTop: 4 }}>
+                      <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: headerTextColor, textTransform: 'uppercase', letterSpacing: 1, marginTop: 4 }}>
                         {personalInfo.jobTitle}
                       </Text>
                     )}
@@ -1043,18 +3069,18 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                     {/* Compact contact bar inside header */}
                     <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 8, gap: 10 }}>
                       {personalInfo.email && (
-                        <Text style={{ fontSize: baseSize(8.5), color: '#334155' }}>
-                          <Text style={{ color: '#0f172a' }}>• </Text>{personalInfo.email}
+                        <Text style={{ fontSize: baseSize(8.5), color: headerSubTextColor }}>
+                          <Text style={{ color: dotColor }}>• </Text>{personalInfo.email}
                         </Text>
                       )}
                       {personalInfo.phone && (
-                        <Text style={{ fontSize: baseSize(8.5), color: '#334155' }}>
-                          <Text style={{ color: '#0f172a' }}>• </Text>{personalInfo.phone}
+                        <Text style={{ fontSize: baseSize(8.5), color: headerSubTextColor }}>
+                          <Text style={{ color: dotColor }}>• </Text>{personalInfo.phone}
                         </Text>
                       )}
                       {personalInfo.location && (
-                        <Text style={{ fontSize: baseSize(8.5), color: '#334155' }}>
-                          <Text style={{ color: '#0f172a' }}>• </Text>{personalInfo.location}
+                        <Text style={{ fontSize: baseSize(8.5), color: headerSubTextColor }}>
+                          <Text style={{ color: dotColor }}>• </Text>{personalInfo.location}
                         </Text>
                       )}
                     </View>
@@ -1063,11 +3089,11 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {personalInfo.photoUrl ? (
                     <Image 
                       src={personalInfo.photoUrl} 
-                      style={{ width: 64, height: 64, borderRadius: 32, border: '2px solid #0f172a', objectFit: 'cover' }}
+                      style={{ width: 64, height: 64, borderRadius: 32, border: isDark ? '2px solid rgba(255, 255, 255, 0.4)' : '2px solid #0f172a', objectFit: 'cover' }}
                     />
                   ) : (
-                    <View style={{ width: 64, height: 64, borderRadius: 32, backgroundColor: '#0f172a', alignItems: 'center', justifyContent: 'center', border: '1px solid #1e293b' }}>
-                      <Text style={{ color: '#facc15', fontSize: baseSize(16), fontFamily: chosenFontBold }}>
+                    <View style={{ width: 64, height: 64, borderRadius: 32, backgroundColor: avatarBg, alignItems: 'center', justifyContent: 'center', border: isDark ? '1px solid rgba(255, 255, 255, 0.2)' : '1px solid #1e293b' }}>
+                      <Text style={{ color: avatarText, fontSize: baseSize(16), fontFamily: chosenFontBold }}>
                         {personalInfo.fullName ? personalInfo.fullName.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase() : 'JD'}
                       </Text>
                     </View>
@@ -1207,7 +3233,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {/* Summary */}
                   {personalInfo.bio && (
                     <View style={{ marginBottom: 16 }}>
-                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 0.5 }}>Professional Summary</Text>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 0.5 }}>Professional Summary</Text>
                       <View style={{ height: 2, backgroundColor: primaryColor, marginTop: 3, marginBottom: 8 }} />
                       <Text style={{ fontSize: baseSize(9), color: '#334155', lineHeight: 1.4 }}>{personalInfo.bio}</Text>
                     </View>
@@ -1216,7 +3242,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {/* Experience */}
                   {experience && experience.length > 0 && (
                     <View style={{ marginBottom: 16 }}>
-                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 0.5 }}>Professional Experience</Text>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 0.5 }}>Professional Experience</Text>
                       <View style={{ height: 2, backgroundColor: primaryColor, marginTop: 3, marginBottom: 8 }} />
                       
                       <View style={{ flexDirection: 'column', gap: 12 }}>
@@ -1246,7 +3272,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {/* Projects */}
                   {projects && projects.length > 0 && (
                     <View style={{ marginBottom: 16 }}>
-                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 0.5 }}>Projects</Text>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 0.5 }}>Projects</Text>
                       <View style={{ height: 2, backgroundColor: primaryColor, marginTop: 3, marginBottom: 8 }} />
                       
                       <View style={{ flexDirection: 'column', gap: 12 }}>
@@ -1276,7 +3302,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {/* Education */}
                   {education && education.length > 0 && (
                     <View style={{ marginBottom: 16 }}>
-                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 0.5 }}>Education</Text>
+                      <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 0.5 }}>Education</Text>
                       <View style={{ height: 2, backgroundColor: primaryColor, marginTop: 3, marginBottom: 8 }} />
                       
                       <View style={{ flexDirection: 'column', gap: 12 }}>
@@ -1309,7 +3335,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             </View>
           );
         })() : templateId === 'ats-standout' ? (
-          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, borderTopWidth: 8, borderTopColor: '#d97706', position: 'relative' }}>
+          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, borderTopWidth: 8, borderTopColor: primaryColor, position: 'relative' }}>
             {/* Header: Name, Title and Pipe-separated Contacts */}
             <View style={{ borderBottomWidth: 3, borderBottomColor: '#334155', paddingBottom: 15, marginBottom: 20, paddingTop: 10 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -1318,7 +3344,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                     {personalInfo.fullName || 'Your Name'}
                   </Text>
                   {personalInfo.jobTitle ? (
-                    <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#d97706', textTransform: 'uppercase', marginTop: 4, letterSpacing: 0.5 }}>
+                    <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', marginTop: 4, letterSpacing: 0.5 }}>
                       {personalInfo.jobTitle}
                     </Text>
                   ) : null}
@@ -1357,7 +3383,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Work Experience */}
                 {experience && experience.length > 0 ? (
                   <View style={{ gap: 10 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Professional Experience
                     </Text>
                     <View style={{ gap: 12 }}>
@@ -1369,7 +3395,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                               {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
                             </Text>
                           </View>
-                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: '#b45309', fontStyle: 'italic' }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: primaryColor, fontStyle: 'italic' }}>
                             {exp.company}{exp.location ? ` | ${exp.location}` : ''}
                           </Text>
                           {exp.description ? (
@@ -1386,7 +3412,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Projects */}
                 {projects && projects.length > 0 ? (
                   <View style={{ gap: 10 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Featured Projects
                     </Text>
                     <View style={{ gap: 12 }}>
@@ -1407,7 +3433,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                             </Text>
                           ) : null}
                           {proj.link ? (
-                            <Text style={{ fontSize: baseSize(8), color: '#d97706' }}>Link: {proj.link}</Text>
+                            <Text style={{ fontSize: baseSize(8), color: primaryColor }}>Link: {proj.link}</Text>
                           ) : null}
                         </View>
                       ))}
@@ -1421,7 +3447,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Skills/Competencies */}
                 {skills && skills.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Core Skills
                     </Text>
                     {skills.map((cat) => (
@@ -1436,7 +3462,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Education */}
                 {education && education.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Education
                     </Text>
                     {education.map((edu) => (
@@ -1460,7 +3486,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Certifications */}
                 {certifications && certifications.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Certifications
                     </Text>
                     {certifications.map((cert) => (
@@ -1471,7 +3497,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                         </View>
                         <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontStyle: 'italic' }}>{cert.issuer}</Text>
                         {cert.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#d97706' }}>Verify: {cert.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>Verify: {cert.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -1481,7 +3507,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Languages */}
                 {languages && languages.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Languages
                     </Text>
                     <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>
@@ -1497,7 +3523,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Awards */}
                 {awards && awards.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Awards & Honors
                     </Text>
                     {awards.map((award) => (
@@ -1508,7 +3534,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                         </View>
                         <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{award.issuer}</Text>
                         {award.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#d97706' }}>{award.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>{award.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -1518,7 +3544,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Achievements */}
                 {achievements && achievements.length > 0 ? (
                   <View style={{ gap: 8 }}>
-                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: '#d97706', backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
+                    <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1, borderLeftWidth: 3, borderLeftColor: primaryColor, backgroundColor: '#f8fafc', paddingLeft: 6, paddingVertical: 4 }}>
                       Key Highlights
                     </Text>
                     {achievements.map((ach) => (
@@ -1528,7 +3554,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           {ach.date ? <Text style={{ fontSize: baseSize(8), color: '#64748b', flexShrink: 0 }}>{ach.date}</Text> : null}
                         </View>
                         {ach.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#d97706' }}>{ach.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>{ach.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -1544,7 +3570,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             </View>
           </View>
         ) : templateId === 'ats-lunar' ? (
-          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f8fafc', padding: 40, position: 'relative' }}>
+          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f8fafc', padding: 40, position: 'relative', fontFamily: chosenFont }}>
             {/* Centered Minimal Header */}
             <View style={{ alignItems: 'center', marginBottom: 20 }}>
               {personalInfo.photoUrl ? (
@@ -1557,24 +3583,24 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {personalInfo.fullName || 'Your Name'}
               </Text>
               {personalInfo.jobTitle ? (
-                <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#4f46e5', textTransform: 'uppercase', marginTop: 4, letterSpacing: 1.5 }}>
+                <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', marginTop: 4, letterSpacing: 1.5 }}>
                   {personalInfo.jobTitle}
                 </Text>
               ) : null}
               
-              <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: 8, fontSize: baseSize(8.5), color: '#64748b' }}>
-                {personalInfo.email ? <Text>{personalInfo.email}</Text> : null}
-                {personalInfo.phone ? <Text> • {personalInfo.phone}</Text> : null}
-                {personalInfo.location ? <Text> • {personalInfo.location}</Text> : null}
-                {personalInfo.nationality ? <Text> • Nat: {personalInfo.nationality}</Text> : null}
-                {personalInfo.gender ? <Text> • Gender: {personalInfo.gender}</Text> : null}
-                {personalInfo.website ? <Text> • {personalInfo.website}</Text> : null}
-                {personalInfo.linkedin ? <Text> • {personalInfo.linkedin}</Text> : null}
-                {personalInfo.github ? <Text> • GitHub: {personalInfo.github}</Text> : null}
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: 8, fontSize: baseSize(8.5), color: '#64748b', fontFamily: chosenFont }}>
+                {personalInfo.email ? <Text style={{ fontFamily: chosenFont }}>{personalInfo.email}</Text> : null}
+                {personalInfo.phone ? <Text style={{ fontFamily: chosenFont }}> • {personalInfo.phone}</Text> : null}
+                {personalInfo.location ? <Text style={{ fontFamily: chosenFont }}> • {personalInfo.location}</Text> : null}
+                {personalInfo.nationality ? <Text style={{ fontFamily: chosenFont }}> • Nat: {personalInfo.nationality}</Text> : null}
+                {personalInfo.gender ? <Text style={{ fontFamily: chosenFont }}> • Gender: {personalInfo.gender}</Text> : null}
+                {personalInfo.website ? <Text style={{ fontFamily: chosenFont }}> • {personalInfo.website}</Text> : null}
+                {personalInfo.linkedin ? <Text style={{ fontFamily: chosenFont }}> • {personalInfo.linkedin}</Text> : null}
+                {personalInfo.github ? <Text style={{ fontFamily: chosenFont }}> • GitHub: {personalInfo.github}</Text> : null}
               </View>
 
               {personalInfo.bio ? (
-                <Text style={{ fontSize: baseSize(9.5), color: '#334155', lineHeight: 1.5, fontStyle: 'italic', textAlign: 'center', marginTop: 12, borderTopWidth: 1, borderTopColor: '#e2e8f0', paddingTop: 10 }}>
+                <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFont, color: '#334155', lineHeight: 1.5, fontStyle: 'italic', textAlign: 'center', marginTop: 12, borderTopWidth: 1, borderTopColor: '#e2e8f0', paddingTop: 10 }}>
                   "{personalInfo.bio}"
                 </Text>
               ) : null}
@@ -1584,7 +3610,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Experience */}
               {experience && experience.length > 0 ? (
                 <View style={{ gap: 8 }}>
-                  <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                  <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                     Experience
                   </Text>
                   <View style={{ gap: 12 }}>
@@ -1592,7 +3618,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                       <View key={exp.id} style={{ gap: 2 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
                           <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#1e293b' }}>{exp.position}</Text>
-                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#4f46e5' }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: primaryColor }}>
                             {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
                           </Text>
                         </View>
@@ -1600,7 +3626,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           {exp.company}{exp.location ? ` | ${exp.location}` : ''}
                         </Text>
                         {exp.description ? (
-                          <Text style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.5, marginTop: 2 }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: '#475569', lineHeight: 1.5, marginTop: 2 }}>
                             {exp.description}
                           </Text>
                         ) : null}
@@ -1613,7 +3639,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Projects */}
               {projects && projects.length > 0 ? (
                 <View style={{ gap: 8 }}>
-                  <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                  <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                     Projects
                   </Text>
                   <View style={{ gap: 10 }}>
@@ -1621,7 +3647,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                       <View key={proj.id} style={{ gap: 2 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
                           <Text style={{ fontSize: baseSize(11), fontFamily: chosenFontBold, color: '#1e293b' }}>{proj.title}</Text>
-                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#4f46e5' }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: primaryColor }}>
                             {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
                           </Text>
                         </View>
@@ -1629,7 +3655,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#475569' }}>{proj.role}</Text>
                         ) : null}
                         {proj.description ? (
-                          <Text style={{ fontSize: baseSize(9), color: '#475569', lineHeight: 1.5, marginTop: 2 }}>
+                          <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: '#475569', lineHeight: 1.5, marginTop: 2 }}>
                             {proj.description}
                           </Text>
                         ) : null}
@@ -1644,14 +3670,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 <View style={{ flex: 1, gap: 15 }}>
                   {skills && skills.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Skills
                       </Text>
                       <View style={{ gap: 4 }}>
                         {skills.map((cat) => (
                           <View key={cat.id} style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
                             <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#334155', marginRight: 4 }}>{cat.name}:</Text>
-                            <Text style={{ fontSize: baseSize(9.5), color: '#475569' }}>{cat.skills.join(', ')}</Text>
+                            <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFont, color: '#475569' }}>{cat.skills.join(', ')}</Text>
                           </View>
                         ))}
                       </View>
@@ -1660,7 +3686,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
 
                   {education && education.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Education
                       </Text>
                       <View style={{ gap: 6 }}>
@@ -1668,12 +3694,12 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           <View key={edu.id} style={{ gap: 1 }}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
                               <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{edu.degree}</Text>
-                              <Text style={{ fontSize: baseSize(8), color: '#4f46e5' }}>{edu.startDate} – {edu.endDate}</Text>
+                              <Text style={{ fontSize: baseSize(8), fontFamily: chosenFont, color: primaryColor }}>{edu.startDate} – {edu.endDate}</Text>
                             </View>
                             {edu.fieldOfStudy ? (
-                              <Text style={{ fontSize: baseSize(9), color: '#334155' }}>{edu.fieldOfStudy}</Text>
+                              <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: '#334155' }}>{edu.fieldOfStudy}</Text>
                             ) : null}
-                            <Text style={{ fontSize: baseSize(8.5), color: '#64748b' }}>{edu.institution}{edu.location ? ` | ${edu.location}` : ''}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFont, color: '#64748b' }}>{edu.institution}{edu.location ? ` | ${edu.location}` : ''}</Text>
                           </View>
                         ))}
                       </View>
@@ -1682,7 +3708,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   
                   {awards && awards.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Awards
                       </Text>
                       <View style={{ gap: 4 }}>
@@ -1690,9 +3716,9 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           <View key={award.id} style={{ gap: 1 }}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
                               <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{award.name}</Text>
-                              <Text style={{ fontSize: baseSize(8), color: '#64748b' }}>{award.date}</Text>
+                              <Text style={{ fontSize: baseSize(8), fontFamily: chosenFont, color: '#64748b' }}>{award.date}</Text>
                             </View>
-                            <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{award.issuer}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFont, color: '#475569' }}>{award.issuer}</Text>
                           </View>
                         ))}
                       </View>
@@ -1704,7 +3730,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 <View style={{ flex: 1, gap: 15 }}>
                   {certifications && certifications.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Certifications
                       </Text>
                       <View style={{ gap: 6 }}>
@@ -1712,9 +3738,9 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           <View key={cert.id} style={{ gap: 1 }}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
                               <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{cert.name}</Text>
-                              <Text style={{ fontSize: baseSize(8), color: '#64748b' }}>{cert.date}</Text>
+                              <Text style={{ fontSize: baseSize(8), fontFamily: chosenFont, color: '#64748b' }}>{cert.date}</Text>
                             </View>
-                            <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{cert.issuer}</Text>
+                            <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFont, color: '#475569' }}>{cert.issuer}</Text>
                           </View>
                         ))}
                       </View>
@@ -1723,12 +3749,12 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
 
                   {languages && languages.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Languages
                       </Text>
                       <View style={{ gap: 3 }}>
                         {languages.map((lang) => (
-                          <Text key={lang.id} style={{ fontSize: baseSize(9.5), color: '#334155' }}>
+                          <Text key={lang.id} style={{ fontSize: baseSize(9.5), fontFamily: chosenFont, color: '#334155' }}>
                             <Text style={{ fontFamily: chosenFontBold }}>{lang.name}</Text> ({lang.proficiency})
                           </Text>
                         ))}
@@ -1738,7 +3764,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   
                   {achievements && achievements.length > 0 ? (
                     <View style={{ gap: 6 }}>
-                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#312e81', textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: '#c7d2fe', paddingBottom: 4 }}>
+                      <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1, borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 4 }}>
                         Highlights
                       </Text>
                       <View style={{ gap: 4 }}>
@@ -1746,7 +3772,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           <View key={ach.id} style={{ gap: 1 }}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
                               <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#1e293b' }}>{ach.name}</Text>
-                              {ach.date ? <Text style={{ fontSize: baseSize(8), color: '#64748b' }}>{ach.date}</Text> : null}
+                              {ach.date ? <Text style={{ fontSize: baseSize(8), fontFamily: chosenFont, color: '#64748b' }}>{ach.date}</Text> : null}
                             </View>
                           </View>
                         ))}
@@ -1764,270 +3790,276 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               <Text>Last active: {new Date(data.updatedAt).toLocaleDateString()}</Text>
             </View>
           </View>
-        ) : templateId === 'ats-universe' ? (
-          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, position: 'relative' }}>
-            {/* Elegant Cosmic theme dark header strip */}
-            <View style={{ backgroundColor: '#18181b', borderRadius: 4, padding: 22, position: 'relative', borderTopWidth: 6, borderTopColor: '#eab308', marginBottom: 20 }}>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <View>
-                  <Text style={{ fontSize: baseSize(24), fontFamily: chosenFontBold, color: '#ffffff', textTransform: 'uppercase' }}>
-                    {personalInfo.fullName || 'Your Name'}
-                  </Text>
-                  {personalInfo.jobTitle ? (
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#facc15', textTransform: 'uppercase', marginTop: 4, letterSpacing: 0.5 }}>
-                      {personalInfo.jobTitle}
+        ) : templateId === 'ats-universe' ? ( (() => {
+          const isDark = getContrastColor(primaryColor) === '#ffffff';
+          const headingFontSizeVal = fontSize === 'sm' ? 8 : fontSize === 'lg' ? 11 : 9.5;
+          const bodyFontSizeVal = fontSize === 'sm' ? 7.5 : fontSize === 'lg' ? 9.5 : 8.5;
+          
+          return (
+            <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#ffffff', padding: 40, position: 'relative', fontFamily: chosenFont }}>
+              {/* Elegant Cosmic theme dark/colored header strip */}
+              <View style={{ backgroundColor: primaryColor, borderRadius: 4, padding: 22, position: 'relative', borderTopWidth: 6, borderTopColor: isDark ? 'rgba(255, 255, 255, 0.25)' : 'rgba(0, 0, 0, 0.2)', marginBottom: 20 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <View>
+                    <Text style={{ fontSize: baseSize(fontSize === 'sm' ? 20 : fontSize === 'lg' ? 28 : 24), fontFamily: chosenFontBold, color: getContrastColor(primaryColor), textTransform: 'uppercase' }}>
+                      {personalInfo.fullName || 'Your Name'}
                     </Text>
+                    {personalInfo.jobTitle ? (
+                      <Text style={{ fontSize: baseSize(fontSize === 'sm' ? 8.5 : fontSize === 'lg' ? 11.5 : 10), fontFamily: chosenFontBold, color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.75)', textTransform: 'uppercase', marginTop: 4, letterSpacing: 0.5 }}>
+                        {personalInfo.jobTitle}
+                      </Text>
+                    ) : null}
+                  </View>
+                  {personalInfo.photoUrl ? (
+                    <Image 
+                      src={personalInfo.photoUrl} 
+                      style={{ width: 50, height: 50, borderRadius: 2, borderWidth: 2, borderColor: isDark ? '#facc15' : primaryColor }}
+                    />
                   ) : null}
                 </View>
-                {personalInfo.photoUrl ? (
-                  <Image 
-                    src={personalInfo.photoUrl} 
-                    style={{ width: 50, height: 50, borderRadius: 2, borderWidth: 2, borderColor: '#eab308' }}
-                  />
+
+                {/* Pipe Separated Contact details */}
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 12, fontSize: baseSize(bodyFontSizeVal), color: isDark ? '#d4d4d8' : '#1e293b', opacity: 0.9 }}>
+                  {personalInfo.email ? <Text>{personalInfo.email}</Text> : null}
+                  {personalInfo.phone ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.phone ? <Text>{personalInfo.phone}</Text> : null}
+                  {personalInfo.location ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.location ? <Text>{personalInfo.location}</Text> : null}
+                  {personalInfo.nationality ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.nationality ? <Text>Nationality: {personalInfo.nationality}</Text> : null}
+                  {personalInfo.gender ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.gender ? <Text>Gender: {personalInfo.gender}</Text> : null}
+                  {personalInfo.website ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.website ? <Text>Web: {personalInfo.website}</Text> : null}
+                  {personalInfo.linkedin ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.linkedin ? <Text>LinkedIn: {personalInfo.linkedin}</Text> : null}
+                  {personalInfo.github ? <Text style={{ color: isDark ? '#facc15' : 'rgba(0, 0, 0, 0.35)' }}>  |  </Text> : null}
+                  {personalInfo.github ? <Text>GitHub: {personalInfo.github}</Text> : null}
+                </View>
+
+                {personalInfo.bio ? (
+                  <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: isDark ? '#a1a1aa' : '#475569', lineHeight: 1.4, fontStyle: 'italic', borderTopWidth: 1, borderTopColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)', paddingTop: 8, marginTop: 10 }}>
+                    {personalInfo.bio}
+                  </Text>
                 ) : null}
               </View>
 
-              {/* Pipe Separated Contact details */}
-              <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 12, fontSize: baseSize(8.5), color: '#d4d4d8' }}>
-                {personalInfo.email ? <Text>{personalInfo.email}</Text> : null}
-                {personalInfo.phone ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.phone ? <Text>{personalInfo.phone}</Text> : null}
-                {personalInfo.location ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.location ? <Text>{personalInfo.location}</Text> : null}
-                {personalInfo.nationality ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.nationality ? <Text>Nationality: {personalInfo.nationality}</Text> : null}
-                {personalInfo.gender ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.gender ? <Text>Gender: {personalInfo.gender}</Text> : null}
-                {personalInfo.website ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.website ? <Text>Web: {personalInfo.website}</Text> : null}
-                {personalInfo.linkedin ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.linkedin ? <Text>LinkedIn: {personalInfo.linkedin}</Text> : null}
-                {personalInfo.github ? <Text style={{ color: '#eab308' }}>  |  </Text> : null}
-                {personalInfo.github ? <Text>GitHub: {personalInfo.github}</Text> : null}
+              {/* Asymmetric Section Layout block */}
+              <View style={{ flexGrow: 1, gap: 15 }}>
+                
+                {/* Professional Experience */}
+                {experience && experience.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Experience
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
+                      {experience.map((exp) => (
+                        <View key={exp.id} style={{ gap: 2 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{exp.position}</Text>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal), fontFamily: chosenFont, color: '#52525b', flexShrink: 0 }}>
+                              {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
+                            </Text>
+                          </View>
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal + 0.5), fontFamily: chosenFont, color: primaryColor, fontStyle: 'italic' }}>
+                            {exp.company}{exp.location ? ` | ${exp.location}` : ''}
+                          </Text>
+                          {exp.description ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: '#3f3f46', lineHeight: 1.4 }}>
+                              {exp.description}
+                            </Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Projects */}
+                {projects && projects.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Projects
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
+                      {projects.map((proj) => (
+                        <View key={proj.id} style={{ gap: 2 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{proj.title}</Text>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal), fontFamily: chosenFont, color: '#52525b', flexShrink: 0 }}>
+                              {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
+                            </Text>
+                          </View>
+                          {proj.role ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 0.5), color: '#3f3f46', fontStyle: 'italic' }}>{proj.role}</Text>
+                          ) : null}
+                          {proj.description ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: '#3f3f46', lineHeight: 1.4 }}>
+                              {proj.description}
+                            </Text>
+                          ) : null}
+                          {proj.link ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: primaryColor }}>Link: {proj.link}</Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Skills */}
+                {skills && skills.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Skills
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
+                      {skills.map((cat) => (
+                        <View key={cat.id} style={{ width: '45%', gap: 1 }}>
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal + 0.5), fontFamily: chosenFontBold, color: '#27272a' }}>{cat.name}</Text>
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: '#3f3f46' }}>{cat.skills.join(', ')}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Education */}
+                {education && education.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Education
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
+                      {education.map((edu) => (
+                        <View key={edu.id} style={{ gap: 2 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{edu.degree}</Text>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: '#52525b', flexShrink: 0 }}>{edu.startDate} - {edu.endDate}</Text>
+                          </View>
+                          {edu.fieldOfStudy ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 0.5), color: '#27272a', fontFamily: chosenFontBold }}>{edu.fieldOfStudy}</Text>
+                          ) : null}
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal + 0.5), color: '#52525b' }}>{edu.institution}{edu.location ? ` | ${edu.location}` : ''}</Text>
+                          {edu.description ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: '#71717a', fontStyle: 'italic' }}>{edu.description}</Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Certifications */}
+                {certifications && certifications.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Certificates
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
+                      {certifications.map((cert) => (
+                        <View key={cert.id} style={{ gap: 1 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{cert.name}</Text>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: '#52525b', flexShrink: 0 }}>{cert.date}</Text>
+                          </View>
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: '#3f3f46', fontStyle: 'italic' }}>{cert.issuer}</Text>
+                          {cert.link ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: primaryColor }}>Verify: {cert.link}</Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Languages */}
+                {languages && languages.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Languages
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>
+                      {languages.map((lang) => (
+                        <Text key={lang.id} style={{ fontSize: baseSize(bodyFontSizeVal), color: '#27272a' }}>
+                          <Text style={{ fontFamily: chosenFontBold }}>{lang.name}</Text> ({lang.proficiency})
+                        </Text>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Awards */}
+                {awards && awards.length > 0 ? (
+                  <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Awards
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
+                      {awards.map((award) => (
+                        <View key={award.id} style={{ gap: 1 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{award.name}</Text>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: '#52525b', flexShrink: 0 }}>{award.date}</Text>
+                          </View>
+                          <Text style={{ fontSize: baseSize(bodyFontSizeVal), color: '#3f3f46' }}>{award.issuer}</Text>
+                          {award.link ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: primaryColor }}>{award.link}</Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
+
+                {/* Achievements */}
+                {achievements && achievements.length > 0 ? (
+                  <View style={{ flexDirection: 'row' }}>
+                    <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: primaryColor, paddingRight: 10, marginTop: 2 }}>
+                      <Text style={{ fontSize: baseSize(headingFontSizeVal), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
+                        Highlights
+                      </Text>
+                    </View>
+                    <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
+                      {achievements.map((ach) => (
+                        <View key={ach.id} style={{ gap: 1 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal + 1), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{ach.name}</Text>
+                            {ach.date ? <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: '#52525b', flexShrink: 0 }}>{ach.date}</Text> : null}
+                          </View>
+                          {ach.link ? (
+                            <Text style={{ fontSize: baseSize(bodyFontSizeVal - 0.5), color: primaryColor }}>{ach.link}</Text>
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  </View>
+                ) : null}
               </View>
 
-              {personalInfo.bio ? (
-                <Text style={{ fontSize: baseSize(9), color: '#a1a1aa', lineHeight: 1.4, fontStyle: 'italic', borderTopWidth: 1, borderTopColor: '#27272a', paddingTop: 8, marginTop: 10 }}>
-                  {personalInfo.bio}
-                </Text>
-              ) : null}
+              {/* Bottom Identifier */}
+              <View style={{ borderTopWidth: 1, borderTopColor: '#e4e4e7', paddingTop: 10, marginTop: 15, flexDirection: 'row', justifyContent: 'space-between', fontSize: baseSize(8.5), color: '#a1a1aa', fontFamily: chosenFont }}>
+                <Text></Text>
+                <Text>Last active: {new Date(data.updatedAt).toLocaleDateString()}</Text>
+              </View>
             </View>
-
-            {/* Asymmetric Section Layout block */}
-            <View style={{ flexGrow: 1, gap: 15 }}>
-              
-              {/* Professional Experience */}
-              {experience && experience.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Experience
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
-                    {experience.map((exp) => (
-                      <View key={exp.id} style={{ gap: 2 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{exp.position}</Text>
-                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFont, color: '#52525b', flexShrink: 0 }}>
-                            {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
-                          </Text>
-                        </View>
-                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFont, color: '#ca8a04', fontStyle: 'italic' }}>
-                          {exp.company}{exp.location ? ` | ${exp.location}` : ''}
-                        </Text>
-                        {exp.description ? (
-                          <Text style={{ fontSize: baseSize(8.5), color: '#3f3f46', lineHeight: 1.4 }}>
-                            {exp.description}
-                          </Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Projects */}
-              {projects && projects.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Projects
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
-                    {projects.map((proj) => (
-                      <View key={proj.id} style={{ gap: 2 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{proj.title}</Text>
-                          <Text style={{ fontSize: baseSize(8.5), fontFamily: chosenFont, color: '#52525b', flexShrink: 0 }}>
-                            {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
-                          </Text>
-                        </View>
-                        {proj.role ? (
-                          <Text style={{ fontSize: baseSize(9), color: '#3f3f46', fontStyle: 'italic' }}>{proj.role}</Text>
-                        ) : null}
-                        {proj.description ? (
-                          <Text style={{ fontSize: baseSize(8.5), color: '#3f3f46', lineHeight: 1.4 }}>
-                            {proj.description}
-                          </Text>
-                        ) : null}
-                        {proj.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#ca8a04' }}>Link: {proj.link}</Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Skills */}
-              {skills && skills.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Skills
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
-                    {skills.map((cat) => (
-                      <View key={cat.id} style={{ width: '45%', gap: 1 }}>
-                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#27272a' }}>{cat.name}</Text>
-                        <Text style={{ fontSize: baseSize(8.5), color: '#3f3f46' }}>{cat.skills.join(', ')}</Text>
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Education */}
-              {education && education.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Education
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 10 }}>
-                    {education.map((edu) => (
-                      <View key={edu.id} style={{ gap: 2 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{edu.degree}</Text>
-                          <Text style={{ fontSize: baseSize(8), color: '#52525b', flexShrink: 0 }}>{edu.startDate} - {edu.endDate}</Text>
-                        </View>
-                        {edu.fieldOfStudy ? (
-                          <Text style={{ fontSize: baseSize(9), color: '#27272a', fontFamily: chosenFontBold }}>{edu.fieldOfStudy}</Text>
-                        ) : null}
-                        <Text style={{ fontSize: baseSize(9), color: '#52525b' }}>{edu.institution}{edu.location ? ` | ${edu.location}` : ''}</Text>
-                        {edu.description ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#71717a', fontStyle: 'italic' }}>{edu.description}</Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Certifications */}
-              {certifications && certifications.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Certificates
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
-                    {certifications.map((cert) => (
-                      <View key={cert.id} style={{ gap: 1 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{cert.name}</Text>
-                          <Text style={{ fontSize: baseSize(8), color: '#52525b', flexShrink: 0 }}>{cert.date}</Text>
-                        </View>
-                        <Text style={{ fontSize: baseSize(8.5), color: '#3f3f46', fontStyle: 'italic' }}>{cert.issuer}</Text>
-                        {cert.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#ca8a04' }}>Verify: {cert.link}</Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Languages */}
-              {languages && languages.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Languages
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>
-                    {languages.map((lang) => (
-                      <Text key={lang.id} style={{ fontSize: baseSize(9), color: '#27272a' }}>
-                        <Text style={{ fontFamily: chosenFontBold }}>{lang.name}</Text> ({lang.proficiency})
-                      </Text>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Awards */}
-              {awards && awards.length > 0 ? (
-                <View style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f4f4f5', paddingBottom: 12 }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Awards
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
-                    {awards.map((award) => (
-                      <View key={award.id} style={{ gap: 1 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{award.name}</Text>
-                          <Text style={{ fontSize: baseSize(8), color: '#52525b', flexShrink: 0 }}>{award.date}</Text>
-                        </View>
-                        <Text style={{ fontSize: baseSize(8.5), color: '#3f3f46' }}>{award.issuer}</Text>
-                        {award.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#ca8a04' }}>{award.link}</Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-
-              {/* Achievements */}
-              {achievements && achievements.length > 0 ? (
-                <View style={{ flexDirection: 'row' }}>
-                  <View style={{ width: '25%', borderRightWidth: 3, borderRightColor: '#eab308', paddingRight: 10, marginTop: 2 }}>
-                    <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#71717a', textTransform: 'uppercase', letterSpacing: 1.5, textAlign: 'right' }}>
-                      Highlights
-                    </Text>
-                  </View>
-                  <View style={{ width: '75%', paddingLeft: 12, gap: 8 }}>
-                    {achievements.map((ach) => (
-                      <View key={ach.id} style={{ gap: 1 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#18181b', flex: 1 }}>{ach.name}</Text>
-                          {ach.date ? <Text style={{ fontSize: baseSize(8), color: '#52525b', flexShrink: 0 }}>{ach.date}</Text> : null}
-                        </View>
-                        {ach.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#ca8a04' }}>{ach.link}</Text>
-                        ) : null}
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : null}
-            </View>
-
-            {/* Bottom Identifier */}
-            <View style={{ borderTopWidth: 1, borderTopColor: '#e4e4e7', paddingTop: 10, marginTop: 15, flexDirection: 'row', justifyContent: 'space-between', fontSize: baseSize(8.5), color: '#a1a1aa', fontFamily: chosenFont }}>
-              <Text></Text>
-              <Text>Last active: {new Date(data.updatedAt).toLocaleDateString()}</Text>
-            </View>
-          </View>
-        ) : templateId === 'ats-supernova' ? ( (() => {
+          );
+        })() ) : templateId === 'ats-supernova' ? ( (() => {
           const nameSize = baseSize(32);
           const titleSize = baseSize(13);
           const bioSize = baseSize(10.5);
@@ -2559,9 +4591,9 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
             </View>
           </View>
         ) : templateId === 'ats-shining-star' ? (
-          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f1f5f9', padding: 40, color: '#334155', position: 'relative' }}>
+          <View style={{ flexDirection: 'column', flexGrow: 1, backgroundColor: '#f1f5f9', padding: 40, color: '#334155', position: 'relative', fontFamily: chosenFont }}>
             {/* Top star accent line */}
-            <View style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: '#0891b2' }} />
+            <View style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: primaryColor }} />
 
             {/* Header Block */}
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 15, paddingTop: 10, marginBottom: 15 }}>
@@ -2570,7 +4602,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                   {personalInfo.fullName || 'Your Name'}
                 </Text>
                 {personalInfo.jobTitle ? (
-                  <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: '#0e7490', textTransform: 'uppercase', letterSpacing: 1.5 }}>
+                  <Text style={{ fontSize: baseSize(9.5), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1.5 }}>
                     {personalInfo.jobTitle}
                   </Text>
                 ) : null}
@@ -2578,19 +4610,19 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                 {/* Contact info */}
                 <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 8, fontSize: baseSize(8.5), color: '#475569', gap: 6 }}>
                   {personalInfo.email ? <Text>{personalInfo.email}</Text> : null}
-                  {personalInfo.phone ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.phone ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.phone ? <Text>{personalInfo.phone}</Text> : null}
-                  {personalInfo.location ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.location ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.location ? <Text>{personalInfo.location}</Text> : null}
-                  {personalInfo.nationality ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.nationality ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.nationality ? <Text>Nationality: {personalInfo.nationality}</Text> : null}
-                  {personalInfo.gender ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.gender ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.gender ? <Text>Gender: {personalInfo.gender}</Text> : null}
-                  {personalInfo.website ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.website ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.website ? <Text>Web: {personalInfo.website}</Text> : null}
-                  {personalInfo.linkedin ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.linkedin ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.linkedin ? <Text>LinkedIn: {personalInfo.linkedin}</Text> : null}
-                  {personalInfo.github ? <Text style={{ color: '#0891b2' }}>|</Text> : null}
+                  {personalInfo.github ? <Text style={{ color: primaryColor }}>|</Text> : null}
                   {personalInfo.github ? <Text>GitHub: {personalInfo.github}</Text> : null}
                 </View>
               </View>
@@ -2598,14 +4630,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {personalInfo.photoUrl ? (
                 <Image 
                   src={personalInfo.photoUrl} 
-                  style={{ width: 50, height: 50, borderRadius: 4, borderWidth: 1, borderColor: '#0891b2' }}
+                  style={{ width: 50, height: 50, borderRadius: 4, borderWidth: 1, borderColor: primaryColor }}
                 />
               ) : null}
             </View>
 
             {/* Quick Summary / Bio */}
             {personalInfo.bio ? (
-              <View style={{ backgroundColor: '#ffffff', borderLeftWidth: 4, borderLeftColor: '#0891b2', padding: 8, borderRadius: 2, marginBottom: 15 }}>
+              <View style={{ backgroundColor: '#ffffff', borderLeftWidth: 4, borderLeftColor: primaryColor, padding: 8, borderRadius: 2, marginBottom: 15 }}>
                 <Text style={{ fontSize: baseSize(9), color: '#475569', fontStyle: 'italic', lineHeight: 1.4 }}>
                   {personalInfo.bio}
                 </Text>
@@ -2617,14 +4649,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Professional Experience */}
               {experience && experience.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Experience</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Experience</Text>
                   </View>
                   <View style={{ gap: 10 }}>
                     {experience.map((exp) => (
                       <View key={exp.id} style={{ gap: 2 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#0e7490', flex: 1 }}>{exp.position}</Text>
+                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, flex: 1 }}>{exp.position}</Text>
                           <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>
                             {exp.startDate} – {exp.currentlyWorking ? 'Present' : exp.endDate}
                           </Text>
@@ -2633,7 +4665,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           {exp.company}{exp.location ? ` | ${exp.location}` : ''}
                         </Text>
                         {exp.description ? (
-                          <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.4 }}>
+                           <Text style={{ fontSize: baseSize(8.5), color: '#475569', lineHeight: 1.4 }}>
                             {exp.description}
                           </Text>
                         ) : null}
@@ -2646,14 +4678,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Projects */}
               {projects && projects.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Projects</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Projects</Text>
                   </View>
                   <View style={{ gap: 10 }}>
                     {projects.map((proj) => (
                       <View key={proj.id} style={{ gap: 2 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: '#0e7490', flex: 1 }}>{proj.title}</Text>
+                          <Text style={{ fontSize: baseSize(10.5), fontFamily: chosenFontBold, color: primaryColor, flex: 1 }}>{proj.title}</Text>
                           <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>
                             {proj.startDate} – {proj.isCurrent ? 'Present' : proj.endDate}
                           </Text>
@@ -2667,7 +4699,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           </Text>
                         ) : null}
                         {proj.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#0e7490' }}>Link: {proj.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>Link: {proj.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -2678,13 +4710,13 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Skills */}
               {skills && skills.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Skills</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Skills</Text>
                   </View>
                   <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
                     {skills.map((cat) => (
                       <View key={cat.id} style={{ width: '48%', backgroundColor: '#ffffff', padding: 6, borderRadius: 2, borderWidth: 1, borderColor: '#cbd5e1', gap: 1 }}>
-                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: '#0e7490' }}>{cat.name}</Text>
+                        <Text style={{ fontSize: baseSize(9), fontFamily: chosenFontBold, color: primaryColor }}>{cat.name}</Text>
                         <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{cat.skills.join(', ')}</Text>
                       </View>
                     ))}
@@ -2695,14 +4727,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Education */}
               {education && education.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Education</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Education</Text>
                   </View>
                   <View style={{ gap: 10 }}>
                     {education.map((edu) => (
                       <View key={edu.id} style={{ gap: 2 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                          <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0e7490', flex: 1 }}>{edu.degree}</Text>
+                          <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, flex: 1 }}>{edu.degree}</Text>
                           <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{edu.startDate} - {edu.endDate}</Text>
                         </View>
                         {edu.fieldOfStudy ? (
@@ -2721,8 +4753,8 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Certifications */}
               {certifications && certifications.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Certificates</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Certificates</Text>
                   </View>
                   <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
                     {certifications.map((cert) => (
@@ -2733,7 +4765,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                         </View>
                         <Text style={{ fontSize: baseSize(8.5), color: '#475569', fontStyle: 'italic' }}>{cert.issuer}</Text>
                         {cert.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#0e7490' }}>Verify: {cert.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>Verify: {cert.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -2744,14 +4776,14 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Languages */}
               {languages && languages.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Languages</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Languages</Text>
                   </View>
                   <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
                     {languages.map((lang) => (
                       <View key={lang.id} style={{ backgroundColor: '#ffffff', paddingVertical: 4, paddingHorizontal: 8, borderRadius: 2, borderWidth: 1, borderColor: '#cbd5e1' }}>
                         <Text style={{ fontSize: baseSize(9), color: '#334155' }}>
-                          <Text style={{ fontFamily: chosenFontBold, color: '#0e7490' }}>{lang.name}</Text> ({lang.proficiency})
+                          <Text style={{ fontFamily: chosenFontBold, color: primaryColor }}>{lang.name}</Text> ({lang.proficiency})
                         </Text>
                       </View>
                     ))}
@@ -2762,8 +4794,8 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Awards */}
               {awards && awards.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Awards</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Awards</Text>
                   </View>
                   <View style={{ gap: 8 }}>
                     {awards.map((award) => (
@@ -2774,7 +4806,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                         </View>
                         <Text style={{ fontSize: baseSize(8.5), color: '#475569' }}>{award.issuer}</Text>
                         {award.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#0e7490' }}>{award.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>{award.link}</Text>
                         ) : null}
                       </View>
                     ))}
@@ -2785,8 +4817,8 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
               {/* Achievements */}
               {achievements && achievements.length > 0 ? (
                 <View style={{ gap: 5 }}>
-                  <View style={{ borderBottomWidth: 1, borderBottomColor: '#cbd5e1', paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: '#0f172a', textTransform: 'uppercase', letterSpacing: 1 }}>Highlights</Text>
+                  <View style={{ borderBottomWidth: 1, borderBottomColor: primaryColor, paddingBottom: 3, flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <Text style={{ fontSize: baseSize(10), fontFamily: chosenFontBold, color: primaryColor, textTransform: 'uppercase', letterSpacing: 1 }}>Highlights</Text>
                   </View>
                   <View style={{ gap: 8 }}>
                     {achievements.map((ach) => (
@@ -2796,7 +4828,7 @@ export const PDFDocument: React.FC<PDFDocumentProps> = ({ data }) => {
                           {ach.date ? <Text style={{ fontSize: baseSize(8), color: '#475569' }}>{ach.date}</Text> : null}
                         </View>
                         {ach.link ? (
-                          <Text style={{ fontSize: baseSize(8), color: '#0e7490' }}>{ach.link}</Text>
+                          <Text style={{ fontSize: baseSize(8), color: primaryColor }}>{ach.link}</Text>
                         ) : null}
                       </View>
                     ))}

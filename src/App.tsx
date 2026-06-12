@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import logoUrl from "./assets/images/logo.svg";
+import { ZoomControls } from "./components/ZoomControls";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ResumeData } from "./types";
 import {
@@ -93,12 +94,6 @@ export default function App() {
     checkMobile();
 
     // Auto-initialize zoom scale to fit mobile screen cleanly on mount
-    if (window.innerWidth < 768) {
-      setZoomScale(0.45);
-    } else {
-      setZoomScale(0.85);
-    }
-
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
@@ -168,7 +163,7 @@ export default function App() {
 
   // PDF Compiling & scale states
   const [isCompiling, setIsCompiling] = useState(false);
-  const [zoomScale, setZoomScale] = useState(0.85);
+  const [zoomScale, setZoomScale] = useState(1.0);
   const [autoSaveMsg, setAutoSaveMsg] = useState<string>(
     "All drafts synchronized offline",
   );
@@ -449,9 +444,10 @@ export default function App() {
     { id: "ats-optimized", name: "ATS Optimized (Single Column)" },
     { id: "ats-standout", name: "ATS Standout (Modern Dual Column)" },
     { id: "ats-lunar", name: "ATS Lunar (Orange & Grey Dual)" },
-    { id: "ats-universe", name: "ATS Universe (Yellow & Grey Single-Column)" },
-    { id: "ats-supernova", name: "ATS Supernova (Rose & Slate Single-Column)" },
-    { id: "ats-shining-star", name: "ATS Shining Star (Navy & Silver Duo)" },
+    { id: "ats-universe", name: "ATS Universe" },
+    { id: "ats-supernova", name: "ATS Supernova" },
+    { id: "ats-shining-star", name: "ATS Shining Star" },
+    { id: "ats-navy-classic", name: "ATS Navy Classic" },
     { id: "modern-minimal", name: "Modern Minimal" },
     { id: "classic-professional", name: "Classic Professional" },
     { id: "creative-bold", name: "Creative Bold" },
@@ -994,7 +990,7 @@ export default function App() {
                 {/* Zoom Controller & view stats overlay */}
                 <div className="absolute right-6 top-6 bg-slate-900/95 backdrop-blur-md rounded-xl p-1.5 flex items-center gap-1.5 z-40 text-white shadow-lg border border-slate-800">
                   <button
-                    onClick={() => setZoomScale((z) => Math.max(z - 0.05, 0.5))}
+                    onClick={() => setZoomScale((z) => Math.max(z - 0.1, 0.5))}
                     className="p-1 hover:bg-slate-800 rounded transition cursor-pointer"
                     title="Zoom Out"
                   >
@@ -1004,7 +1000,7 @@ export default function App() {
                     {Math.round(zoomScale * 100)}%
                   </span>
                   <button
-                    onClick={() => setZoomScale((z) => Math.min(z + 0.05, 1.2))}
+                    onClick={() => setZoomScale((z) => Math.min(z + 0.1, 1.2))}
                     className="p-1 hover:bg-slate-800 rounded transition cursor-pointer"
                     title="Zoom In"
                   >
@@ -1028,7 +1024,7 @@ export default function App() {
 
                 {/* Main page center */}
                 <div className="w-full flex justify-start md:justify-center py-10">
-                  <ResumePreview data={currentResume} zoom={zoomScale} />
+                  <ResumePreview key={zoomScale} data={currentResume} zoom={zoomScale} />
                 </div>
               </div>
             </div>
@@ -1069,7 +1065,7 @@ export default function App() {
       {isFullscreenPreview && currentResume && (
         <div className="fixed inset-0 z-[120] bg-slate-900/95 backdrop-blur-md flex flex-col animate-in fade-in duration-200 overflow-hidden">
           <TransformWrapper
-            initialScale={zoomScale * 1.15}
+            initialScale={zoomScale}
             minScale={0.3}
             maxScale={3}
             limitToBounds={false}
@@ -1100,32 +1096,7 @@ export default function App() {
                         <span className="hidden sm:inline">Focus</span>
                       </button>
 
-                      <div className="flex items-center bg-slate-800 border border-slate-700 rounded-lg py-1.5 px-1 gap-0.5 shrink-0">
-                      <button
-                        onClick={() => zoomOut(0.1)}
-                        className="p-1 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
-                        title="Zoom Out"
-                      >
-                        <ZoomOut className="w-4 h-4" />
-                      </button>
-                      <span className="text-xs font-mono text-slate-300 w-11 text-center">
-                        {Math.round(state.scale * 100)}%
-                      </span>
-                      <button
-                        onClick={() => zoomIn(0.1)}
-                        className="p-1 hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white"
-                        title="Zoom In"
-                      >
-                        <ZoomIn className="w-4 h-4" />
-                      </button>
-                      <button
-                        onClick={() => resetTransform()}
-                        className="p-1 ml-0.5 text-xs font-semibold hover:bg-slate-700 rounded transition cursor-pointer text-slate-300 hover:text-white border-l border-slate-700 pl-2"
-                        title="Reset Zoom"
-                      >
-                        Reset
-                      </button>
-                    </div>
+                      <ZoomControls />
 
                     <button
                       onClick={() => {

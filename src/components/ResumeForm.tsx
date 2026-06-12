@@ -732,7 +732,6 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
     { id: 'awards', label: 'Awards', icon: Trophy, color: 'text-yellow-500' },
     { id: 'achievements', label: 'Achievements', icon: Star, color: 'text-orange-500' },
     { id: 'languages', label: 'Languages', icon: Globe, color: 'text-fuchsia-500' },
-    { id: 'ats', label: 'ATS Check', icon: Sparkles, color: 'text-indigo-500' },
   ];
 
   const isSectionCompleted = (secId: string) => {
@@ -806,21 +805,30 @@ export const ResumeForm: React.FC<ResumeFormProps> = ({
                 className="w-full text-sm text-slate-700 bg-slate-100 border border-slate-200 rounded-lg px-3 py-2 outline-none focus:border-slate-300 focus:bg-white transition-colors cursor-pointer font-medium"
               >
                 {[
-                  { id: 'modern-minimal', name: 'Modern Minimal' },
+                  { id: 'academic-technical', name: 'Academic Technical' },
+                  { id: 'ats-lunar', name: 'ATS Lunar' },
+                  { id: 'ats-navy-classic', name: 'ATS Navy Classic' },
+                  { id: 'ats-optimized', name: 'ATS Optimized' },
+                  { id: 'ats-shining-star', name: 'ATS Shining Star' },
+                  { id: 'ats-standout', name: 'ATS Standout' },
+                  { id: 'ats-supernova', name: 'ATS Supernova' },
+                  { id: 'ats-universe', name: 'ATS Universe' },
                   { id: 'classic-professional', name: 'Classic Professional' },
                   { id: 'creative-bold', name: 'Creative Bold' },
-                  { id: 'academic-technical', name: 'Academic Technical' },
                   { id: 'executive-premium', name: 'Executive Premium' },
-                  { id: 'ats-optimized', name: 'ATS Optimized' },
-                  { id: 'ats-standout', name: 'ATS Standout' },
-                  { id: 'two-column-popular', name: 'Two Column Popular (Modern 2-Column Sidebar Layout)' },
-                  { id: 'two-column-grow', name: 'Two Column Grow (Industry Standard 2-Column Theme)' },
+                  { id: 'modern-minimal', name: 'Modern Minimal' },
+                  { id: 'two-column-amber', name: 'Two Column Amber (Cozy Warm 2-Column Layout)' },
+                  { id: 'two-column-eclipse', name: 'Two Column Eclipse (Dark Header 2-Column Layout)' },
+                  { id: 'two-column-galaxy', name: 'Two Column Galaxy (Modern Space Layout)' },
                   { id: 'two-column-gravity', name: 'Two Column Gravity (Elegant 2-Column Sidebar Layout)' },
-                  { id: 'ats-lunar', name: 'ATS Lunar' },
-                  { id: 'ats-universe', name: 'ATS Universe (Yellow & Dark Grey)' },
-                  { id: 'ats-supernova', name: 'ATS Supernova (Rose & Slate)' },
-                  { id: 'ats-shining-star', name: 'ATS Shining Star (Navy Blue & Crisp Silver)' },
-                  { id: 'ats-navy-classic', name: 'ATS Navy Classic (Single Column, Subtly Elegant Navy)' },
+                  { id: 'two-column-grow', name: 'Two Column Grow (Industry Standard 2-Column Theme)' },
+                  { id: 'two-column-harmony', name: 'Two Column Harmony (Balanced 2-Column Layout)' },
+                  { id: 'two-column-ocean', name: 'Two Column Ocean (Deep Professional 2-Column Layout)' },
+                  { id: 'two-column-pluto', name: 'Two Column Pluto (Modern Ice 2-Column Layout)' },
+                  { id: 'two-column-popular', name: 'Two Column Popular (Modern 2-Column Sidebar Layout)' },
+                  { id: 'two-column-uranus', name: 'Two Column Uranus (Icy Creative 2-Column Layout)' },
+                  { id: 'two-column-venus', name: 'Two Column Venus (Soft Elegant 2-Column Sidebar Layout)' },
+                  { id: 'two-column-victory', name: 'Two Column Victory (Prestigious 2-Column Layout)' },
                 ].map((template) => (
                   <option key={template.id} value={template.id} className="text-slate-900 bg-white">{template.name}</option>
                 ))}
