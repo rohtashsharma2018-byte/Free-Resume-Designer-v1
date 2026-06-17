@@ -1,5 +1,7 @@
+
 {
-  "image": "ghcr.io/rohtashsharma2018-byte/free-resume-designer-v1:latest"
+  "image": "ghcr.io/rohtashsharma2018-byte/free-resume-designer-v1:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  }
 }
-
-
