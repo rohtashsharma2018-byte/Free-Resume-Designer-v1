@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Definition for nice drop shadow to give 3D depth to the document -->
+  <defs>
+    <filter id="logo-shadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.15" />
+    </filter>
+    <filter id="plus-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Clear Wrapper group with a subtle shadow to make the white sheet pop on slightly off-white backgrounds -->
+  <g filter="url(#logo-shadow)">
+    <!-- Base White Paper Sheet with folded corner geometry -->
+    <path d="M 16 4 
+             L 68 4 
+             L 84 20 
+             L 84 94 
+             L 16 94 
+             Z" 
+          fill="#ffffff" 
+          stroke="#e2e8f0" 
+          stroke-width="1" />
+          
+    <!-- Folded Corner Effect -->
+    <path d="M 68 4 L 68 20 L 84 20 Z" fill="#cbd5e1" />
+    <path d="M 68 4 L 84 20 L 68 20 Z" fill="#f1f5f9" opacity="0.9" />
+  </g>
+
+  <!-- Avatar Placeholder (Left Column) -->
+  <circle cx="34" cy="27" r="7.5" fill="#334155" />
+  <path d="M 23 41.5 C 23 36, 45 36, 45 41.5 Z" fill="#334155" />
+
+  <!-- Metadata Lines (Right Column) -->
+  <rect x="52" y="22" width="22" height="3" rx="1.5" fill="#475569" />
+  <rect x="52" y="29" width="16" height="3" rx="1.5" fill="#f59e0b" />
+  <rect x="52" y="36" width="22" height="3" rx="1.5" fill="#475569" />
+
+  <!-- Bold Divider -->
+  <rect x="23" y="49" width="54" height="4" rx="2" fill="#334155" />
+
+  <!-- Body Content Lines -->
+  <rect x="23" y="58" width="54" height="3" rx="1.5" fill="#94a3b8" />
+  <rect x="23" y="66" width="48" height="3" rx="1.5" fill="#94a3b8" />
+  <rect x="23" y="74" width="54" height="3" rx="1.5" fill="#94a3b8" />
+  <rect x="23" y="82" width="36" height="3" rx="1.5" fill="#f59e0b" />
+
+  <!-- Prominent Orange-Red Plus Button at the Top-Right Corner -->
+  <g filter="url(#plus-shadow)">
+    <!-- Orange circle with crisp white outline -->
+    <circle cx="76" cy="18" r="14" fill="#ff4500" stroke="#ffffff" stroke-width="2" />
+    <!-- White Plus lines -->
+    <rect x="74.5" y="10" width="3" height="16" rx="1" fill="#ffffff" />
+    <rect x="68" y="16.5" width="16" height="3" rx="1" fill="#ffffff" />
+  </g>
+</svg>
