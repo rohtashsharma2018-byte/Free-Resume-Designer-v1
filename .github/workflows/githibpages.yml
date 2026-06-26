@@ -1,0 +1,64 @@
+name: Build and Publish to gh-pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Publish to gh-pages
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Create a temporary directory
+          mkdir -p /tmp/site
+          cp -R dist/* /tmp/site/
+
+          # Switch to gh-pages branch (create if it doesn't exist)
+          if git show-ref --quiet refs/heads/gh-pages; then
+            git checkout gh-pages
+          elif git ls-remote --exit-code --heads origin gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+
+          # Remove old files (except .git)
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
+
+          # Copy new build
+          cp -R /tmp/site/* .
+
+          git add .
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Deploy build from ${GITHUB_SHA}"
+          git push origin gh-pages --force
